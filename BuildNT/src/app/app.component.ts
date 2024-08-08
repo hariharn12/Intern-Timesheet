@@ -5,12 +5,13 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { SidebarComponent } from "./sidebar/sidebar.component";
 >>>>>>> a3ce0c0fb854406b3ba61f0f8b9dd122f05c6429
 import { LoginComponent } from "./login/login.component";
+import { SidebarComponent } from "./sidebar/sidebar.component";
 
 @Component( {
   selector: 'app-root',
   standalone: true,
 <<<<<<< HEAD
-  imports: [RouterOutlet, RouterLink, LoginComponent],
+  imports: [RouterOutlet, RouterLink, LoginComponent, SidebarComponent],
 =======
   imports: [RouterOutlet, RouterLink, SidebarComponent, LoginComponent],
 >>>>>>> a3ce0c0fb854406b3ba61f0f8b9dd122f05c6429
