@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { SidebarComponent } from "./sidebar/sidebar.component";
 import { LoginComponent } from "./login/login.component";
+import { SidebarComponent } from "./sidebar/sidebar.component";
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from "./dashboard/dashboard.component";
 
