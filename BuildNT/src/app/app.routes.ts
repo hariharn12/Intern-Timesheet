@@ -3,6 +3,7 @@ import { LoginComponent } from './login/login.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppAlignmentComponent } from './app-alignment/app-alignment.component';
+import { ClientListComponent } from './client-list/client-list.component';
 
 export const routes: Routes = [
     {
@@ -16,6 +17,10 @@ export const routes: Routes = [
             {
                 path: 'dashboard',
                 component:DashboardComponent,
+            },
+            {
+                path: 'clientList',
+                component:ClientListComponent,
             },
         ]
     },
