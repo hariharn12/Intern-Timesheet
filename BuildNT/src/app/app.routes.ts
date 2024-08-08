@@ -9,7 +9,7 @@ export const routes: Routes = [
         path:'login',
         component:LoginComponent
     },
-  {
+    {
         path:'',
         component:AppAlignmentComponent,
         children:[
@@ -19,4 +19,5 @@ export const routes: Routes = [
             },
         ]
     },
+
 ];
