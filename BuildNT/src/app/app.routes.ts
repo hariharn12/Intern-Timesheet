@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppAlignmentComponent } from './app-alignment/app-alignment.component';
 import { ClientListComponent } from './client-list/client-list.component';
 import { EmployComponent } from './employ/employ.component';
+import { CreateemployComponent } from './createemploy/createemploy.component';
 
 export const routes: Routes = [
     {
@@ -15,6 +16,7 @@ export const routes: Routes = [
         path:'',
         component:AppAlignmentComponent,
         children:[
+            { path: '',   redirectTo: '/login', pathMatch: 'full' },
             {
                 path: 'dashboard',
                 component:DashboardComponent,
@@ -26,8 +28,13 @@ export const routes: Routes = [
             {
                 path:'employ',
                 component:EmployComponent,
+            },
+            {
+                path:'employ/createemploy',
+                component:CreateemployComponent,
             }
         ]
     },
-
+    
+    
 ];
