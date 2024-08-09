@@ -1,0 +1,26 @@
+.client-info {
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .client-info .logo {
+    margin-right: 20px;
+  }
+  p{
+    color: #707070;
+    font-size: 14px;
+  }
+  a{
+    text-decoration: none;
+    color: #1C1B1F;
+    font-size: 14px;
+  }
+  .client{
+    font-size: 28px;
+  }
+  .project-font{
+    font-size: 14px;
+    color: #344054;
+  }
