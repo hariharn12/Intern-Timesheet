@@ -1,11 +1,11 @@
-<div class="container-fluid">
+<div class="p-4 ">
   <div class="row">
     <div class="d-flex justify-content-between">
-      <div>
+      <div >
         <h3>My Clients List</h3>
       </div>
       <div class="wrapper">
-        <div class="searchBar">
+        <div class="searchBar d-flex">
           <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search Clients" />
           <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -27,35 +27,15 @@
         </tr>
       </thead>
       <tbody>
-          <tr>
-            <td>C0001</td>
-            <td>SMRT</td>
-            <td>support&#64;gmail.com</td>
-            <td>02</td>
-            <td>12/07/2023</td>
-          </tr>
-          <tr routerLink="./smrt">
-            <td>C0002</td>
-            <td>Hitachi</td>
-            <td>support&#64;hithi.com</td>
-            <td>04</td>
-            <td>02/05/2023</td>
-          </tr>
-          <tr>
-            <td>C0003</td>
-            <td>BuildNT</td>
-            <td>support&#64;buildnt.com</td>
-            <td>04</td>
-            <td>22/09/2023</td>
-          </tr>
-          <tr>
-            <td>C0004</td>
-            <td>Gaura</td>
-            <td>support&#64;gaura.com</td>
-            <td>02</td>
-            <td>05/12/2023</td>
-          </tr>
+        <tr *ngFor="let client of clients" [routerLink]="['./', client.clientName.toLowerCase()]">
+          <td>{{ client.id }}</td>
+          <td>{{ client.clientName }}</td>
+          <td>{{ client.email }}</td>
+          <td>{{ client.project }}</td>
+          <td>{{ client.onboardDate }}</td>
+        </tr>
       </tbody>
     </table>
   </div>
 </div>
+<router-outlet></router-outlet>

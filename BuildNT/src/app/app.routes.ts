@@ -7,6 +7,7 @@ import { ClientListComponent } from './client-list/client-list.component';
 import { MyProjectComponent } from './my-project/my-project.component';
 import { EmployComponent } from './employ/employ.component';
 import { CreateemployComponent } from './createemploy/createemploy.component';
+import { SmrtComponent } from './smrt/smrt.component';
 
 export const routes: Routes = [
     {
@@ -31,13 +32,17 @@ export const routes: Routes = [
                 component:MyProjectComponent,
             },
             {
-                path:'employ',
-                component:EmployComponent,
+                path: 'employ',
+                component: EmployComponent,
             },
             {
                 path:'employ/createemploy',
                 component:CreateemployComponent,
-            }
+            },
+            {
+                path: 'clientList/smrt',
+                component:SmrtComponent,
+            },
         ]
     },
     
