@@ -1,0 +1,7 @@
+.wrapper {
+    width:40%;
+}
+
+.list-inline-item.active {
+    border-bottom: 1px solid #004CFF;
+}
