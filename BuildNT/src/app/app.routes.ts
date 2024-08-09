@@ -30,6 +30,7 @@ export const routes: Routes = [
                 path: 'myproject',
                 component:MyProjectComponent,
             },
+            {
                 path:'employ',
                 component:EmployComponent,
             },
