@@ -4,6 +4,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppAlignmentComponent } from './app-alignment/app-alignment.component';
 import { ClientListComponent } from './client-list/client-list.component';
+import { EmployComponent } from './employ/employ.component';
 
 export const routes: Routes = [
     {
@@ -22,6 +23,10 @@ export const routes: Routes = [
                 path: 'clientList',
                 component:ClientListComponent,
             },
+            {
+                path:'employ',
+                component:EmployComponent,
+            }
         ]
     },
 
