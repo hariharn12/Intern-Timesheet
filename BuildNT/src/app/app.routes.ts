@@ -50,7 +50,7 @@ export const routes: Routes = [
                 path:'employ/createemploy',
                 component:CreateemployComponent,
             },
-        ],
+        
             {
                 path: 'clientList/smrt',
                 component:SmrtComponent,
