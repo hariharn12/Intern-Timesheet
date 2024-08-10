@@ -7,6 +7,8 @@ import { ClientListComponent } from './client-list/client-list.component';
 import { MyProjectComponent } from './my-project/my-project.component';
 import { EmployComponent } from './employ/employ.component';
 import { CreateemployComponent } from './createemploy/createemploy.component';
+import { CurrentprojectComponent } from './my-project/currentproject/currentproject.component';
+import { UpcomingprojectComponent } from './my-project/upcomingproject/upcomingproject.component';
 import { CurrentprojectComponent } from './currentproject/currentproject.component';
 import { SmrtComponent } from './smrt/smrt.component';
 
@@ -35,6 +37,10 @@ export const routes: Routes = [
                     {
                     path:'currentproject',
                     component:CurrentprojectComponent,
+                },
+                {
+                    path:'upcomingproject',
+                    component:UpcomingprojectComponent,
                 },
             ],
             },
