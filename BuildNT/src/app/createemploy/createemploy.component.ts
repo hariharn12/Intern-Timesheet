@@ -1,6 +1,5 @@
-import { ɵBrowserAnimationBuilder } from '@angular/animations';
+
 import { Component } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { MatTabsModule } from '@angular/material/tabs';
 
