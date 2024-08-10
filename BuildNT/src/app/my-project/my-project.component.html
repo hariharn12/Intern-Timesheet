@@ -16,4 +16,12 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+            <a routerLink="/currentproject"><mat-tab label="Current Project"></mat-tab></a>
+            <a routerLink="#"><mat-tab label="Upcoming Project"></mat-tab></a>
+            <a routerLink="#"><mat-tab label="Completed Project"></mat-tab></a>
+        </mat-tab-group>
+    </div>
 </div>
+    <router-outlet></router-outlet>

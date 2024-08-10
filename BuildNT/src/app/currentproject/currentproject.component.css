@@ -1,0 +1,9 @@
+.badge-green {
+    color: #0EB85B;
+    background-color: #0EB85B1F !important;
+}
+
+.badge-danger {
+    color:#FFB406;
+    background-color:#FFB4061F;
+}
