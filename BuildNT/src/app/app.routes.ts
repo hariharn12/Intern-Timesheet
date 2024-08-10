@@ -7,39 +7,44 @@ import { ClientListComponent } from './client-list/client-list.component';
 import { MyProjectComponent } from './my-project/my-project.component';
 import { EmployComponent } from './employ/employ.component';
 import { CreateemployComponent } from './createemploy/createemploy.component';
+import { MyTimesheetComponent } from './my-timesheet/my-timesheet.component';
 
 export const routes: Routes = [
     {
-        path:'login',
-        component:LoginComponent
+        path: 'login',
+        component: LoginComponent
     },
     {
-        path:'',
-        component:AppAlignmentComponent,
-        children:[
-            { path: '',   redirectTo: '/login', pathMatch: 'full' },
+        path: '',
+        component: AppAlignmentComponent,
+        children: [
+            { path: '', redirectTo: '/login', pathMatch: 'full' },
             {
                 path: 'dashboard',
-                component:DashboardComponent,
+                component: DashboardComponent,
             },
             {
                 path: 'clientList',
-                component:ClientListComponent,
+                component: ClientListComponent,
             },
             {
                 path: 'myproject',
-                component:MyProjectComponent,
+                component: MyProjectComponent,
             },
             {
-                path:'employ',
-                component:EmployComponent,
+                path: 'employ',
+                component: EmployComponent,
             },
             {
-                path:'employ/createemploy',
-                component:CreateemployComponent,
+                path: 'employ/createemploy',
+                component: CreateemployComponent,
+            },
+            {
+                path: 'mytimesheet',
+                component: MyTimesheetComponent,
             }
         ]
     },
-    
-    
+
+
 ];
