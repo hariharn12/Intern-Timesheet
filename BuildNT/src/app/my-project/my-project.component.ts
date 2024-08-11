@@ -8,7 +8,7 @@ import { UpcomingprojectComponent } from './upcomingproject/upcomingproject.comp
 @Component({
   selector: 'app-my-project',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, MatTabsModule, CurrentprojectComponent,UpcomingprojectComponent],
+  imports: [RouterOutlet, RouterLink, MatTabsModule, MyProjectComponent,CurrentprojectComponent,UpcomingprojectComponent],
   templateUrl: './my-project.component.html',
   styleUrl: './my-project.component.css'
 })

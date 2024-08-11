@@ -11,8 +11,7 @@ import { SmrtComponent } from './smrt/smrt.component';
 @Component( {
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, SidebarComponent, CommonModule, LoginComponent, DashboardComponent,MyProjectComponent],
-  imports: [RouterOutlet, RouterLink, SidebarComponent, CommonModule, LoginComponent, DashboardComponent,ClientListComponent,SmrtComponent],
+  imports: [RouterOutlet, RouterLink, LoginComponent, SidebarComponent, CommonModule, DashboardComponent,ClientListComponent,SmrtComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
