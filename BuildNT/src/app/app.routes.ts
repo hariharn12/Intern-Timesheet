@@ -9,9 +9,9 @@ import { EmployComponent } from './employ/employ.component';
 import { CreateemployComponent } from './createemploy/createemploy.component';
 import { CurrentprojectComponent } from './my-project/currentproject/currentproject.component';
 import { UpcomingprojectComponent } from './my-project/upcomingproject/upcomingproject.component';
+import { MyTimesheetComponent } from './my-timesheet/my-timesheet.component';
 import { SmrtComponent } from './smrt1/smrt-details/smrt-details.component';
 import { SmrtEditComponent } from './smrt1/smrt-edit/smrt-edit.component';
-
 
 export const routes: Routes = [
   {
@@ -61,6 +61,10 @@ export const routes: Routes = [
       {
         path: 'clientList/smrt-details',
         component: SmrtComponent,
+      },
+      {
+        path: 'mytimesheet',
+        component: MyTimesheetComponent,
       },
       {
         path: 'smrt-edit',
