@@ -7,7 +7,11 @@ import { ClientListComponent } from './client-list/client-list.component';
 import { MyProjectComponent } from './my-project/my-project.component';
 import { EmployComponent } from './employ/employ.component';
 import { CreateemployComponent } from './createemploy/createemploy.component';
+<<<<<<< HEAD
 import { MyTimesheetComponent } from './my-timesheet/my-timesheet.component';
+=======
+import { SmrtComponent } from './smrt/smrt.component';
+>>>>>>> 6c4599daba65b09e425617ab66e647a35302bdfd
 
 export const routes: Routes = [
     {
@@ -36,6 +40,7 @@ export const routes: Routes = [
                 component: EmployComponent,
             },
             {
+<<<<<<< HEAD
                 path: 'employ/createemploy',
                 component: CreateemployComponent,
             },
@@ -43,6 +48,15 @@ export const routes: Routes = [
                 path: 'mytimesheet',
                 component: MyTimesheetComponent,
             }
+=======
+                path:'employ/createemploy',
+                component:CreateemployComponent,
+            },
+            {
+                path: 'clientList/smrt',
+                component:SmrtComponent,
+            },
+>>>>>>> 6c4599daba65b09e425617ab66e647a35302bdfd
         ]
     },
 
