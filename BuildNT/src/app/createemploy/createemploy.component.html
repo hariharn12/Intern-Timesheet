@@ -1,7 +1,70 @@
-<p>createemploy works!</p>
-<mat-tab-group>
-    <mat-tab label="First"> Content 1 </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Third"> Content 3 </mat-tab>
-  </mat-tab-group>
-  
+<div class="container-fluid">
+<div class="d-flex justify-content-between my-3">
+    <div class=" col-md-4 ">
+      <h3>My Employe</h3>
+      <p>Employee List / Create Employee<p>
+    </div>
+    <div class="wrapper col-md-3">
+    <div class="input-group bg-white border rounded ">
+        <input class="form-control border-0" type="text" placeholder="search" id="example-search-input">
+        <span class="input-group-append">
+          <button class="btn btn-outline-secondary bg-white border-0 rounded-pill ms-n3" type="button">
+            <i class="bi bi-search"></i>
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <form class="row g-3">
+    <div class="client-logo">
+        <label for="climaterial-symbols-outlinedent-logo" class="detail-font">Client Logo</label>
+           <label for="client-logo" class="logo-upload">
+               <span class="material-symbols-outlined">upload</span>
+               <h1 class="textupload">Upload</h1>
+            </label>     
+            <input id="client-logo" type="file" class="file">
+    </div>
+    <div class="col-md-3">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-3">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-3">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
+</div>
