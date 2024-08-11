@@ -9,51 +9,6 @@ import { EmployComponent } from './employ/employ.component';
 import { CreateemployComponent } from './createemploy/createemploy.component';
 import { CurrentprojectComponent } from './my-project/currentproject/currentproject.component';
 import { UpcomingprojectComponent } from './my-project/upcomingproject/upcomingproject.component';
-import { SmrtComponent } from './smrt/smrt.component';
-
-export const routes: Routes = [
-    {
-        path:'login',
-        component:LoginComponent
-    },
-    {
-        path:'',
-        component:AppAlignmentComponent,
-        children:[
-            { path: '',   redirectTo: '/login', pathMatch: 'full' },
-            {
-                path: 'dashboard',
-                component:DashboardComponent,
-            },
-            {
-                path: 'clientList',
-                component:ClientListComponent,
-            },
-            {
-                path: 'myproject',
-                component:MyProjectComponent,
-                children:[
-                    {
-                    path:'currentproject',
-                    component:CurrentprojectComponent,
-                },
-                {
-                    path:'upcomingproject',
-                    component:UpcomingprojectComponent,
-                },
-            ],
-            },
-            {
-                path:'employ',
-                component:EmployComponent,
-            },
-            {
-                path:'employ/createemploy',
-                component:CreateemployComponent,
-            },
-        ],
-            },
-    ]
 import { MyTimesheetComponent } from './my-timesheet/my-timesheet.component';
 import { SmrtComponent } from './smrt1/smrt-details/smrt-details.component';
 import { SmrtEditComponent } from './smrt1/smrt-edit/smrt-edit.component';
