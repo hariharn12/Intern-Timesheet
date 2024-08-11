@@ -77,3 +77,8 @@ td:hover {
     border-radius: 5px;
     padding: 2px;
 }
+.create-button {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+} 

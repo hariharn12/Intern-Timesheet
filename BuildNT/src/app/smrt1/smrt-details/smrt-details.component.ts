@@ -1,13 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { MatTabsModule } from '@angular/material/tabs';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { CurrentprojectComponent } from '../../my-project/currentproject/currentproject.component';
 
 @Component({
   selector: 'app-smrt',
   standalone: true,
-  imports: [RouterLink,RouterOutlet,CommonModule],
-  templateUrl: './smrt.component.html',
-  styleUrl: './smrt.component.css'
+  imports: [RouterLink,RouterOutlet,CommonModule,MatTabsModule, CurrentprojectComponent],
+  templateUrl: './smrt-details.component.html',
+  styleUrl: './smrt-details.component.css'
 })
 export class SmrtComponent {
   public client = {

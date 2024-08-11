@@ -1,0 +1,18 @@
+main{
+    width: 70vw;
+}
+table{
+    width: 100%;
+    border-color: #D9D9D9;
+}
+td,th{
+    padding-top: 20px;
+}
+input{
+    width: 59.69px;
+height: 30px;
+top: 15px;
+left: 493px;
+border-radius: 2px;
+border: 1px solid #878686;
+}

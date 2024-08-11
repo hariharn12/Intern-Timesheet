@@ -27,7 +27,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let client of clients" [routerLink]="['./', client.clientName.toLowerCase()]">
+        <tr *ngFor="let client of clients" [routerLink]="['./', client.path]">
           <td>{{ client.id }}</td>
           <td>{{ client.clientName }}</td>
           <td>{{ client.email }}</td>
@@ -37,5 +37,8 @@
       </tbody>
     </table>
   </div>
+  <div class="create-button">
+  <a class="btn btn-primary fw-bold" routerLink="/smrt-edit" role="button">+</a>
+</div>
 </div>
 <router-outlet></router-outlet>
