@@ -1,0 +1,9 @@
+.card-font {
+    font-size: 14px;
+}
+
+.add {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
