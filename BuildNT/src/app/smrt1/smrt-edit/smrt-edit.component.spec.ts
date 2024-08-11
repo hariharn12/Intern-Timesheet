@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SmrtComponent } from './smrt.component';
+import { SmrtEditComponent } from './smrt-edit.component';
 
-describe('SmrtComponent', () => {
-  let component: SmrtComponent;
-  let fixture: ComponentFixture<SmrtComponent>;
+describe('SmrtEditComponent', () => {
+  let component: SmrtEditComponent;
+  let fixture: ComponentFixture<SmrtEditComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SmrtComponent]
+      imports: [SmrtEditComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SmrtComponent);
+    fixture = TestBed.createComponent(SmrtEditComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
