@@ -1,7 +1,7 @@
 <div class="container">
   <div class="d-flex justify-content-between">
     <div>
-      <h4 class="client">Edit Client Detail</h4>
+      <h4 class="client">Client Detail</h4>
       <nav>
         <a routerLink="/clientList">ClientList</a>
         <a class="px-2">/Client Details</a>
@@ -84,7 +84,7 @@
               checked
             />
             <label class="form-check-label" for="flexCheckChecked">
-              Same Address For Billing Address 
+              Same Address For Billing Address
             </label>
           </div>
         </div>
@@ -106,79 +106,85 @@
       </div>
     </div>
     <!-- create contact details -->
-     <div>
+    <div>
       <h6>Contact details</h6>
-     <div class="row">
-      <div class="mb-3 col">
-        <label for="contact-person" class="form-label">Contact Person</label>
-        <input
-          type="text"
-          class="form-control"
-          id="contact-person"
-           [(ngModel)]="newContactPerson"
-        />
-      </div>
-      <div class="mb-3 col">
-        <label for="Position" class="form-label">Position</label>
-        <input
-          type="text"
-          class="form-control"
-          id="Position"
-           [(ngModel)]="newPosition"
-        />
-      </div>
-      <div class="mb-3 col">
-        <label for="phoneNumber" class="form-label">Phone Number</label>
-        <input
-          type="tel"
-          class="form-control"
-          id="phoneNumber"
+      <div class="row">
+        <div class="mb-3 col">
+          <label for="contact-person" class="form-label">Contact Person</label>
+          <input
+            type="text"
+            class="form-control"
+            id="contact-person"
+            [(ngModel)]="newContactPerson"
+          />
+        </div>
+        <div class="mb-3 col">
+          <label for="Position" class="form-label">Position</label>
+          <input
+            type="text"
+            class="form-control"
+            id="Position"
+            [(ngModel)]="newPosition"
+          />
+        </div>
+        <div class="mb-3 col">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phoneNumber"
             [(ngModel)]="newPhoneNumber"
-        />
-      </div>
-           <div class="mb-3 col">
-        <label for="contactEmail" class="form-label">Email Id</label>
-        <input
-          type="email"
-          class="form-control"
-           [(ngModel)]="newEmail"
-          id="contactEmail"
-        />
-      </div>
-    <div class="col  align-items-center  justify-content-end d-flex">
-    <button type="button" class="btn add-button" (click)="addContact()">
-            <i class="bi bi-plus"></i> {{ editingIndex !== null ? 'Update' : 'Add' }}
+          />
+        </div>
+        <div class="mb-3 col">
+          <label for="contactEmail" class="form-label">Email Id</label>
+          <input
+            type="email"
+            class="form-control"
+            [(ngModel)]="newEmail"
+            id="contactEmail"
+          />
+        </div>
+        <div class="col align-items-center justify-content-end d-flex">
+          <button type="button" class="btn add-button" (click)="addContact()">
+            <i class="bi bi-plus"></i>
+            {{ editingIndex !== null ? "Update" : "Add" }}
           </button>
-    </div>
-      
+        </div>
       </div>
-     </div>
-<!-- contact details -->
-     <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Contact Person</th>
-      <th scope="col">Position</th>
-      <th scope="col">Phone Number</th>
-      <th scope="col">Email Id</th>
-    </tr>
-  </thead>
-  <tbody>
- <tr *ngFor="let contact of contacts; let i = index">
-      <td class="bg-secondary">{{contact.contactPerson}}</td>
-      <td class="bg-secondary">{{contact.position}}</td>
-      <td class="bg-secondary">{{contact.phoneNumber}}</td>
-      <td class="bg-secondary">{{contact.email}}</td>
-       <td class="bg-secondary">
-            <button class="btn btn-outreline-primary me-4 btn-sm" (click)="editContact(i)">
-              <i class="bi bi-pencil "></i>
+    </div>
+    <!-- contact details -->
+    <table class="table ">
+      <thead>
+        <tr>
+          <th scope="col">Contact Person</th>
+          <th scope="col">Position</th>
+          <th scope="col">Phone Number</th>
+          <th scope="col">Email Id</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let contact of contacts; let i = index">
+          <td class="bg-secondary">{{ contact.contactPerson }}</td>
+          <td class="bg-secondary">{{ contact.position }}</td>
+          <td class="bg-secondary">{{ contact.phoneNumber }}</td>
+          <td class="bg-secondary">{{ contact.email }}</td>
+          <td class="bg-secondary">
+            <button
+              class="btn btn-outreline-primary me-4 btn-sm"
+              (click)="editContact(i)"
+            >
+              <i class="bi bi-pencil"></i>
             </button>
-            <button class="btn btn-outreline-danger  btn-sm" (click)="deleteContact(i)">
-             <i class="bi bi-trash"></i>
+            <button
+              class="btn btn-outreline-danger btn-sm"
+              (click)="deleteContact(i)"
+            >
+              <i class="bi bi-trash"></i>
             </button>
           </td>
-    </tr>
-  </tbody>
-</table>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>

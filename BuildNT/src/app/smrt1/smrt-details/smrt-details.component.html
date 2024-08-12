@@ -13,16 +13,17 @@
   </div>
 
   <!-- client details label -->
-  <div class="client-info">
-    <img
+  <div class="client-info col-6 col-md-12 col-lg-12">
+    <div>
+      <img
       src="/assets/images/Rectangle 5543.png"
       alt="Company Logo"
       class="logo"
-    />
-    <div class="d-flex">
-      <div class="d-flex grid gap-5">
-        <div>
-          <div class="">
+      />
+    </div>
+      <div class="d-flex">
+        <div class="col">
+          <div>
             <p>Client Name</p>
             {{ client.name }}
           </div>
@@ -31,7 +32,7 @@
             {{ client.id }}
           </div>
         </div>
-        <div class="px-3">
+        <div class="px-3 col">
           <div>
             <p>Email ID</p>
             {{ client.email }}
@@ -41,7 +42,7 @@
             {{ client.location }}
           </div>
         </div>
-        <div class="px-2">
+        <div class="px-3 col">
           <div>
             <p>Onboarding Date</p>
           </div>
@@ -51,7 +52,7 @@
           </div>
           <div>{{ client.accountManager }}</div>
         </div>
-        <div class="px-3">
+        <div class="px-3 col">
           <div>
             <p>Contact Person</p>
           </div>
@@ -68,7 +69,6 @@
           <div>{{ client.phoneNumber }}</div>
         </div>
       </div>
-    </div>
   </div>
   <div class="row">
     <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
