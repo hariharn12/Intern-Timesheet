@@ -1,0 +1,29 @@
+.searchBar {
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 2px;
+}
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  padding-right: 30px; /* Add space for the icon */
+}
+
+.search-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Make sure clicks on the icon don't affect the input */
+}
+.button-color{
+    border-color: #D0D5DD;
+    height: 40px;
+    width: 180px;
+}
+.button-color:hover{
+    background-color:  unset;
+    color: #787878;
+}
