@@ -33,88 +33,17 @@
          </th>
       </tr>
     </thead>
-    <tbody class="p">
-      <tr class="p-5">
-        <td>U 123456</td>
-        <td>Nathan</td>
-        <td>Robert</td>
-        <td>udhaya&#64;blint.co</td>
-        <td>UI/UX</td>
-        <td>Tushar B</td>
-        <td>12/07/2023</td>
+    <tbody class="">
+      <tr *ngFor="let employee of employee" [routerLink]="['./', employee.path]">
+        <td>{{ employee.id }}</td>
+        <td>{{ employee.firstName }}</td>
+        <td>{{ employee.lastName }}</td>
+        <td>{{ employee.email}}</td>
+        <td>{{ employee.depatment }}</td>
+        <td>{{employee.report}}</td>
+        <td>{{employee.joining}}</td>
       </tr>
-      <tr class="py-2">
-        <td>U 123456</td>
-        <td>Nathan</td>
-        <td>Robert</td>
-        <td>udhaya&#64;blint.co</td>
-        <td>UI/UX</td>
-        <td>Tushar B</td>
-        <td>12/07/2023</td>
-      </tr>
-      <tr>
-        <td>U 123456</td>
-        <td>Nathan</td>
-        <td>Robert</td>
-        <td>udhaya&#64;blint.co</td>
-        <td>UI/UX</td>
-        <td>Tushar B</td>
-        <td>12/07/2023</td>
-      <tr>
-        <td>U 123456</td>
-        <td>Nathan</td>
-        <td>Robert</td>
-        <td>udhaya&#64;blint.co</td>
-        <td>UI/UX</td>
-        <td>Tushar B</td>
-        <td>12/07/2023</td>
-      </tr>
-      <tr>
-        <td>U 123456</td>
-        <td>Nathan</td>
-        <td>Robert</td>
-        <td>udhaya&#64;blint.co</td>
-        <td>UI/UX</td>
-        <td>Tushar B</td>
-        <td>12/07/2023</td>
-      </tr>
-      <tr>
-        <td>U 123456</td>
-        <td>Nathan</td>
-        <td>Robert</td>
-        <td>udhaya&#64;blint.co</td>
-        <td>UI/UX</td>
-        <td>Tushar B</td>
-        <td>12/07/2023</td>
-      </tr>
-      <tr>
-        <td>U 123456</td>
-        <td>Nathan</td>
-        <td>Robert</td>
-        <td>udhaya&#64;blint.co</td>
-        <td>UI/UX</td>
-        <td>Tushar B</td>
-        <td>12/07/2023</td>
-      </tr>
-      <tr>
-        <td>U 123456</td>
-        <td>Nathan</td>
-        <td>Robert</td>
-        <td>udhaya&#64;blint.co</td>
-        <td>UI/UX</td>
-        <td>Tushar B</td>
-        <td>12/07/2023</td>
-      </tr>
-      <tr>
-        <td>U 123456</td>
-        <td>Nathan</td>
-        <td>Robert</td>
-        <td>udhaya&#64;blint.co</td>
-        <td>UI/UX</td>
-        <td>Tushar B</td>
-        <td>12/07/2023</td>
-      </tr>
-    </tbody>
+  </tbody>
   </table>
   </div>
 
@@ -122,5 +51,7 @@
 <div class="add">
   <a class="btn btn-primary fw-bold" routerLink="createemploy" role="button">+</a>
 </div>
+<router-outlet></router-outlet>
+
 
 
