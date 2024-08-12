@@ -64,3 +64,69 @@ export const routes: Routes = [
         ],
     },
 ]
+            },
+    ]
+import { MyTimesheetComponent } from './my-timesheet/my-timesheet.component';
+import { SmrtComponent } from './smrt1/smrt-details/smrt-details.component';
+import { SmrtEditComponent } from './smrt1/smrt-edit/smrt-edit.component';
+
+export const routes: Routes = [
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
+    path: '',
+    component: AppAlignmentComponent,
+    children: [
+      { path: '', redirectTo: '/login', pathMatch: 'full' },
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
+      },
+      {
+        path: 'clientList',
+        component: ClientListComponent,
+      },
+      {
+        path: 'myproject',
+        component: MyProjectComponent,
+        children: [
+          {
+            path: 'currentproject',
+            component: CurrentprojectComponent,
+          },
+          {
+            path: 'upcomingproject',
+            component: UpcomingprojectComponent,
+          },
+        ],
+      },
+      {
+        path: 'employ',
+        component: EmployComponent,
+      },
+      {
+        path: 'employ',
+        component: EmployComponent,
+      },
+      {
+        path: 'employ/createemploy',
+        component: CreateemployComponent,
+      },
+
+      {
+        path: 'clientList/smrt-details',
+        component: SmrtComponent,
+      },
+      {
+        path: 'mytimesheet',
+        component: MyTimesheetComponent,
+      },
+      {
+        path: 'smrt-edit',
+        component: SmrtEditComponent,
+      },
+    ],
+  },
+];
