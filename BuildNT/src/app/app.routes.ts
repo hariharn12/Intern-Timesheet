@@ -64,8 +64,6 @@ export const routes: Routes = [
         ],
     },
 ]
-            },
-    ]
 import { MyTimesheetComponent } from './my-timesheet/my-timesheet.component';
 import { SmrtComponent } from './smrt1/smrt-details/smrt-details.component';
 import { SmrtEditComponent } from './smrt1/smrt-edit/smrt-edit.component';
