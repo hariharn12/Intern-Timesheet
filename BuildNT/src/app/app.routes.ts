@@ -11,59 +11,6 @@ import { CurrentprojectComponent } from './my-project/currentproject/currentproj
 import { UpcomingprojectComponent } from './my-project/upcomingproject/upcomingproject.component';
 import { CompleteprojectComponent } from './my-project/completeproject/completeproject.component';
 import { CreateprojectComponent } from './my-project/createproject/createproject.component';
-
-export const routes: Routes = [
-    {
-        path: 'login',
-        component: LoginComponent
-    },
-    {
-        path: '',
-        component: AppAlignmentComponent,
-        children: [
-            { path: '', redirectTo: '/login', pathMatch: 'full' },
-            {
-                path: 'dashboard',
-                component: DashboardComponent,
-            },
-            {
-                path: 'clientList',
-                component: ClientListComponent,
-            },
-            {
-                path: 'myproject',
-                component: MyProjectComponent,
-                children: [
-                    {
-                        path: 'currentproject',
-                        component: CurrentprojectComponent,
-                    },
-                    {
-                        path: 'upcomingproject',
-                        component: UpcomingprojectComponent,
-                    },
-                    {
-                        path: 'completeproject',
-                        component: CompleteprojectComponent,
-                    },
-                ],
-             
-            },
-            {
-                path: 'myproject/createproject',
-                component: CreateprojectComponent,
-            },
-            {
-                path: 'employ',
-                component: EmployComponent,
-            },
-            {
-                path: 'employ/createemploy',
-                component: CreateemployComponent,
-            },
-        ],
-    },
-]
 import { MyTimesheetComponent } from './my-timesheet/my-timesheet.component';
 import { SmrtComponent } from './smrt1/smrt-details/smrt-details.component';
 import { SmrtEditComponent } from './smrt1/smrt-edit/smrt-edit.component';
@@ -97,6 +44,14 @@ export const routes: Routes = [
           {
             path: 'upcomingproject',
             component: UpcomingprojectComponent,
+          },
+          {
+            path:'completedproject',
+            component: CompleteprojectComponent
+          },
+          {
+            path:'createproject',
+            component:CreateprojectComponent
           },
         ],
       },
