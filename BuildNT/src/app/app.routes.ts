@@ -14,6 +14,8 @@ import { CreateprojectComponent } from './my-project/createproject/createproject
 import { MyTimesheetComponent } from './my-timesheet/my-timesheet.component';
 import { SmrtComponent } from './smrt1/smrt-details/smrt-details.component';
 import { SmrtEditComponent } from './smrt1/smrt-edit/smrt-edit.component';
+import { EmploydetailComponent } from './employdetail/employdetail.component';
+import { ReportsComponent } from './reports/reports.component';
 
 export const routes: Routes = [
   {
@@ -60,12 +62,12 @@ export const routes: Routes = [
         component: EmployComponent,
       },
       {
-        path: 'employ',
-        component: EmployComponent,
-      },
-      {
         path: 'employ/createemploy',
         component: CreateemployComponent,
+      },
+      {
+        path:'employ/detail',
+        component:EmploydetailComponent,
       },
 
       {
@@ -79,6 +81,10 @@ export const routes: Routes = [
       {
         path: 'smrt-edit',
         component: SmrtEditComponent,
+      },
+      {
+        path:'reports',
+        component: ReportsComponent
       },
     ],
   },
