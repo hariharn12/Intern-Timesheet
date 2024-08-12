@@ -9,6 +9,8 @@ import { EmployComponent } from './employ/employ.component';
 import { CreateemployComponent } from './createemploy/createemploy.component';
 import { CurrentprojectComponent } from './my-project/currentproject/currentproject.component';
 import { UpcomingprojectComponent } from './my-project/upcomingproject/upcomingproject.component';
+import { CompleteprojectComponent } from './my-project/completeproject/completeproject.component';
+import { CreateprojectComponent } from './my-project/createproject/createproject.component';
 import { MyTimesheetComponent } from './my-timesheet/my-timesheet.component';
 import { SmrtComponent } from './smrt1/smrt-details/smrt-details.component';
 import { SmrtEditComponent } from './smrt1/smrt-edit/smrt-edit.component';
@@ -44,6 +46,14 @@ export const routes: Routes = [
           {
             path: 'upcomingproject',
             component: UpcomingprojectComponent,
+          },
+          {
+            path:'completedproject',
+            component: CompleteprojectComponent
+          },
+          {
+            path:'createproject',
+            component:CreateprojectComponent
           },
         ],
       },
