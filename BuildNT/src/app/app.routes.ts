@@ -9,48 +9,58 @@ import { EmployComponent } from './employ/employ.component';
 import { CreateemployComponent } from './createemploy/createemploy.component';
 import { CurrentprojectComponent } from './my-project/currentproject/currentproject.component';
 import { UpcomingprojectComponent } from './my-project/upcomingproject/upcomingproject.component';
-import { SmrtComponent } from './smrt/smrt.component';
+import { CompleteprojectComponent } from './my-project/completeproject/completeproject.component';
+import { CreateprojectComponent } from './my-project/createproject/createproject.component';
 
 export const routes: Routes = [
     {
-        path:'login',
-        component:LoginComponent
+        path: 'login',
+        component: LoginComponent
     },
     {
-        path:'',
-        component:AppAlignmentComponent,
-        children:[
-            { path: '',   redirectTo: '/login', pathMatch: 'full' },
+        path: '',
+        component: AppAlignmentComponent,
+        children: [
+            { path: '', redirectTo: '/login', pathMatch: 'full' },
             {
                 path: 'dashboard',
-                component:DashboardComponent,
+                component: DashboardComponent,
             },
             {
                 path: 'clientList',
-                component:ClientListComponent,
+                component: ClientListComponent,
             },
             {
                 path: 'myproject',
-                component:MyProjectComponent,
-                children:[
+                component: MyProjectComponent,
+                children: [
                     {
-                    path:'currentproject',
-                    component:CurrentprojectComponent,
-                },
-                {
-                    path:'upcomingproject',
-                    component:UpcomingprojectComponent,
-                },
-            ],
+                        path: 'currentproject',
+                        component: CurrentprojectComponent,
+                    },
+                    {
+                        path: 'upcomingproject',
+                        component: UpcomingprojectComponent,
+                    },
+                    {
+                        path: 'completeproject',
+                        component: CompleteprojectComponent,
+                    },
+                ],
+             
             },
             {
-                path:'employ',
-                component:EmployComponent,
+                path: 'myproject/createproject',
+                component: CreateprojectComponent,
             },
             {
-                path:'employ/createemploy',
-                component:CreateemployComponent,
+                path: 'employ',
+                component: EmployComponent,
+            },
+            {
+                path: 'employ/createemploy',
+                component: CreateemployComponent,
             },
         ],
-            },
-    ]
+    },
+]

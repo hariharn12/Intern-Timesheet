@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="row">
+        <h3 class="pt-3">Create Project</h3>
+        <p class="text-secondary font-control mt-0">My Projects/Create Project</p>
+    </div>
+    <div class="row">
+        <div class="col-3 bg-info">
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">Select Client</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select Client</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">Project Type</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Billable</option>
+                    <option value="1">Non-Billable</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-3 bg-danger">
+            <div class="mb-3">
+                <div>
+                    <label for="exampleFormControlInput1" class="form-label">Status</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Set Project Name">
+                </div>
+                <div>
+                    <label for="exampleFormControlInput1" class="form-label">Start Date</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="12/07/2023">
+                </div>
+            </div>
+        </div>
+        <div class="col-3 bg-primary">
+            <label for="exampleFormControlInput1" class="form-label">Project Name</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Active</option>
+                <option value="1">In-Active</option>
+            </select>
+        </div>
+        <div class="col-3 bg-success">
+            <label for="exampleFormControlInput1" class="form-label">Select Project Manager</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Tushar B</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

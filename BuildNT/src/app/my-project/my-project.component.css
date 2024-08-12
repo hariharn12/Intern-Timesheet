@@ -5,3 +5,9 @@
 .list-inline-item.active {
     border-bottom: 1px solid #004CFF;
 }
+
+.add {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
