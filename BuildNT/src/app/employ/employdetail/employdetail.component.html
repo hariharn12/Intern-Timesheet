@@ -1,0 +1,130 @@
+<div class="container">
+    <div class="d-flex justify-content-between my-3">
+        <div>
+            <h4 class="client">Employee Details</h4>
+            <nav>
+                <a routerLink="/employ" class="text-decoration-none text-black">Employee List /Employee Details</a>
+            </nav>
+        </div>
+        <div>
+            <button routerLink="/smrt-edit" type="button" class="btn mt-2 btn-primary"><i class="bi bi-pencil px-1"></i>
+                Edit</button>
+        </div>
+    </div>
+    <!-- client details label -->
+    <div class="bg-card col-6 col-md-12 col-lg-12 p-2">
+
+        <div class="d-flex">
+            <div class="col py-5">
+                <img src="assets/images/employee.png" alt="employee Logo" class="logo" />
+            </div>
+            <div class="col">
+                <div>
+                    <p>Employee Name</p>
+                    {{ employ.name}}
+                </div>
+                <div class="pt-4">
+                    <p>Employee ID</p>
+                    {{ employ.id}}
+                </div>
+                <div class="pt-4">
+                    <p>Status</p>
+                    {{ employ.status}}
+                </div>
+            </div>
+            <div class="px-3 col">
+                <div>
+                    <p>Email ID</p>
+                    {{employ.email }}
+                </div>
+                <div class="pt-4">
+                    <p>Location</p>
+                    {{employ.location }}
+                </div>
+
+                <div class="pt-4">
+                    <p>Joining Date</p>
+                    {{ employ.join }}
+                </div>
+            </div>
+            <div class="px-3 col">
+                <div>
+                    <p>Designation</p>
+                    {{ employ.designation}}
+                </div>
+
+                <div class="pt-4">
+                    <p>Position</p>
+                    {{employ.position}}
+                </div>
+
+                <div class="pt-4">
+                    <p>End Date</p>
+                    {{employ.last}}
+                </div>
+            </div>
+
+            <div class="px-3 col">
+                <div>
+                    <p>Department</p>
+                    {{ employ.department}}
+                </div>
+                <div class="pt-4">
+                    <p>End Date</p>
+                    {{employ.last}}
+                </div>
+            </div>
+            <div class="px-3 col">
+                <div>
+                    <p>Reporting Manager</p>
+                    {{employ.report}}
+                </div>
+                <div class="pt-4">
+                    <p>Hourly Cost Rate</p>
+                    {{employ.rate}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <h6 class="my-2">Employee Reports</h6>
+    <div class="row">
+        <div class="col border d-flex justify-content-between mx-2 rounded">
+            <div>
+                <h4>02</h4>
+                <p>Live Projects</p>
+            </div>
+            <div class="bg-danger my-5 rounded p-2">
+                <img src="assets/images/liveproject.png" alt="">
+            </div>
+        </div>
+        <div class="col border d-flex justify-content-between mx-2 rounded">
+            <div>
+                <h4>07</h4>
+                <p>No of Completed Projects</p>
+            </div>
+            <div class="bg-success my-5 rounded p-2">
+                <img src="assets/images/completeproject.png" alt="">
+            </div>
+        </div>
+        <div class="col border d-flex justify-content-between mx-2 rounded">
+            <div>
+                <h4>600</h4>
+                <p>Total Worked Hours</p>
+            </div>
+            <div class="bg-info my-5 rounded p-2">
+                <img src="assets/images/workedhours.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+            <a><mat-tab label="Current Project">
+                <app-currentproject></app-currentproject>
+            </mat-tab></a>
+            <a><mat-tab label="Timesheet">
+                <app-timesheet></app-timesheet>
+            </mat-tab></a>
+        </mat-tab-group>
+    </div>
+
+</div>
