@@ -3,7 +3,7 @@
         <div>
             <h4>MY Time Sheet</h4>
         </div>
-        <div>
+        <div class="m-2">
             <select>
                 <option>Weekly</option>
                 <option>Monthly</option>
@@ -13,7 +13,7 @@
     </div>
 
     <body>
-        <table>
+        <table class="p-3">
             <tr>
                 <th>Project</th>
                 <th>Task</th>
@@ -90,7 +90,7 @@
                 <th>Total</th>
             </tr>
             <tr>
-                <td>SMRT</td>
+                <td class="project-list">SMRT</td>
                 <td>
                     <select>
                         <option value="1">Design</option>
@@ -109,7 +109,7 @@
                 <td><i class="bi bi-trash"></i></td>
             </tr>
             <tr>
-                <td>BUILDNT</td>
+                <td class="project-list">BuildNT</td>
                 <td>
                     <select>
                         <option value="1">Design</option>
@@ -128,7 +128,7 @@
                 <td><i class="bi bi-trash"></i></td>
             </tr>
             <tr>
-                <td>HITACHI</td>
+                <td class="project-list">Hitachi</td>
                 <td>
                     <select>
                         <option value="1">Design</option>
@@ -146,7 +146,78 @@
                 <td>0.00</td>
                 <td><i class="bi bi-trash"></i></td>
             </tr>
-            <tr></tr>
+            <tr>
+                <td><a href="#">+ select project</a></td>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+                <td>3.00 </td>
+                <td><i class="bi bi-trash"></i></td>
+            </tr>
+            <tr>
+                <td class="project-list">Total</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>3.00 </td>
+                <td><i class="bi bi-trash"></i></td>
+            </tr>
         </table>
+        <div class="d-flex justify-content-between">
+            <div class="d-flex border border-secondary border-rounded pt-1 px-2">
+                <i class="bi bi-copy ps-2"></i>
+                <p class="ps-2">Copy last week</p>
+            </div>
+            <div><button class="border border-primary rounded text-white px-4 py-2 me-2 bg-primary">Submit</button></div>
+        </div>
+        <div class="alterations mt-3">
+            <p class="project-list">Recently Submitted</p>
+            <table>
+                <tr class="first-line">
+                    <td>
+                        <p class="project-list">02-July-2023 To 09-July-2023</p>
+                        <p class="text-warning">Submitted for approval</p>
+                    </td>
+                    <td>4.00</td>
+                    <td>0.00</td>
+                    <td>0.008.00</td>
+                    <td><a href="my-timesheet.component.html"><i class="bi bi-pen"></i></a></td>
+                    <td><i class="bi bi-trash"></i></td>
+                </tr>
+                <tr class=second-line>
+                    <td>
+                        <p class="project-list">02-July-2023 To 09-July-2023</p>
+                        <p class="text-success">Approved</p>
+                    </td>
+                    <td>4.00</td>
+                    <td>0.00</td>
+                    <td>0.008.00</td>
+                    <td><a href="my-timesheet.component.html"><i class="bi bi-pen"></i></a></td>
+                    <td><i class="bi bi-trash"></i></td>
+                </tr>
+                <tr class="third-line">
+                    <td>
+                        <p class="project-list">02-July-2023 To 09-July-2023</p>
+                        <p class="text-danger">Rejected</p>
+                    </td>
+                    <td>4.00</td>
+                    <td>0.00</td>
+                    <td>0.008.00</td>
+                    <td><a href="my-timesheet.component.html"><i class="bi bi-pen"></i></a></td>
+                    <td><i class="bi bi-trash"></i></td>
+                </tr>
+            </table>
+        </div>
+        
     </body>
 </div>
