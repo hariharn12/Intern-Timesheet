@@ -16,6 +16,7 @@ import { SmrtComponent } from './smrt1/smrt-details/smrt-details.component';
 import { SmrtEditComponent } from './smrt1/smrt-edit/smrt-edit.component';
 import { EmploydetailComponent } from './employ/employdetail/employdetail.component';
 import { ReportsComponent } from './reports/reports.component';
+import { EditempolyComponent } from './employ/editempoly/editempoly.component';
 
 export const routes: Routes = [
   {
@@ -68,6 +69,10 @@ export const routes: Routes = [
       {
         path:'employ/detail',
         component:EmploydetailComponent,
+      },
+      {
+        path:'employ/detail/editemploy',
+        component:EditempolyComponent,
       },
 
       {
