@@ -1,17 +1,18 @@
 <div class="container">
     <div class="row">
-        <h3 class="pt-3">Create Project</h3>
+        <h4 class="pt-2">Create Project</h4>
         <p class="text-secondary font-control mt-0">My Projects/Create Project</p>
     </div>
     <div class="row">
-        <div class="col-3 bg-info">
-            <div>
+        <div class="col-3">
+            <div class="mb-2">
                 <label for="exampleFormControlInput1" class="form-label">Select Client</label>
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Select Client</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="1">SMRT</option>
+                    <option value="2">Hitachi</option>
+                    <option value="3">TATA</option>
+                    <option value="3">BuildINT</option>
                 </select>
             </div>
             <div>
@@ -19,10 +20,13 @@
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Billable</option>
                     <option value="1">Non-Billable</option>
+                    <option value="2">Admin</option>
+                    <option value="3">Training</option>
+                    <option value="4" class="text-primary">+ Add New Project</option>
                 </select>
             </div>
         </div>
-        <div class="col-3 bg-danger">
+        <div class="col-3">
             <div class="mb-3">
                 <div>
                     <label for="exampleFormControlInput1" class="form-label">Status</label>
@@ -30,28 +34,60 @@
                         placeholder="Set Project Name">
                 </div>
                 <div>
-                    <label for="exampleFormControlInput1" class="form-label">Start Date</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="12/07/2023">
+                    <label for="joining" class="form-label mt-2">Start Date</label>
+                    <div class="input-group bg-white border rounded">
+                        <input matInput [matDatepicker]="picker" placeholder="12/07/2023" id="joining"
+                            class="form-control border-0">
+                        <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-3 bg-primary">
-            <label for="exampleFormControlInput1" class="form-label">Project Name</label>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Active</option>
-                <option value="1">In-Active</option>
-            </select>
+        <div class="col-3">
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">Project Name</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Active</option>
+                    <option value="1">Inactive</option>
+                    <option value="1">Hold</option>
+                </select>
+            </div>
+            <div>
+                <label for="joining" class="form-label mt-2">End Date</label>
+                <div class="input-group bg-white border rounded">
+                    <input matInput [matDatepicker]="pickers" placeholder="12/07/2023" id="joining"
+                        class="form-control border-0">
+                    <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+                    <mat-datepicker-toggle matIconSuffix [for]="pickers"></mat-datepicker-toggle>
+                    <mat-datepicker #pickers></mat-datepicker>
+                </div>
+            </div>
         </div>
-        <div class="col-3 bg-success">
-            <label for="exampleFormControlInput1" class="form-label">Select Project Manager</label>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Tushar B</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
+        <div class="col-3">
+            <div class="mb-2">
+                <label for="exampleFormControlInput1" class="form-label">Select Project Manager</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Tushar B</option>
+                    <option value="1">Arun</option>
+                    <option value="2">Raj kumar</option>
+                    <option value="3">Suprith Kumar</option>
+                </select>
+            </div>
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">Total Hours</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="00:00 Hrs">
+            </div>
         </div>
     </div>
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+        <mat-tab label="Create Task">
+            <app-createtask></app-createtask>
+        </mat-tab>
+        <mat-tab label="Assign Teams">
+            <app-assign-teams></app-assign-teams>
+        </mat-tab>
+    </mat-tab-group>
 </div>
 <router-outlet></router-outlet>
