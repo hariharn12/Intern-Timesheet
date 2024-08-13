@@ -1,0 +1,41 @@
+a {
+  text-decoration: none;
+  color: #1c1b1f;
+}
+.upload-button:hover {
+  background-color: unset;
+  color: unset;
+}
+.bg-secondary {
+  background-color: #f4f4f4 !important;
+}
+.add-button {
+  background-color: #ff8000;
+  color: #f4f4f4;
+}
+.sumit-btn {
+  position: fixed absolute;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 16px;
+}
+
+table {
+  font-size: 12px;
+  line-height: 24px;
+  margin: 30px auto;
+  text-align: left;
+  width: 100%;
+}
+
+th {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 15px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #c4c4c4;
+  color: #7b7b7b;
+}

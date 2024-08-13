@@ -24,19 +24,19 @@
         </div>
       </div>
     </div>
-    <table>
-      <thead>
-        <tr>
-          <th>Client ID</th>
-          <th>Client Name</th>
-          <th>Email ID</th>
-          <th>No. of Projects</th>
-          <th>Onboard Date</th>
+    <table class="font-18">
+    <thead >
+        <tr >
+          <th class="font-18 p-4">Client ID</th>
+          <th class="font-18 p-4">Client Name</th>
+          <th class="font-18 p-4">Email ID</th>
+          <th class="font-18 p-4">No. of Projects</th>
+          <th class="font-18 p-4">Onboard Date</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let client of clients" [routerLink]="['./', client.path]">
-          <td>{{ client.id }}</td>
+        <tr  *ngFor="let client of clients" [routerLink]="['./', client.path]">
+          <td class="p-4">{{ client.id }}</td>
           <td>{{ client.clientName }}</td>
           <td>{{ client.email }}</td>
           <td>{{ client.project }}</td>
@@ -46,8 +46,8 @@
     </table>
   </div>
   <div class="create-button">
-    <a class="btn btn-primary fw-bold" routerLink="/smrt-edit" role="button"
-      >+</a
+    <a class="btn btn-primary fw-bold" routerLink="/create-client" role="button"
+      ><i class="bi bi-plus-lg"></i></a
     >
   </div>
 </div>

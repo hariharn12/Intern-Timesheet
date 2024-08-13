@@ -1,14 +1,11 @@
 .wrapper {
     width: 20%;
 }
-
-.label {
-    font-size: .625rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: +1.3px;
+h5{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33.89px;
 }
-
 
 #searchQueryInput {
     width: 100%;
@@ -18,7 +15,6 @@
     font-size: 1rem;
     background: none;
 }
-
 
 #searchQuerySubmit {
     width: 3.5rem;
@@ -52,8 +48,6 @@ th {
     background: #F4F4F4;
     border-bottom: 1px solid #c4c4c4;
     color: #7B7B7B;
-    font-weight: 500;
-    font-size: 18px;
 }
 
 td {
@@ -65,7 +59,6 @@ td {
     font-size: 18px;
     font-weight: 500;
     color: black;
-
 }
 
 td:hover {
