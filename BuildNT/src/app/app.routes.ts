@@ -16,6 +16,8 @@ import { SmrtComponent } from './smrt1/smrt-details/smrt-details.component';
 import { SmrtEditComponent } from './smrt1/smrt-edit/smrt-edit.component';
 import { EmploydetailComponent } from './employdetail/employdetail.component';
 import { ReportsComponent } from './reports/reports.component';
+import { CreatetaskComponent } from './my-project/createproject/createtask/createtask.component';
+import { AssignTeamsComponent } from './my-project/createproject/assign-teams/assign-teams.component';
 
 export const routes: Routes = [
   {
@@ -49,13 +51,21 @@ export const routes: Routes = [
           },
           {
             path:'completedproject',
-            component: CompleteprojectComponent
-          },
-          {
-            path:'createproject',
-            component:CreateprojectComponent
+            component: CompleteprojectComponent,
           },
         ],
+      },
+      {
+        path:'myproject/createproject',
+        component:CreateprojectComponent,
+      },
+      {
+        path:'createtask',
+        component:CreatetaskComponent,
+      },
+      {
+        path:'AssignTeams',
+        component:AssignTeamsComponent,
       },
       {
         path: 'employ',
