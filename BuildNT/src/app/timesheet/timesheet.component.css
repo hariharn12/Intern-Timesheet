@@ -4,5 +4,17 @@
 
 .border-success {
     border-left: 4px solid #00B71E !important;
-
+}
+.border-danger {
+    border-left: 4px solid  #f25d3f !important;
+}
+.edit-icon {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+.icon{
+    width: 18px;
+    height: 18px;
 }
