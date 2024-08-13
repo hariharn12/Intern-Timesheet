@@ -17,6 +17,7 @@ import { SmrtEditComponent } from './smrt1/smrt-edit/smrt-edit.component';
 import { EmploydetailComponent } from './employ/employdetail/employdetail.component';
 import { ReportsComponent } from './reports/reports.component';
 import { EditempolyComponent } from './employ/editempoly/editempoly.component';
+import { CreatePageComponent } from './smrt1/create-page/create-page.component';
 
 export const routes: Routes = [
   {
@@ -49,12 +50,12 @@ export const routes: Routes = [
             component: UpcomingprojectComponent,
           },
           {
-            path:'completedproject',
-            component: CompleteprojectComponent
+            path: 'completedproject',
+            component: CompleteprojectComponent,
           },
           {
-            path:'createproject',
-            component:CreateprojectComponent
+            path: 'createproject',
+            component: CreateprojectComponent,
           },
         ],
       },
@@ -67,12 +68,12 @@ export const routes: Routes = [
         component: CreateemployComponent,
       },
       {
-        path:'employ/detail',
-        component:EmploydetailComponent,
+        path: 'employ/detail',
+        component: EmploydetailComponent,
       },
       {
-        path:'employ/detail/editemploy',
-        component:EditempolyComponent,
+        path: 'employ/detail/editemploy',
+        component: EditempolyComponent,
       },
 
       {
@@ -84,12 +85,16 @@ export const routes: Routes = [
         component: MyTimesheetComponent,
       },
       {
-        path: 'smrt-edit',
+        path: 'client-edit',
         component: SmrtEditComponent,
       },
       {
-        path:'reports',
-        component: ReportsComponent
+        path: 'reports',
+        component: ReportsComponent,
+      },
+      {
+        path: 'create-client',
+        component: CreatePageComponent,
       },
     ],
   },

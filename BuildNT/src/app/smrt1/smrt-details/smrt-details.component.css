@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     background: #f4f4f4;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     width: 100%;
   }
@@ -20,6 +20,7 @@
   }
   .client{
     font-size: 28px;
+    font-weight: 500;
   }
   .project-font{
     font-size: 14px;
