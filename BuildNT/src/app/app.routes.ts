@@ -6,14 +6,19 @@ import { AppAlignmentComponent } from './app-alignment/app-alignment.component';
 import { ClientListComponent } from './client-list/client-list.component';
 import { MyProjectComponent } from './my-project/my-project.component';
 import { EmployComponent } from './employ/employ.component';
-import { CreateemployComponent } from './createemploy/createemploy.component';
+import { CreateemployComponent } from './employ/createemploy/createemploy.component';
 import { CurrentprojectComponent } from './my-project/currentproject/currentproject.component';
 import { UpcomingprojectComponent } from './my-project/upcomingproject/upcomingproject.component';
+import { CompleteprojectComponent } from './my-project/completeproject/completeproject.component';
+import { CreateprojectComponent } from './my-project/createproject/createproject.component';
 import { MyTimesheetComponent } from './my-timesheet/my-timesheet.component';
 import { SmrtComponent } from './smrt1/smrt-details/smrt-details.component';
 import { SmrtEditComponent } from './smrt1/smrt-edit/smrt-edit.component';
-import { EmploydetailComponent } from './employdetail/employdetail.component';
+import { EmploydetailComponent } from './employ/employdetail/employdetail.component';
 import { ReportsComponent } from './reports/reports.component';
+import { CreatetaskComponent } from './my-project/createproject/createtask/createtask.component';
+import { AssignTeamsComponent } from './my-project/createproject/assign-teams/assign-teams.component';
+import { EditempolyComponent } from './employ/editempoly/editempoly.component';
 
 export const routes: Routes = [
   {
@@ -45,7 +50,23 @@ export const routes: Routes = [
             path: 'upcomingproject',
             component: UpcomingprojectComponent,
           },
+          {
+            path:'completedproject',
+            component: CompleteprojectComponent,
+          },
         ],
+      },
+      {
+        path:'myproject/createproject',
+        component:CreateprojectComponent,
+      },
+      {
+        path:'createtask',
+        component:CreatetaskComponent,
+      },
+      {
+        path:'AssignTeams',
+        component:AssignTeamsComponent,
       },
       {
         path: 'employ',
@@ -58,6 +79,10 @@ export const routes: Routes = [
       {
         path:'employ/detail',
         component:EmploydetailComponent,
+      },
+      {
+        path:'employ/detail/editemploy',
+        component:EditempolyComponent,
       },
 
       {

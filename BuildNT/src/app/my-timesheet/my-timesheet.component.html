@@ -1,4 +1,4 @@
-<div class="main">
+<div class="comtainer-fluid p-3">
     <div class="nav d-flex justify-content-between">
         <div>
             <h4>MY Time Sheet</h4>
@@ -14,8 +14,10 @@
 
     <body>
         <table class="p-3">
+        <table class="table border">
+            <thead class="bg-secondary">
             <tr>
-                <th>Project</th>
+                <th >Project</th>
                 <th>Task</th>
                 <th>
                     <div>
@@ -89,6 +91,8 @@
                 </th>
                 <th>Total</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td class="project-list">SMRT</td>
                 <td>
@@ -105,8 +109,7 @@
                 <td><input></td>
                 <td><input></td>
                 <td><input></td>
-                <td>3.00 </td>
-                <td><i class="bi bi-trash"></i></td>
+                <td>3.00   <i class="bi bi-trash"></i></td>
             </tr>
             <tr>
                 <td class="project-list">BuildNT</td>
@@ -124,8 +127,7 @@
                 <td><input></td>
                 <td><input></td>
                 <td><input></td>
-                <td>0.00</td>
-                <td><i class="bi bi-trash"></i></td>
+                <td>0.00   <i class="bi bi-trash"></i></td>
             </tr>
             <tr>
                 <td class="project-list">Hitachi</td>
@@ -143,8 +145,7 @@
                 <td><input></td>
                 <td><input></td>
                 <td><input></td>
-                <td>0.00</td>
-                <td><i class="bi bi-trash"></i></td>
+                <td>0.00   <i class="bi bi-trash"></i></td>
             </tr>
             <tr>
                 <td><a href="#">+ select project</a></td>
@@ -219,5 +220,61 @@
             </table>
         </div>
         
+=======
+                <td class="text-primary">
++ Select Project
+                </td>
+                <td >
+                    <input type="text" class="bg-secondary">
+                </td>
+                <td>
+                    <input type="text" class="bg-secondary">
+                </td>
+                <td>
+                    <input type="text" class="bg-secondary">
+                </td>
+                <td>
+                    <input type="text" class="bg-secondary">
+                </td>
+                <td>
+                    <input type="text" class="bg-secondary">
+                </td>
+                <td>
+                    <input type="text" class="bg-secondary">
+                </td>
+                <td>
+                    <input type="text" class="bg-secondary">
+                </td>
+                <td>
+                    <input type="text" class="bg-secondary">
+                </td>
+               
+                <td>0.00   <i class="bi bi-trash"></i></td>
+
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td>
+                    8.00 hrs
+                </td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>8.00   <i class="bi bi-trash"></i></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-between my-4">
+            <button type="button" class="btn btn-light border"><i class="bi bi-copy"></i>Copy last week</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+        <h5>Recently submitted</h5>
+        <app-timesheet>
+        </app-timesheet>
+>>>>>>> f75723273df8fc4d09f022ccdd30f339c314ae54
     </body>
 </div>

@@ -44,3 +44,13 @@ input {
     border-radius: 2px;
     border: 1px solid #878686;
 }
+/* height: 30px;
+top: 15px;
+left: 493px;
+border-radius: 2px;
+border: 1px solid #878686;
+} */
+
+.bg-secondary {
+    background-color: #87868699 !important;
+}
