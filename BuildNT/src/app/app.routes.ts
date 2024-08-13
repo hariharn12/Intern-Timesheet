@@ -16,6 +16,8 @@ import { SmrtComponent } from './smrt1/smrt-details/smrt-details.component';
 import { SmrtEditComponent } from './smrt1/smrt-edit/smrt-edit.component';
 import { EmploydetailComponent } from './employ/employdetail/employdetail.component';
 import { ReportsComponent } from './reports/reports.component';
+import { CreatetaskComponent } from './my-project/createproject/createtask/createtask.component';
+import { AssignTeamsComponent } from './my-project/createproject/assign-teams/assign-teams.component';
 import { EditempolyComponent } from './employ/editempoly/editempoly.component';
 import { CreatePageComponent } from './smrt1/create-page/create-page.component';
 
@@ -58,6 +60,18 @@ export const routes: Routes = [
             component: CreateprojectComponent,
           },
         ],
+      },
+      {
+        path:'myproject/createproject',
+        component:CreateprojectComponent,
+      },
+      {
+        path:'createtask',
+        component:CreatetaskComponent,
+      },
+      {
+        path:'AssignTeams',
+        component:AssignTeamsComponent,
       },
       {
         path: 'employ',

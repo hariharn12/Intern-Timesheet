@@ -1,0 +1,91 @@
+<div class="container">
+    <div class="row pt-3">
+        <div class="col-3">
+            <label for="exampleFormControlInput1" class="form-label fs-6 font-control">Task</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected class="text-secondary">Requirement gathering</option>
+                <option value="1">UI/UX Design</option>
+                <option value="2">Database Design</option>
+                <option value="3">Web App Development</option>
+                <option value="4">Mobile App Development</option>
+                <option value="5">API Development</option>
+                <option value="6">Testing</option>
+                <option value="7">Deployment</option>
+                <option value="8">UAT</option>
+                <option value="9">Support</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <label for="exampleFormControlInput1" class="form-label fs-6 font-control">Select Employee</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected class="text-secondary">Arun</option>
+                <option value="1">Raj kumar</option>
+                <option value="2">Suprith Kumar</option>
+                <option value="3">Suprith Kumar</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <label for="exampleFormControlInput1" class="form-label font-control">No. of Hours for This Task</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="40 hrs">
+        </div>
+        <div class="col-3">
+            <label for="exampleFormControlInput1" class="form-label font-control">Start Date</label>
+            <div class="input-group bg-white border rounded">
+                <input matInput [matDatepicker]="pickers" placeholder="13/07/2023" id="joining"
+                    class="form-control border-0">
+                <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+                <mat-datepicker-toggle matIconSuffix [for]="pickers"></mat-datepicker-toggle>
+                <mat-datepicker #pickers></mat-datepicker>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label for="exampleFormControlInput1" class="form-label font-control">End Date</label>
+            <div class="input-group bg-white border rounded">
+                <input matInput [matDatepicker]="picker" placeholder="13/09/2023" id="joining"
+                    class="form-control border-0">
+                <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </div>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3 d-flex justify-content-end mt-5">
+            <button type="button" class="btn btn-warning font-control">+ Add</button>
+        </div>
+    </div>
+    <div class="row pt-3">
+        <div class="card card-color">
+            <div class="card-body pt-0 pb-0">
+                <div class="row">
+                    <div class="col-2">
+                        <h6 class="font-control mb-0 text-secondary">Task</h6>
+                        <p class="card-font">UI/UX</p>
+                    </div>
+                    <div class="col-2">
+                        <h6 class="font-control mb-0 text-secondary">Select Employee</h6>
+                        <p class="card-font">Arun</p>
+                    </div>
+                    <div class="col-3">
+                        <h6 class="font-control mb-0 text-secondary">No.of Hours for Employees</h6>
+                        <p class="card-font">40 hrs</p>
+                    </div>
+                    <div class="col-2">
+                        <h6 class="font-control mb-0 text-secondary">Start Date</h6>
+                        <p class="card-font">12/08/2023</p>
+                    </div>
+                    <div class="col-2">
+                        <h6 class="font-control mb-0 text-secondary">End Date</h6>
+                        <p class="card-font">12/07/2023</p>
+                    </div>
+                    <div class="col-1 pt-4 d-flex">
+                        <i class="bi bi-pencil fs-5 text-secondary"></i>
+                        <i class="bi bi-trash fs-5 ps-4 text-secondary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
