@@ -4,5 +4,28 @@
 
 .border-success {
     border-left: 4px solid #00B71E !important;
+}
 
+.border-danger {
+    border-left: 4px solid #f25d3f !important;
+}
+
+.submit-date-details {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: left;
+    color: #707070;
+}
+
+.edit-icon {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
 }
