@@ -7,6 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatNativeDateModule } from '@angular/material/core'; 
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-createemploy',
@@ -15,7 +16,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    MatNativeDateModule],
+    MatNativeDateModule,CommonModule],
   templateUrl: './createemploy.component.html',
   styleUrl: './createemploy.component.css'
 })
