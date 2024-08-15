@@ -16,32 +16,26 @@
   </div>
   <div class="table-responsive">
   <table class="table table-hover table-responsive rounded overflow-hidden">
-    <thead class="table-secondary">
+    <thead class="table-secondary font-16">
       <tr>
-        <th>Employee ID</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Email ID</th>
-        <th>
-          Department
-          <i class="bi bi-filter fw-bold"></i>
-        </th>
-        <th>Reporting Manager</th>
-        <th>
-          Joining Date
-          <i class="bi bi-chevron-expand"></i>
-         </th>
+        <th class="p-4">Employee ID</th>
+        <th class="p-4">First Name</th>
+        <th class="p-4">Last Name</th>
+        <th class="p-4">Email ID</th>
+        <th class="p-4">Department<i class="bi bi-filter fw-bold"></i></th>
+        <th class="p-4">Reporting Manager</th>
+        <th class="p-4">Joining Date<i class="bi bi-chevron-expand"></i></th>
       </tr>
     </thead>
-    <tbody class="">
+    <tbody>
       <tr *ngFor="let employee of employee" [routerLink]="['./', employee.path]">
-        <td>{{ employee.id }}</td>
-        <td>{{ employee.firstName }}</td>
-        <td>{{ employee.lastName }}</td>
-        <td>{{ employee.email}}</td>
-        <td>{{ employee.depatment }}</td>
-        <td>{{employee.report}}</td>
-        <td>{{employee.joining}}</td>
+        <td class="p-4">{{ employee.id }}</td>
+        <td class="p-4">{{ employee.firstName }}</td>
+        <td class="p-4">{{ employee.lastName }}</td>
+        <td class="p-4">{{ employee.email}}</td>
+        <td class="p-4">{{ employee.depatment }}</td>
+        <td class="p-4">{{employee.report}}</td>
+        <td class="p-4">{{employee.joining}}</td>
       </tr>
   </tbody>
   </table>

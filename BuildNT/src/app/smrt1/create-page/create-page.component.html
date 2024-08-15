@@ -154,7 +154,7 @@
       </div>
     </div>
     <!-- contact details -->
-    <table class="table ">
+    <table class="table">
       <thead >
         <tr class="">
           <th  class="font-color-16 p-4">Contact Person</th>
@@ -164,13 +164,13 @@
           <th  class="font-color-16 p-4"></th>
         </tr>
       </thead>
-      <tbody class="font-16">
+      <tbody class="font-16 ">
         <tr *ngFor="let contact of contacts; let i = index">
-          <td class="bg-secondary p-4">{{ contact.contactPerson }}</td>
-          <td class="bg-secondary p-4">{{ contact.position }}</td>
-          <td class="bg-secondary p-4">{{ contact.phoneNumber }}</td>
-          <td class="bg-secondary p-4">{{ contact.email }}</td>
-          <td class="bg-secondary p-4">
+          <td class=" p-4">{{ contact.contactPerson }}</td>
+          <td class=" p-4">{{ contact.position }}</td>
+          <td class=" p-4">{{ contact.phoneNumber }}</td>
+          <td class=" p-4">{{ contact.email }}</td>
+          <td class=" p-4">
             <button
               class="btn btn-outreline-primary me-4 btn-sm"
               (click)="editContact(i)"
