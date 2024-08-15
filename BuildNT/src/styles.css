@@ -27,4 +27,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     line-height: 22px;
     color: #878686 !important;
 }
-
+.font-color-14{
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #7B7B7B !important;
+}
