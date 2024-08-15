@@ -20,6 +20,7 @@ import { CreatetaskComponent } from './my-project/createproject/createtask/creat
 import { AssignTeamsComponent } from './my-project/createproject/assign-teams/assign-teams.component';
 import { EditempolyComponent } from './employ/editempoly/editempoly.component';
 import { CreatePageComponent } from './smrt1/create-page/create-page.component';
+import { ApprovelComponent } from './approvel/approvel.component';
 
 export const routes: Routes = [
   {
@@ -62,16 +63,16 @@ export const routes: Routes = [
         ],
       },
       {
-        path:'myproject/createproject',
-        component:CreateprojectComponent,
+        path: 'myproject/createproject',
+        component: CreateprojectComponent,
       },
       {
-        path:'createtask',
-        component:CreatetaskComponent,
+        path: 'createtask',
+        component: CreatetaskComponent,
       },
       {
-        path:'AssignTeams',
-        component:AssignTeamsComponent,
+        path: 'AssignTeams',
+        component: AssignTeamsComponent,
       },
       {
         path: 'employ',
@@ -101,6 +102,10 @@ export const routes: Routes = [
       {
         path: 'client-edit',
         component: SmrtEditComponent,
+      },
+      {
+        path: 'approval',
+        component: ApprovelComponent,
       },
       {
         path: 'reports',
