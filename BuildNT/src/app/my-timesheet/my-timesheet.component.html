@@ -4,11 +4,13 @@
             <p class="heading">MY Time Sheet</p>
         </div>
         <div class="days">
-            <select>
+            <select class="p-1">
                 <option>Weekly</option>
                 <option>Monthly</option>
                 <option>Yearly</option>
             </select>
+            <button class="arrow px-2"><img src="\assets\images\left-arrow.jpg"></button>
+            <button class="arrow px-2"><img src="\assets\images\right-arrow.jpg"></button>
         </div>
     </div>
     <div>
@@ -194,7 +196,7 @@
             </tbody>
         </table>
         <div class="d-flex justify-content-between my-4">
-            <button type="button" class="btn btn-light border"><i class="bi bi-copy"></i>Copy last week</button>
+            <button type="button" class="btn btn-light border"><i class="bi bi-copy p-2"></i>Copy last week</button>
             <button type="button" class="btn btn-primary">
 
 
@@ -231,7 +233,7 @@
         </div>
     </div>
     <div class="comtainer-fluid">
-        <div class="row m-0 border-left p-2 border my-2 rounded">
+        <div class="row m-0 p-2 mt-2 box-one border rounded">
             <div class="col-4">
                 <p class="submit-date-details">02-July-2023 To 09-July-2023</p>
                 <p class="text-warning">Submitted for Approval</p>
@@ -347,9 +349,7 @@
                                             <td>
                                                 <input type="text" class="select-project">
                                             </td>
-
-                                            <td>0.00 <i class="bi bi-trash ps-3"></i></td>
-
+                                            <td>0.00<i class="bi bi-trash ps-3"></i></td>
                                         </tr>
                                         <tr>
                                             <td class="project-list">Total</td>
@@ -379,7 +379,7 @@
             </div>
         
         </div>
-        <div class="row m-0 border-success p-2 my-2  rounded ">
+        <div class="row m-0 p-2 my-4 box-two border rounded ">
             <div class="col-4">
                 <p class="submit-date-details">02-July-2023 To 09-July-2023</p>
                 <p class="text-success">Approval</p>
@@ -495,9 +495,7 @@
                                             <td>
                                                 <input type="text" class="select-project">
                                             </td>
-
                                             <td>0.00 <i class="bi bi-trash ps-3"></i></td>
-
                                         </tr>
                                         <tr>
                                             <td class="project-list">Total</td>
@@ -526,7 +524,7 @@
                 <button class="edit-icon py-4"><i class="bi bi-trash icon"></i></button>
             </div>
         </div>
-        <div class="row m-0 border-danger p-2 my-2  rounded ">
+        <div class="row m-0 p-2 box-three border rounded ">
             <div class="col-4">
                 <p class="submit-date-details">02-July-2023 To 09-July-2023</p>
                 <p class="text-success">Approval</p>
@@ -557,7 +555,7 @@
                         data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog  modal-fullscreen">
                             <div class="modal-content">
-                                <div class="modal-body">
+                                <div class="modal-body ps-5">
                                     <h6>MY TIME SHEET</h6>
                                     <tbody>
                                         <tr>
@@ -642,9 +640,7 @@
                                             <td>
                                                 <input type="text" class="select-project">
                                             </td>
-
                                             <td>0.00 <i class="bi bi-trash"></i></td>
-
                                         </tr>
                                         <tr>
                                             <td class="project-list">Total</td>

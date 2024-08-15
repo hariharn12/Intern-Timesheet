@@ -6,7 +6,12 @@ select {
     background-color: white; 
     color: black; 
   }
-
+.arrow {
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    background-color: white; 
+    color: black; 
+}
 .heading {
 font-size: 28px;
 font-weight: 500;
@@ -96,15 +101,15 @@ border: 1px solid #878686;
 .bg-secondary {
     background-color: #87868699 !important;
 }
-.border-left {
+.box-one {
     border-left: 4px solid #FFB406 !important;
 }
 
-.border-success {
+.box-two {
     border-left: 4px solid #00B71E !important;
 }
 
-.border-danger {
+.box-three {
     border-left: 4px solid #f25d3f !important;
 }
 

@@ -19,6 +19,7 @@ import { ReportsComponent } from './reports/reports.component';
 import { CreatetaskComponent } from './my-project/createproject/createtask/createtask.component';
 import { AssignTeamsComponent } from './my-project/createproject/assign-teams/assign-teams.component';
 import { EditempolyComponent } from './employ/editempoly/editempoly.component';
+import { PopupComponent } from './popup/popup.component';
 
 export const routes: Routes = [
   {
@@ -100,6 +101,10 @@ export const routes: Routes = [
       {
         path:'reports',
         component: ReportsComponent
+      },
+      {
+        path: 'popup',
+        component: PopupComponent
       },
     ],
   },
