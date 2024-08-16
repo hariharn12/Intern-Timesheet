@@ -42,3 +42,31 @@ h3{
     font-size: 28px;
     font-weight: 500;
 }
+.approval {
+    width: 30px;
+    height: 30px;
+    top: 40px;
+    left: 236px;
+    gap: 0px;
+    opacity: 0px; 
+color:#3A3A3A;
+}
+
+.approval-text{
+    font-family: Inter;
+font-size: 24px;
+font-weight: 500;
+line-height: 18px;
+text-align: left;
+color: #292929;
+}
+
+.poptopic{
+    /* width: 183px; */
+height: 20px;
+top: 100px;
+left: 162px;
+gap: 0px;
+opacity: 0px;
+color: #292929;
+}
