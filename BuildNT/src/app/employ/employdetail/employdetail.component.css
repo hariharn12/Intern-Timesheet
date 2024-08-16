@@ -20,4 +20,9 @@
 
 .border-height {
     height: 100px;
+.card {
+    width: 373px;
+height: 100px;
+gap: 0px;
+opacity: 0px;
 }
