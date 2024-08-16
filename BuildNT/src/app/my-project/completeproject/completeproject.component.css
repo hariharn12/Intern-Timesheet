@@ -7,6 +7,11 @@
     background-color: #0EB85B1F !important;
 }
 
+.badge-danger {
+    color:#FFB406;
+    background-color:#FFB4061F;
+}
+
 .progress-bar {
     height: 22px;
 }

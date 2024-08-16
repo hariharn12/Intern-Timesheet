@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container pt-3">
   <div class="d-flex justify-content-between">
     <div>
       <h4 class="client pt-4 mb-0">Create Client</h4>
@@ -87,6 +87,7 @@
       </div>
     </div>
     <!-- contact details -->
+
     <table class="table">
       <thead>
         <tr class="">
@@ -106,15 +107,36 @@
           <td class=" p-4">
             <button class="btn btn-outreline-primary me-4 btn-sm" (click)="editContact(i)"
               data-bs-target="#exampleModal1" data-bs-toggle="modal">
+       <div class="detail mt-4 p-2">
+      <div class="row d-flex text-center" *ngFor="let contact of contacts; let i = index">
+        <div class="col m-auto mx-2">
+          <h4>Contact Person</h4>
+          <h5>{{ contact.contactPerson }}</h5>
+        </div>
+        <div class="col m-auto">
+          <h4>Phone Number</h4>
+          <h5>{{ contact.position }}</h5>
+        </div>
+        <div class="col m-auto">
+          <h4>Phone Number</h4>
+          <h5>{{ contact.phoneNumber }}</h5>
+        </div>
+        <div class="col m-auto">
+          <h4>Email Id</h4>
+          <h5>{{ contact.email }}</h5>
+        </div>
+        <div class="col m-auto"> <button
+              class="btn btn-outreline-primary me-4 btn-sm"
+              (click)="editContact(i)"
+            >
+
               <i class="bi bi-pencil"></i>
             </button>
             <button class="btn btn-outreline-danger btn-sm" data-bs-target="#exampleModal3" data-bs-toggle="modal">
               <i class="bi bi-trash"></i>
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            </button></div>
+      </div>
+    </div>
   </div>
   <div class="sumit-btn">
     <button type="button" class="btn btn-primary btn-lg" data-bs-target="#exampleModal2" data-bs-toggle="modal">Create
