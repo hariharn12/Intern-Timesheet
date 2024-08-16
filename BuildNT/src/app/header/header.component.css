@@ -11,6 +11,6 @@
     opacity: 0px;
 }
 
-/* .offcanvas-body { */
-    /* width: 20%; */
-/* } */
+.header {
+    height: 60px;
+}
