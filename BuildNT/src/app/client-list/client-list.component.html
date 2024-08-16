@@ -19,16 +19,16 @@
     <table class="font-18">
       <thead>
         <tr>
-          <th class="font-18 p-4">Client ID</th>
-          <th class="font-18 p-4">Client Name</th>
-          <th class="font-18 p-4">Email ID</th>
-          <th class="font-18 p-4">No. of Projects</th>
-          <th class="font-18 p-4">Onboard Date</th>
+          <th class="font-18 p-3">Client ID</th>
+          <th class="font-18 p-3">Client Name</th>
+          <th class="font-18 p-3">Email ID</th>
+          <th class="font-18 p-3">No. of Projects</th>
+          <th class="font-18 p-3">Onboard Date</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let client of clients" [routerLink]="['./', client.path]">
-          <td class="p-4">{{ client.id }}</td>
+          <td class="p-3">{{ client.id }}</td>
           <td>{{ client.clientName }}</td>
           <td>{{ client.email }}</td>
           <td>{{ client.project }}</td>
