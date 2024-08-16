@@ -7,3 +7,22 @@
     right:2%;
     bottom: 5%;
 }
+
+
+.approval {
+    width: 30px;
+    height: 30px;
+    top: 40px;
+    left: 236px;
+    gap: 0px;
+    opacity: 0px;    
+}
+
+.approval-text{
+    font-family: Inter;
+font-size: 24px;
+font-weight: 500;
+line-height: 18px;
+text-align: left;
+
+}
