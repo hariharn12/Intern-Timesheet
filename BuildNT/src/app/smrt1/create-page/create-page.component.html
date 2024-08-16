@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container pt-3">
   <div class="d-flex justify-content-between">
     <div>
       <h4 class="client pt-4">Create Client</h4>
@@ -154,24 +154,25 @@
       </div>
     </div>
     <!-- contact details -->
-    <table class="table">
-      <thead >
-        <tr class="">
-          <th  class="font-color-16 p-4">Contact Person</th>
-          <th  class="font-color-16 p-4">Position</th>
-          <th  class="font-color-16 p-4">Phone Number</th>
-          <th  class="font-color-16 p-4">Email Id</th>
-          <th  class="font-color-16 p-4"></th>
-        </tr>
-      </thead>
-      <tbody class="font-16 ">
-        <tr *ngFor="let contact of contacts; let i = index">
-          <td class=" p-4">{{ contact.contactPerson }}</td>
-          <td class=" p-4">{{ contact.position }}</td>
-          <td class=" p-4">{{ contact.phoneNumber }}</td>
-          <td class=" p-4">{{ contact.email }}</td>
-          <td class=" p-4">
-            <button
+       <div class="detail mt-4 p-2">
+      <div class="row d-flex text-center" *ngFor="let contact of contacts; let i = index">
+        <div class="col m-auto mx-2">
+          <h4>Contact Person</h4>
+          <h5>{{ contact.contactPerson }}</h5>
+        </div>
+        <div class="col m-auto">
+          <h4>Phone Number</h4>
+          <h5>{{ contact.position }}</h5>
+        </div>
+        <div class="col m-auto">
+          <h4>Phone Number</h4>
+          <h5>{{ contact.phoneNumber }}</h5>
+        </div>
+        <div class="col m-auto">
+          <h4>Email Id</h4>
+          <h5>{{ contact.email }}</h5>
+        </div>
+        <div class="col m-auto"> <button
               class="btn btn-outreline-primary me-4 btn-sm"
               (click)="editContact(i)"
             >
@@ -182,13 +183,11 @@
               (click)="deleteContact(i)"
             >
               <i class="bi bi-trash"></i>
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            </button></div>
+      </div>
+    </div>
   </div>
   <div class="sumit-btn">
-    <button type="button" class="btn btn-primary btn-lg">Create client</button>
+    <button type="button" routerLink="/clientList" class="btn btn-primary btn-lg">Create client</button>
   </div>
 </div>
