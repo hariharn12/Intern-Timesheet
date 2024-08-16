@@ -9,6 +9,10 @@
 }
 
 .progress-bar {
-    width: 50px;
+    height: 22px;
+}
+
+.card-font {
+    font-size: 14px;
 }
 
