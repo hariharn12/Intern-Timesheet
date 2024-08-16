@@ -1,3 +1,7 @@
 .card-font {
     font-size: 14px;
 }
+
+.progress-bar {
+    height: 22px !important;
+}
