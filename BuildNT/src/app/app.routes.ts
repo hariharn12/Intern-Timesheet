@@ -21,6 +21,7 @@ import { AssignTeamsComponent } from './my-project/createproject/assign-teams/as
 import { EditempolyComponent } from './employ/editempoly/editempoly.component';
 import { CreatePageComponent } from './smrt1/create-page/create-page.component';
 import { ApprovelComponent } from './approvel/approvel.component';
+import { ProjectdetailComponent } from './my-project/projectdetail/projectdetail.component';
 
 export const routes: Routes = [
   {
@@ -56,15 +57,19 @@ export const routes: Routes = [
             path: 'completedproject',
             component: CompleteprojectComponent,
           },
-          {
-            path: 'createproject',
-            component: CreateprojectComponent,
-          },
-        ],
+    ],   
       },
       {
         path: 'myproject/createproject',
         component: CreateprojectComponent,
+      },
+      {
+        path: 'myproject/projectdetail/createproject',
+        component: CreateprojectComponent,
+      },
+      {
+        path:'myproject/projectdetail',
+        component:ProjectdetailComponent
       },
       {
         path: 'createtask',

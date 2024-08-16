@@ -10,8 +10,13 @@ option {
     gap: 0px;
     opacity: 0px;    
 }
-
 .dash-font {
     font-size: 28px;
     font-weight: 700;
+.header {
+    font-family: Inter;
+font-size: 28px;
+font-weight: 500;
+line-height: 33.89px;
+text-align: left;
 }
