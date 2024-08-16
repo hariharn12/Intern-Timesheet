@@ -10,3 +10,11 @@ option {
     gap: 0px;
     opacity: 0px;    
 }
+
+.header {
+    font-family: Inter;
+font-size: 28px;
+font-weight: 500;
+line-height: 33.89px;
+text-align: left;
+}
