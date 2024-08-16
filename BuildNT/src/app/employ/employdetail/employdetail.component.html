@@ -3,11 +3,13 @@
         <div>
             <h4 class="client mb-0">Employee Details</h4>
             <nav>
-                <a routerLink="/employ" class="text-decoration-none font-14 text-black mb-2">Employee List /Employee Details</a>
+                <a routerLink="/employ" class="text-decoration-none font-14 text-black mb-2">Employee List /Employee
+                    Details</a>
             </nav>
         </div>
         <div>
-            <button routerLink="./editemploy" type="button" class="btn mt-2 btn-outline-secondary"><i class="bi bi-pencil px-1"></i>
+            <button routerLink="./editemploy" type="button" class="btn mt-2 btn-outline-secondary"><i
+                    class="bi bi-pencil px-1"></i>
                 Edit</button>
         </div>
     </div>
@@ -126,25 +128,25 @@
         </div>
         <div class="col border d-flex justify-content-between mx-2 rounded card">
             <div>
-                <h4>600</h4>
+                <h4>200</h4>
                 <p class="font-color-16">Total Worked Hours</p>
             </div>
             <div class="bg-info my-4 rounded p-2">
-            <div class="bg-info rounded p-2">
                 <img src="assets/images/workedhours.png" alt="">
             </div>
-        </div>
-    </div>
-    <div class="row pt-4">
-        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
-            <a><mat-tab label="Current Project">
-                <app-currentproject></app-currentproject>
-            </mat-tab></a>
-            <a><mat-tab label="Timesheet">
-                <app-timesheet></app-timesheet>
-            </mat-tab></a>
-        </mat-tab-group>
-    </div>
+            </div>
+            </div>
 
-</div>
-<router-outlet></router-outlet>
+            <div class="row pt-4">
+                <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+                    <a><mat-tab label="Current Project">
+                            <app-currentproject></app-currentproject>
+                        </mat-tab></a>
+                    <a><mat-tab label="Timesheet">
+                            <app-timesheet></app-timesheet>
+                        </mat-tab></a>
+                </mat-tab-group>
+            </div>
+
+        </div>
+        <router-outlet></router-outlet>
