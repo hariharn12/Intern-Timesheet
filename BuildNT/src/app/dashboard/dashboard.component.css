@@ -10,3 +10,8 @@ option {
     gap: 0px;
     opacity: 0px;    
 }
+
+.dash-font {
+    font-size: 28px;
+    font-weight: 700;
+}
