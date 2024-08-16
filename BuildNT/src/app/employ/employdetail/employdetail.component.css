@@ -17,6 +17,9 @@
     font-size: 28px;
     font-weight: 500;
 }
+
+.border-height {
+    height: 100px;
 .card {
     width: 373px;
 height: 100px;

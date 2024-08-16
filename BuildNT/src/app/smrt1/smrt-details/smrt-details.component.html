@@ -1,7 +1,7 @@
 <div class="container pt-4">
   <div class="d-flex m-2 justify-content-between">
     <div>
-      <h4 class="client">Client Detail</h4>
+      <h4 class="client mb-0">Client Detail</h4>
       <nav class="pb-3">
         <a routerLink="/clientList">ClientList</a>
         <a class="px-2">/Client Details</a>
@@ -24,47 +24,47 @@
       <div class="d-flex ps-4">
         <div class="col-2">
           <div>
-            <p>Client Name</p>
+            <p class="mb-0">Client Name</p>
             {{ client.name }}
           </div>
-          <div class="pt-4">
-            <p>Client ID</p>
+          <div class="pt-3">
+            <p class="mb-0">Client ID</p>
             {{ client.id }}
           </div>
         </div>
         <div class="px-3 col-3">
           <div>
-            <p>Email ID</p>
+            <p class="mb-0">Email ID</p>
             {{ client.email }}
           </div>
-          <div class="pt-4">
-            <p>Location</p>
+          <div class="pt-3">
+            <p class="mb-0">Location</p>
             {{ client.location }}
           </div>
         </div>
         <div class="px-3 col-3">
           <div>
-            <p>Onboarding Date</p>
+            <p class="mb-0">Onboarding Date</p>
           </div>
           <div>{{ client.onboardingDate | date : "MM/dd/yyyy" }}</div>
-          <div class="pt-4">
-            <p>Account Manager</p>
+          <div class="pt-3">
+            <p class="mb-0">Account Manager</p>
           </div>
           <div>{{ client.accountManager }}</div>
         </div>
         <div class="px-3 col-4">
           <div>
-            <p>Contact Person</p>
+            <p class="mb-0">Contact Person</p>
           </div>
           <div>{{ client.contactPerson }}</div>
-          <div class="pt-4">
-            <p>Address</p>
+          <div class="pt-3">
+            <p class="mb-0">Address</p>
           </div>
           <div>{{ client.address }}</div>
         </div>
         <div class="col-2">
           <div>
-            <p>Phone Number</p>
+            <p class="mb-0">Phone Number</p>
           </div>
           <div>{{ client.phoneNumber }}</div>
         </div>
