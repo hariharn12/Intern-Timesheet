@@ -1,5 +1,5 @@
-<div class="container">
-  <div class="d-flex justify-content-between">
+<div class="container pt-3">
+  <div class="d-flex m-2 justify-content-between">
     <div>
       <h4 class="client pt-4">Edit Client Detail</h4>
       <nav>
@@ -10,7 +10,7 @@
   </div>
   <div>
     <!-- upload file -->
-    <div class="mb-3 pt-3 font-14">
+    <div class="mb-3 m-2 pt-3 font-14">
       <label for="formFileMultiple" class="form-label">Logo</label>
       <div class="d-flex">
         <input
@@ -35,7 +35,7 @@
       </div>
     </div>
     <!-- client details -->
-    <div class="row pt-2 font-14">
+    <div class="row pt-2 p-2 font-14">
       <div class="mb-3 col-3">
         <label for="company-name" class="form-label">Company name</label>
         <input
@@ -106,9 +106,9 @@
       </div>
     </div>
     <!-- create contact details -->
-    <div class=" pt-2">
+    <div class="pt-2 p-2">
       <p class="font-18">Contact details</p>
-      <div class="row ">
+      <div class="row">
         <div class="mb-3 col">
           <label for="contact-person" class="form-label">Contact Person</label>
           <input
@@ -154,24 +154,25 @@
       </div>
     </div>
     <!-- contact details -->
-    <table class="table ">
-      <thead >
-        <tr class="">
-          <th  class="font-color-16 p-4">Contact Person</th>
-          <th  class="font-color-16 p-4">Position</th>
-          <th  class="font-color-16 p-4">Phone Number</th>
-          <th  class="font-color-16 p-4">Email Id</th>
-          <th  class="font-color-16 p-4"></th>
-        </tr>
-      </thead>
-      <tbody class="font-16">
-        <tr *ngFor="let contact of contacts; let i = index">
-          <td class="bg-secondary p-4">{{ contact.contactPerson }}</td>
-          <td class="bg-secondary p-4">{{ contact.position }}</td>
-          <td class="bg-secondary p-4">{{ contact.phoneNumber }}</td>
-          <td class="bg-secondary p-4">{{ contact.email }}</td>
-          <td class="bg-secondary p-4">
-            <button
+    <div class="detail mt-4 m-2 p-2">
+      <div class="row d-flex text-center" *ngFor="let contact of contacts; let i = index">
+        <div class="col m-auto mx-2">
+          <h4>Contact Person</h4>
+          <h5>{{ contact.contactPerson }}</h5>
+        </div>
+        <div class="col m-auto">
+          <h4>Phone Number</h4>
+          <h5>{{ contact.position }}</h5>
+        </div>
+        <div class="col m-auto">
+          <h4>Phone Number</h4>
+          <h5>{{ contact.phoneNumber }}</h5>
+        </div>
+        <div class="col m-auto">
+          <h4>Email Id</h4>
+          <h5>{{ contact.email }}</h5>
+        </div>
+        <div class="col m-auto"> <button
               class="btn btn-outreline-primary me-4 btn-sm"
               (click)="editContact(i)"
             >
@@ -182,13 +183,11 @@
               (click)="deleteContact(i)"
             >
               <i class="bi bi-trash"></i>
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            </button></div>
+      </div>
+    </div>
   </div>
   <div class="sumit-btn">
-    <button type="button" class="btn btn-primary btn-lg">Resumit</button>
+    <button type="button" routerLink="/clientList/smrt-details" class="btn btn-primary btn-lg">Resumit</button>
   </div>
 </div>

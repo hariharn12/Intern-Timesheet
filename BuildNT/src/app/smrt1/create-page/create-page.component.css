@@ -14,7 +14,7 @@ a {
   color: #f4f4f4;
 }
 .sumit-btn {
-  position: fixed absolute;
+  position: absolute;
   bottom: 0px;
   right: 0px;
   display: flex;
@@ -22,11 +22,19 @@ a {
   width: 100%;
   padding-right: 16px;
 }
-
-table {
-  margin: 30px auto;
+.client{
+  font-size: 28px;
+  color: black;
+  font-weight: 500;
 }
-
+h4 {
+  font-family: Mulish;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.57px;
+  text-align: left;
+  color: #707070;
+}
 th,td {
   background: #f4f4f4;
 }
@@ -72,3 +80,15 @@ line-height: 20px;
 letter-spacing: 0.25px;
 text-align: center; 
 }
+h5 {
+  font-family: Mulish;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.57px;
+  text-align: left;
+}
+.detail {
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+

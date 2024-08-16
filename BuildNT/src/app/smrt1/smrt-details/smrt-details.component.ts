@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { CurrentprojectComponent } from '../../my-project/currentproject/currentproject.component';
+import { CompleteprojectComponent } from "../../my-project/completeproject/completeproject.component";
 
 @Component({
   selector: 'app-smrt',
   standalone: true,
-  imports: [RouterLink,RouterOutlet,CommonModule,MatTabsModule, CurrentprojectComponent],
+  imports: [RouterLink, RouterOutlet, CommonModule, MatTabsModule, CurrentprojectComponent, CompleteprojectComponent],
   templateUrl: './smrt-details.component.html',
   styleUrl: './smrt-details.component.css'
 })
