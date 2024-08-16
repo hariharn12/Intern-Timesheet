@@ -6,3 +6,7 @@
     color: #0EB85B;
     background-color: #0EB85B1F !important;
 }
+
+.progress-bar {
+    height: 22px;
+}
