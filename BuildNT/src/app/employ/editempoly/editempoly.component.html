@@ -1,9 +1,11 @@
 <div class="container">
     <div class="d-flex justify-content-between my-3">
       <div class=" col-md-4 ">
-        <h3>Edit Employee Details</h3>
-        <a routerLink="/employ" class="text-decoration-none font-14 text-black">Employee List / Employee Dtail
+        <h3 class="client mb-0">Edit Employee Details</h3>
+        <nav>
+        <a routerLink="/employ" class="text-decoration-none font-14 text-black mb-2">Employee List / Employee Dtail
         </a>
+        </nav>
       </div>
       <div class="wrapper col-md-3">
         <div class="input-group bg-white border rounded ">
@@ -117,6 +119,7 @@
       </div>
     </form>
     <div class="add">
-      <a class="btn btn-primary fw-bold" routerLink="createemploy" role="button">Update</a>
+      <a class="btn btn-primary fw-3" routerLink="/employ" role="button">Update</a>
     </div>
   </div>
+  <router-outlet></router-outlet>
