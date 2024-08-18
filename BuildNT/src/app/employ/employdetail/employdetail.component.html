@@ -18,8 +18,8 @@
             <div class="pt-2 px-2">
                 <img src="assets/images/employee.png" alt="employee Logo" class="logo" />
             </div>
-            <div class="font-16 px-3">
-                <div>
+            <div class="font-16 mx-4">
+                <div class="">
                     <p class="font-color-14 mb-0">Employee Name</p>
                     {{ employ.name}}
                 </div>
@@ -32,7 +32,7 @@
                     {{ employ.status}}
                 </div>
             </div>
-            <div class="px-4 font-16">
+            <div class="px-4 font-16 mx-4">
                 <div>
                     <p class="font-color-14 mb-0">Email ID</p>
                     {{employ.email }}
@@ -47,7 +47,7 @@
                     {{ employ.join }}
                 </div>
             </div>
-            <div class="px-4 font-16">
+            <div class="px-4 font-16 mx-4">
                 <div>
                     <p class="font-color-14 mb-0">Designation</p>
                     {{ employ.designation}}
@@ -58,13 +58,13 @@
                     {{employ.position}}
                 </div>
 
-                <div class="pt-2">
+                <div class="pt-2 ">
                     <p class="font-color-14 mb-0">End Date</p>
                     {{employ.last}}
                 </div>
             </div>
 
-            <div class="px-4 font-16">
+            <div class="px-4 font-16 mx-4">
                 <div>
                     <p class="font-color-14 mb-0">Department</p>
                     {{ employ.department}}
@@ -74,7 +74,7 @@
                     {{employ.last}}
                 </div>
             </div>
-            <div class="px-3 font-16">
+            <div class="px-3 font-16 mx-4">
                 <div>
                     <p class="font-color-14 mb-0">Reporting Manager</p>
                     {{employ.report}}
@@ -107,26 +107,6 @@
             </div>
         </div>
         <div class="col border d-flex justify-content-between mx-2 rounded border-height">
-    <div class="row">
-        <div class="col border d-flex justify-content-between mx-2 rounded card">
-            <div class="">
-                <h4>02</h4>
-                <p class="font-color-16">Live Projects</p>
-            </div>
-            <div class="bg-danger rounded p-2">
-                <img src="assets/images/liveproject.png" alt="">
-            </div>
-        </div>
-        <div class="col border d-flex justify-content-between mx-2 rounded card">
-            <div class="col">
-                <h4>07</h4>
-                <p class="font-color-16">No of Completed Projects</p>
-            </div>
-            <div class="bg-success col rounded p-2">
-                <img src="assets/images/completeproject.png" alt="">
-            </div>
-        </div>
-        <div class="col border d-flex justify-content-between mx-2 rounded card">
             <div>
                 <h4>200</h4>
                 <p class="font-color-16">Total Worked Hours</p>
@@ -134,19 +114,18 @@
             <div class="bg-info my-4 rounded p-2">
                 <img src="assets/images/workedhours.png" alt="">
             </div>
-            </div>
-            </div>
-
-            <div class="row pt-4">
-                <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
-                    <a><mat-tab label="Current Project">
-                            <app-currentproject></app-currentproject>
-                        </mat-tab></a>
-                    <a><mat-tab label="Timesheet">
-                            <app-timesheet></app-timesheet>
-                        </mat-tab></a>
-                </mat-tab-group>
-            </div>
-
         </div>
-        <router-outlet></router-outlet>
+
+        <div class="row pt-4">
+            <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+                <a><mat-tab label="Current Project">
+                        <app-currentproject></app-currentproject>
+                    </mat-tab></a>
+                <a><mat-tab label="Timesheet">
+                        <app-timesheet></app-timesheet>
+                    </mat-tab></a>
+            </mat-tab-group>
+        </div>
+
+    </div>
+    <router-outlet></router-outlet>
