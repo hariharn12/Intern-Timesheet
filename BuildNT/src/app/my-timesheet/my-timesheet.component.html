@@ -1,571 +1,611 @@
-<div class="comtainer-fluid px-3">
-    <div class="nav d-flex justify-content-between">
-        <div class=" pt-4 ps-3">
-            <p class="heading">My Time Sheet</p>
-        </div>
-<<<<<<< HEAD
-        <div class="mt-4">
-            <div class="days">
-                <select class="p-2">
-                    <option>Weekly</option>
-                    <option>Monthly</option>
-                    <option>Yearly</option>
-                </select>
+<div class="comtainer-fluid p-3">
+  <div class="nav d-flex pt-4 justify-content-between">
+    <div class="ps-3">
+      <p class="heading">My Time Sheet</p>
+    </div>
+      <div class="days">
+        <select class="p-1">
+          <option>Weekly</option>
+          <option>Monthly</option>
+          <option>Yearly</option>
+        </select>
+        <button class="arrow px-2">
+          <img src="\assets\images\left-arrow.jpg" />
+        </button>
+        <button class="arrow px-2">
+          <img src="\assets\images\right-arrow.jpg" />
+        </button>
+      </div>
+  </div>
+  <div>
+    <table class="p-3 table border">
+      <thead class="bg-secondary">
+        <tr>
+          <th class="table-heading">Project</th>
+          <th class="table-heading">Task</th>
+          <th>
+            <div>
+              <p class="date-details">Mon, Jul17</p>
+              <select class="text-option-shift">
+                <option value="option-values">1st Shift</option>
+                <option value="option-values">2nd Shift</option>
+                <option value="option-values">3rd Shift</option>
+              </select>
             </div>
-=======
-        <div class="days">
-            <select class="p-1">
-                <option>Weekly</option>
-                <option>Monthly</option>
-                <option>Yearly</option>
+          </th>
+          <th>
+            <div>
+              <p class="date-details">Tue, Jul18</p>
+              <select class="text-option-shift">
+                <option value="1">2nd Shift</option>
+                <option value="2">1st Shift</option>
+                <option value="3">3rd Shift</option>
+              </select>
+            </div>
+          </th>
+          <th>
+            <div>
+              <p class="date-details">Wed, Jul19</p>
+              <select class="text-option-shift">
+                <option value="1">3rd Shift</option>
+                <option value="2">2nd Shift</option>
+                <option value="3">1st Shift</option>
+              </select>
+            </div>
+          </th>
+          <th>
+            <div>
+              <p class="date-details">Thu, Jul20</p>
+              <select class="text-option-shift">
+                <option value="1">1st Shift</option>
+                <option value="2">2nd Shift</option>
+                <option value="3">3rd Shift</option>
+              </select>
+            </div>
+          </th>
+          <th>
+            <div>
+              <p class="date-details">Fri, Jul21</p>
+              <select class="text-option-shift">
+                <option value="1">General</option>
+                <option value="2">General</option>
+                <option value="3">General</option>
+              </select>
+            </div>
+          </th>
+          <th>
+            <div>
+              <p class="date-details">Sat, Jul22</p>
+              <select class="text-option-shift">
+                <option value="1">3rd Shift</option>
+                <option value="2">2nd Shift</option>
+                <option value="3">1st Shift</option>
+              </select>
+            </div>
+          </th>
+          <th>
+            <div>
+              <p class="date-details">Sun, Jul23</p>
+              <select class="text-option-shift">
+                <option value="1">3rd Shift</option>
+                <option value="2">2nd Shift</option>
+                <option value="3">1st Shift</option>
+              </select>
+            </div>
+          </th>
+          <th class="table-heading">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="project-list">SMRT</td>
+          <td>
+            <select class="text-option">
+              <option value="1">Design</option>
+              <option value="2">2nd Shift</option>
+              <option value="3">1st Shift</option>
             </select>
-            <button class="arrow px-2"><img src="\assets\images\left-arrow.jpg"></button>
-            <button class="arrow px-2"><img src="\assets\images\right-arrow.jpg"></button>
-        </div>
-    </div>
-    <div>
-        <table class="p-3 table border">
-            <thead class="bg-secondary">
-                <tr>
-                    <th class="table-heading">Project</th>
-                    <th class="table-heading">Task</th>
-                    <th>
-                        <div>
-                            <p class="date-details">Mon, Jul17</p>
-                            <select class="text-option-shift">
-                                <option value="option-values">1st Shift</option>
-                                <option value="option-values">2nd Shift</option>
-                                <option value="option-values">3rd Shift</option>
-                            </select>
-                        </div>
-                    </th>
-                    <th>
-                        <div>
-                            <p class="date-details">Tue, Jul18</p>
-                            <select class="text-option-shift">
-                                <option value="1">2nd Shift</option>
-                                <option value="2">1st Shift</option>
-                                <option value="3">3rd Shift</option>
-                            </select>
-                        </div>
-                    </th>
-                    <th>
-                        <div>
-                            <p class="date-details">Wed, Jul19</p>
-                            <select class="text-option-shift">
-                                <option value="1">3rd Shift</option>
-                                <option value="2">2nd Shift</option>
-                                <option value="3">1st Shift</option>
-                            </select>
-                        </div>
-                    </th>
-                    <th>
-                        <div>
-                            <p class="date-details">Thu, Jul20</p>
-                            <select class="text-option-shift">
-                                <option value="1">1st Shift</option>
-                                <option value="2">2nd Shift</option>
-                                <option value="3">3rd Shift</option>
-                            </select>
-                        </div>
-                    </th>
-                    <th>
-                        <div>
-                            <p class="date-details">Fri, Jul21</p>
-                            <select class="text-option-shift">
-                                <option value="1">General</option>
-                                <option value="2">General</option>
-                                <option value="3">General</option>
-                            </select>
-                        </div>
-                    </th>
-                    <th>
-                        <div>
-                            <p class="date-details">Sat, Jul22</p>
-                            <select class="text-option-shift">
-                                <option value="1">3rd Shift</option>
-                                <option value="2">2nd Shift</option>
-                                <option value="3">1st Shift</option>
-                            </select>
-                        </div>
-                    </th>
-                    <th>
-                        <div>
-                            <p class="date-details">Sun, Jul23</p>
-                            <select class="text-option-shift">
-                                <option value="1">3rd Shift</option>
-                                <option value="2">2nd Shift</option>
-                                <option value="3">1st Shift</option>
-                            </select>
-                        </div>
-                    </th>
-                    <th class="table-heading">Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="project-list">SMRT</td>
-                    <td>
-                        <select class="text-option">
-                            <option value="1">Design</option>
-                            <option value="2">2nd Shift</option>
-                            <option value="3">1st Shift</option>
-                        </select>
-                    </td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td>3.00 <i class="bi bi-trash ps-3"></i></td>
-                </tr>
-                <tr>
-                    <td class="project-list">BuildNT</td>
-                    <td>
-                        <select class="text-option">
-                            <option value="1">Design</option>
-                            <option value="2">2nd Shift</option>
-                            <option value="3">1st Shift</option>
-                        </select>
-                    </td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td>0.00 <i class="bi bi-trash ps-3"></i></td>
-                </tr>
-                <tr>
-                    <td class="project-list">Hitachi</td>
-                    <td>
-                        <select class="text-option">
-                            <option value="1">Design</option>
-                            <option value="2">2nd Shift</option>
-                            <option value="3">1st Shift</option>
-                        </select>
-                    </td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td><input></td>
-                    <td>0.00 <i class="bi bi-trash ps-3"></i></td>
-                </tr>
-                <tr>
-                    <td class="add-project text-primary">
-                        + Select Project
-                    </td>
-                    <td>
-                        <input type="text" class="select-project">
-                    </td>
-                    <td>
-                        <input type="text" class="select-project">
-                    </td>
-                    <td>
-                        <input type="text" class="select-project">
-                    </td>
-                    <td>
-                        <input type="text" class="select-project">
-                    </td>
-                    <td>
-                        <input type="text" class="select-project">
-                    </td>
-                    <td>
-                        <input type="text" class="select-project">
-                    </td>
-                    <td>
-                        <input type="text" class="select-project">
-                    </td>
-                    <td>
-                        <input type="text" class="select-project">
-                    </td>
+          </td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td>3.00 <i class="bi bi-trash ps-3"></i></td>
+        </tr>
+        <tr>
+          <td class="project-list">BuildNT</td>
+          <td>
+            <select class="text-option">
+              <option value="1">Design</option>
+              <option value="2">2nd Shift</option>
+              <option value="3">1st Shift</option>
+            </select>
+          </td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td>0.00 <i class="bi bi-trash ps-3"></i></td>
+        </tr>
+        <tr>
+          <td class="project-list">Hitachi</td>
+          <td>
+            <select class="text-option">
+              <option value="1">Design</option>
+              <option value="2">2nd Shift</option>
+              <option value="3">1st Shift</option>
+            </select>
+          </td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td><input /></td>
+          <td>0.00 <i class="bi bi-trash ps-3"></i></td>
+        </tr>
+        <tr>
+          <td class="add-project text-primary">+ Select Project</td>
+          <td>
+            <input type="text" class="select-project" />
+          </td>
+          <td>
+            <input type="text" class="select-project" />
+          </td>
+          <td>
+            <input type="text" class="select-project" />
+          </td>
+          <td>
+            <input type="text" class="select-project" />
+          </td>
+          <td>
+            <input type="text" class="select-project" />
+          </td>
+          <td>
+            <input type="text" class="select-project" />
+          </td>
+          <td>
+            <input type="text" class="select-project" />
+          </td>
+          <td>
+            <input type="text" class="select-project" />
+          </td>
 
-                    <td>0.00 <i class="bi bi-trash ps-3"></i></td>
-
-                </tr>
-                <tr>
-                    <td class="project-list">Total</td>
-                    <td class="project-list"></td>
-                    <td class="project-list">
-                        8.00 hrs
-                    </td>
-                    <td class="project-list">0.00</td>
-                    <td class="project-list">0.00</td>
-                    <td class="project-list">0.00</td>
-                    <td class="project-list">0.00</td>
-                    <td class="project-list">0.00</td>
-                    <td class="project-list">0.00</td>
-                    <td>8.00 <i class="bi bi-trash ps-3"></i></td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="d-flex justify-content-between my-4">
-            <button type="button" class="btn btn-light border"><i class="bi bi-copy p-2"></i>Copy last week</button>
-            <button type="button" class="btn btn-primary">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Submit
+          <td>0.00 <i class="bi bi-trash ps-3"></i></td>
+        </tr>
+        <tr>
+          <td class="project-list">Total</td>
+          <td class="project-list"></td>
+          <td class="project-list">8.00 hrs</td>
+          <td class="project-list">0.00</td>
+          <td class="project-list">0.00</td>
+          <td class="project-list">0.00</td>
+          <td class="project-list">0.00</td>
+          <td class="project-list">0.00</td>
+          <td class="project-list">0.00</td>
+          <td>8.00 <i class="bi bi-trash ps-3"></i></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="d-flex justify-content-between my-4">
+      <button type="button" class="btn btn-light border">
+        <i class="bi bi-copy p-2"></i>Copy last week
+      </button>
+      <button type="button" class="btn btn-primary">
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Submit
+        </button>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header d-flex justify-content-center">
+                <i
+                  class="bi bi-check-circle-fill text-success fs-2 border-rounded"
+                ></i>
+              </div>
+              <div class="modal-body">
+                <h5 class="text-dark">Submitted Successfully</h5>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  ok
                 </button>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header d-flex justify-content-center">
-                                <i class="bi bi-check-circle-fill text-success fs-2 border-rounded"></i>
-                            </div>
-                            <div class="modal-body">
-                                <h5 class="text-dark">
-                                    Submitted Successfully
-                                </h5>
-                            </div>
-                            <div class="modal-footer d-flex justify-content-center">
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
-                                aria-label="Close">ok</button>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div class="alterations mt-3">
+      <p class="project-list">Recently Submitted</p>
+    </div>
+  </div>
+  <div class="comtainer-fluid">
+    <div class="row m-0 p-2 mt-2 box-one border rounded">
+      <div class="col-4">
+        <p class="submit-date-details">02-July-2023 To 09-July-2023</p>
+        <p class="text-warning">Submitted for Approval</p>
+      </div>
+      <div class="col-2">
+        <p class="approval-rate">40.00</p>
+        <p class="approval-details">Billable Project Hrs</p>
+      </div>
+      <div class="col-2">
+        <p class="approval-rate">0.00</p>
+        <p class="approval-details">Non-Billable Project Hrs</p>
+      </div>
+      <div class="col-2">
+        <p class="approval-rate">0.00</p>
+        <p class="approval-details">Time off/Holiday Hrs</p>
+      </div>
+      <div class="col">
+        <p class="approval-rate">8.00</p>
+        <p class="approval-details">Pre-sales</p>
+      </div>
+      <div class="col my-2 btn-brimary">
+        <button class="edit-icon">
+          <button
+            type="button"
+            class="btn btn-white text-dark"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            <i class="bi bi-pen icon"></i>
+          </button>
+          <div
+            class="modal fade mb-5 mt-5"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h6>MY TIME SHEET</h6>
+                  <table>
+                    <tr>
+                      <td class="project-list">SMRT</td>
+                      <td>
+                        <select>
+                          <option value="1">Design</option>
+                          <option value="2">2nd Shift</option>
+                          <option value="3">1st Shift</option>
+                        </select>
+                      </td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td>3.00 <i class="bi bi-trash"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="project-list">BuildNT</td>
+                      <td>
+                        <select>
+                          <option value="1">Design</option>
+                          <option value="2">2nd Shift</option>
+                          <option value="3">1st Shift</option>
+                        </select>
+                      </td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td>0.00 <i class="bi bi-trash"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="project-list">Hitachi</td>
+                      <td>
+                        <select>
+                          <option value="1">Design</option>
+                          <option value="2">2nd Shift</option>
+                          <option value="3">1st Shift</option>
+                        </select>
+                      </td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td>0.00 <i class="bi bi-trash"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="add-project text-primary">+ Select Project</td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>0.00<i class="bi bi-trash ps-1"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="project-list">Total</td>
+                      <td class="project-list"></td>
+                      <td class="project-list">8.00 hrs</td>
+                      <td class="project-list">0.00</td>
+                      <td class="project-list">0.00</td>
+                      <td class="project-list">0.00</td>
+                      <td class="project-list">0.00</td>
+                      <td class="project-list">0.00</td>
+                      <td class="project-list">0.00</td>
+                      <td>8.00 <i class="bi bi-trash"></i></td>
+                    </tr>
+                  </table>
+                  <div class="mb-5">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      cancel
+                    </button>
+                    <button type="button" class="btn btn-primary ms-4">
+                      Resubmit
+                    </button>
+                  </div>
                 </div>
-            </button>
-        </div>
-        <div class="alterations mt-3">
-            <p class="project-list">Recently Submitted</p>
-        </div>
+              </div>
+            </div>
+          </div>
+        </button>
+        <button class="edit-icon py-4"><i class="bi bi-trash icon"></i></button>
+      </div>
     </div>
-    <div class="comtainer-fluid">
-        <div class="row m-0 p-2 mt-2 box-one border rounded">
-            <div class="col-4">
-                <p class="submit-date-details">02-July-2023 To 09-July-2023</p>
-                <p class="text-warning">Submitted for Approval</p>
-            </div>
-            <div class="col-2">
-                <p class="approval-rate">40.00</p>
-                <p class="approval-details">Billable Project Hrs</p>
-            </div>
-            <div class="col-2">
-                <p class="approval-rate">0.00</p>
-                <p class="approval-details">Non-Billable Project Hrs</p>
-            </div>
-            <div class="col-2">
-                <p class="approval-rate">0.00</p>
-                <p class="approval-details">Time off/Holiday Hrs</p>
-            </div>
-            <div class="col">
-                <p class="approval-rate">8.00</p>
-                <p class="approval-details">Pre-sales</p>
-            </div>
-            <div class="col my-2 btn-brimary">
-                <button class="edit-icon">
-                    <button type="button" class="btn btn-white text-dark" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        <i class="bi bi-pen icon"></i>
-                    </button>
-                    <div class="modal fade mb-5 mt-5" id="staticBackdrop" data-bs-backdrop="static"
-                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog  modal-fullscreen">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <h6>MY TIME SHEET</h6>
-                                    <table>
-                                        <tr>
-                                            <td class="project-list">SMRT</td>
-                                            <td>
-                                                <select>
-                                                    <option value="1">Design</option>
-                                                    <option value="2">2nd Shift</option>
-                                                    <option value="3">1st Shift</option>
-                                                </select>
-                                            </td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td>3.00 <i class="bi bi-trash"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="project-list">BuildNT</td>
-                                            <td>
-                                                <select>
-                                                    <option value="1">Design</option>
-                                                    <option value="2">2nd Shift</option>
-                                                    <option value="3">1st Shift</option>
-                                                </select>
-                                            </td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td>0.00 <i class="bi bi-trash"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="project-list">Hitachi</td>
-                                            <td>
-                                                <select>
-                                                    <option value="1">Design</option>
-                                                    <option value="2">2nd Shift</option>
-                                                    <option value="3">1st Shift</option>
-                                                </select>
-                                            </td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td>0.00 <i class="bi bi-trash"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="add-project text-primary">
-                                                + Select Project
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>0.00<i class="bi bi-trash ps-1"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="project-list">Total</td>
-                                            <td class="project-list"></td>
-                                            <td class="project-list">
-                                                8.00 hrs
-                                            </td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td>8.00 <i class="bi bi-trash"></i></td>
-                                        </tr>
-                                    </table>
-                                    <div class="mb-5">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">cancel</button>
-                                        <button type="button" class="btn btn-primary ms-4">Resubmit</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </button>
-                <button class="edit-icon py-4"><i class="bi bi-trash icon"></i></button>
-            </div>
+    <div class="row m-0 p-2 my-4 box-two border rounded">
+      <div class="col-4">
+        <p class="submit-date-details">02-July-2023 To 09-July-2023</p>
+        <p class="text-success">Approval</p>
+      </div>
+      <div class="col-2">
+        <p class="approval-rate">40.00</p>
+        <p class="approval-details">Billable Project Hrs</p>
+      </div>
+      <div class="col-2">
+        <p class="approval-rate">0.00</p>
+        <p class="approval-details">Non-Billable Project Hrs</p>
+      </div>
+      <div class="col-2">
+        <p class="approval-rate">0.00</p>
+        <p class="approval-details">Time off/Holiday Hrs</p>
+      </div>
+      <div class="col">
+        <p class="approval-rate">8.00</p>
+        <p class="approval-details">Pre-sales</p>
+      </div>
+      <div class="col my-2 btn-brimary">
+        <button class="edit-icon">
+          <button
+            type="button"
+            class="btn btn-white text-dark"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            <i class="bi bi-pen icon"></i>
+          </button>
+          <div
+            class="modal fade mb-5 mt-5 edit"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen edit">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h6>MY TIME SHEET</h6>
+                  <tbody>
+                    <tr>
+                      <td class="project-list">SMRT</td>
+                      <td>
+                        <select>
+                          <option value="1">Design</option>
+                          <option value="2">2nd Shift</option>
+                          <option value="3">1st Shift</option>
+                        </select>
+                      </td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td>3.00 <i class="bi bi-trash"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="project-list">BuildNT</td>
+                      <td>
+                        <select>
+                          <option value="1">Design</option>
+                          <option value="2">2nd Shift</option>
+                          <option value="3">1st Shift</option>
+                        </select>
+                      </td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td>0.00 <i class="bi bi-trash"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="project-list">Hitachi</td>
+                      <td>
+                        <select>
+                          <option value="1">Design</option>
+                          <option value="2">2nd Shift</option>
+                          <option value="3">1st Shift</option>
+                        </select>
+                      </td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td><input /></td>
+                      <td>0.00 <i class="bi bi-trash"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="add-project text-primary">+ Select Project</td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
+                      <td>
+                        <input type="text" class="select-project" />
+                      </td>
 
-        </div>
-        <div class="row m-0 p-2 my-4 box-two border rounded ">
-            <div class="col-4">
-                <p class="submit-date-details">02-July-2023 To 09-July-2023</p>
-                <p class="text-success">Approval</p>
-            </div>
-            <div class="col-2">
-                <p class="approval-rate">40.00</p>
-                <p class="approval-details">Billable Project Hrs</p>
-            </div>
-            <div class="col-2">
-                <p class="approval-rate">0.00</p>
-                <p class="approval-details">Non-Billable Project Hrs</p>
-            </div>
-            <div class="col-2">
-                <p class="approval-rate">0.00</p>
-                <p class="approval-details">Time off/Holiday Hrs</p>
-            </div>
-            <div class="col">
-                <p class="approval-rate">8.00</p>
-                <p class="approval-details">Pre-sales</p>
-            </div>
-            <div class="col my-2 btn-brimary">
-                <button class="edit-icon">
-                    <button type="button" class="btn btn-white text-dark" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        <i class="bi bi-pen icon"></i>
-                    </button>
-<<<<<<< HEAD
-                    <div class="modal fade mb-5 mt-5 edit" id="staticBackdrop" data-bs-backdrop="static"
-                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog  modal-fullscreen edit">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <h6>MY TIME SHEET</h6>
-                                    <tbody>
-                                        <tr>
-                                            <td class="project-list">SMRT</td>
-                                            <td>
-                                                <select>
-                                                    <option value="1">Design</option>
-                                                    <option value="2">2nd Shift</option>
-                                                    <option value="3">1st Shift</option>
-                                                </select>
-                                            </td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td>3.00 <i class="bi bi-trash"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="project-list">BuildNT</td>
-                                            <td>
-                                                <select>
-                                                    <option value="1">Design</option>
-                                                    <option value="2">2nd Shift</option>
-                                                    <option value="3">1st Shift</option>
-                                                </select>
-                                            </td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td>0.00 <i class="bi bi-trash"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="project-list">Hitachi</td>
-                                            <td>
-                                                <select>
-                                                    <option value="1">Design</option>
-                                                    <option value="2">2nd Shift</option>
-                                                    <option value="3">1st Shift</option>
-                                                </select>
-                                            </td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td>0.00 <i class="bi bi-trash"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="add-project text-primary">
-                                                + Select Project
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
+                      <td>0.00 <i class="bi bi-trash ps-3"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="project-list">Total</td>
+                      <td class="project-list"></td>
+                      <td class="project-list">8.00 hrs</td>
+                      <td class="project-list">0.00</td>
+                      <td class="project-list">0.00</td>
+                      <td class="project-list">0.00</td>
+                      <td class="project-list">0.00</td>
+                      <td class="project-list">0.00</td>
+                      <td class="project-list">0.00</td>
+                      <td>8.00 <i class="bi bi-trash"></i></td>
+                    </tr>
+                  </tbody>
+                </div>
 
-                                            <td>0.00 <i class="bi bi-trash ps-3"></i></td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="project-list">Total</td>
-                                            <td class="project-list"></td>
-                                            <td class="project-list">
-                                                8.00 hrs
-                                            </td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td>8.00 <i class="bi bi-trash"></i></td>
-                                        </tr>
-                                </div>
-                                <div class="mb-5">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">cancel</button>
-                                    <button type="button" class="btn btn-primary ms-4"  data-bs-dismiss="modal">Resubmit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-=======
->>>>>>> nivetha
-                </button>
-                <button class="edit-icon py-4"><i class="bi bi-trash icon"></i></button>
+                <div class="mb-5">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    cancel
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary ms-4"
+                    data-bs-dismiss="modal"
+                  >
+                    Resubmit
+                  </button>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="row m-0 p-2 box-three border rounded ">
-            <div class="col-4">
-                <p class="submit-date-details">02-July-2023 To 09-July-2023</p>
-                <p class="text-success">Approval</p>
-            </div>
-            <div class="col-2">
-                <p class="approval-rate">40.00</p>
-                <p class="approval-details">Billable Project Hrs</p>
-            </div>
-            <div class="col-2">
-                <p class="approval-rate">0.00</p>
-                <p class="approval-details">Non-Billable Project Hrs</p>
-            </div>
-            <div class="col-2">
-                <p class="approval-rate">0.00</p>
-                <p class="approval-details">Time off/Holiday Hrs</p>
-            </div>
-            <div class="col">
-                <p class="approval-rate">8.00</p>
-                <p class="approval-details">Pre-sales</p>
-            </div>
-            <div class="col my-2 btn-brimary">
-                <button class="edit-icon">
-                    <button type="button" class="btn btn-white text-dark" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        <i class="bi bi-pen icon"></i>
-                    </button>
-                </button>
-                <button class="edit-icon py-4"><i class="bi bi-trash icon"></i></button>
-            </div>
-        </div>
+          </div>
+        </button>
+        <button class="edit-icon py-4"><i class="bi bi-trash icon"></i></button>
+      </div>
     </div>
+    <div class="row m-0 p-2 box-three border rounded">
+      <div class="col-4">
+        <p class="submit-date-details">02-July-2023 To 09-July-2023</p>
+        <p class="text-success">Approval</p>
+      </div>
+      <div class="col-2">
+        <p class="approval-rate">40.00</p>
+        <p class="approval-details">Billable Project Hrs</p>
+      </div>
+      <div class="col-2">
+        <p class="approval-rate">0.00</p>
+        <p class="approval-details">Non-Billable Project Hrs</p>
+      </div>
+      <div class="col-2">
+        <p class="approval-rate">0.00</p>
+        <p class="approval-details">Time off/Holiday Hrs</p>
+      </div>
+      <div class="col">
+        <p class="approval-rate">8.00</p>
+        <p class="approval-details">Pre-sales</p>
+      </div>
+      <div class="col my-2 btn-brimary">
+        <button class="edit-icon">
+          <button
+            type="button"
+            class="btn btn-white text-dark"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            <i class="bi bi-pen icon"></i>
+          </button>
+        </button>
+        <button class="edit-icon py-4"><i class="bi bi-trash icon"></i></button>
+      </div>
+    </div>
+  </div>
 </div>
