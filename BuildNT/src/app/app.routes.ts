@@ -19,9 +19,13 @@ import { ReportsComponent } from './reports/reports.component';
 import { CreatetaskComponent } from './my-project/createproject/createtask/createtask.component';
 import { AssignTeamsComponent } from './my-project/createproject/assign-teams/assign-teams.component';
 import { EditempolyComponent } from './employ/editempoly/editempoly.component';
+<<<<<<< HEAD
 import { CreatePageComponent } from './smrt1/create-page/create-page.component';
 import { ApprovelComponent } from './approvel/approvel.component';
 import { ProjectdetailComponent } from './my-project/projectdetail/projectdetail.component';
+=======
+import { PopupComponent } from './popup/popup.component';
+>>>>>>> nivetha
 
 export const routes: Routes = [
   {
@@ -119,6 +123,10 @@ export const routes: Routes = [
       {
         path: 'create-client',
         component: CreatePageComponent,
+      },
+      {
+        path: 'popup',
+        component: PopupComponent
       },
     ],
   },
