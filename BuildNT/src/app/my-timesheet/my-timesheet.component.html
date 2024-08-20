@@ -17,9 +17,9 @@
         <table class="p-3 table border">
             <thead class="bg-secondary">
                 <tr>
-                    <th class="table-heading">Project</th>
-                    <th class="table-heading">Task</th>
-                    <th>
+                    <th class="table-heading ps-3">Project</th>
+                    <th class="table-heading ps-3">Task</th>
+                    <th class="ps-3">
                         <div>
                             <p class="date-details">Mon, Jul17</p>
                             <select class="text-option-shift">
@@ -29,7 +29,7 @@
                             </select>
                         </div>
                     </th>
-                    <th>
+                    <th class="ps-3">
                         <div>
                             <p class="date-details">Tue, Jul18</p>
                             <select class="text-option-shift">
@@ -39,7 +39,7 @@
                             </select>
                         </div>
                     </th>
-                    <th>
+                    <th class="ps-3">
                         <div>
                             <p class="date-details">Wed, Jul19</p>
                             <select class="text-option-shift">
@@ -49,7 +49,7 @@
                             </select>
                         </div>
                     </th>
-                    <th>
+                    <th class="ps-3">
                         <div>
                             <p class="date-details">Thu, Jul20</p>
                             <select class="text-option-shift">
@@ -59,7 +59,7 @@
                             </select>
                         </div>
                     </th>
-                    <th>
+                    <th class="ps-3">
                         <div>
                             <p class="date-details">Fri, Jul21</p>
                             <select class="text-option-shift">
@@ -69,7 +69,7 @@
                             </select>
                         </div>
                     </th>
-                    <th>
+                    <th class="ps-3">
                         <div>
                             <p class="date-details">Sat, Jul22</p>
                             <select class="text-option-shift">
@@ -79,7 +79,7 @@
                             </select>
                         </div>
                     </th>
-                    <th>
+                    <th class="ps-3">
                         <div>
                             <p class="date-details">Sun, Jul23</p>
                             <select class="text-option-shift">
@@ -89,7 +89,7 @@
                             </select>
                         </div>
                     </th>
-                    <th class="table-heading">Total</th>
+                    <th class="table-heading ps-3">Total</th>
                 </tr>
             </thead>
             <tbody>
@@ -148,8 +148,23 @@
                     <td>0.00 <i class="bi bi-trash ps-3"></i></td>
                 </tr>
                 <tr>
-                    <td class="add-project text-primary">
-                        + Select Project
+                    <td class>
+                        <div class="btn-group pt-1">
+                            <button type="button" class="add-project btn btn-light bg-light text-primary"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                                +select project
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li style="padding: 5px; font-size: 15px;"><a class="dropdown-item text-secondary"
+                                        href="#">SMRT</a></li>
+                                <li style="padding: 5px; font-size: 15px;"><a class="dropdown-item text-secondary"
+                                        href="#">BuildNT</a></li>
+                                <li style="padding: 5px; font-size: 15px;"><a class="dropdown-item text-secondary"
+                                        href="#">Hitachi</a></li>
+                                <li style="padding: 5px; font-size: 15px;"><a class="dropdown-item" href="#">Acumen</a>
+                                </li>
+                            </ul>
+                        </div>
                     </td>
                     <td>
                         <input type="text" class="select-project">
@@ -191,15 +206,18 @@
                     <td class="project-list">0.00</td>
                     <td class="project-list">0.00</td>
                     <td class="project-list">0.00</td>
-                    <td>8.00 <i class="bi bi-trash ps-3"></i></td>
+                    <td>8.00 <i class="bi bi-trash text-dark ps-3"></i>
+
+                    </td>
                 </tr>
             </tbody>
         </table>
         <div class="d-flex justify-content-between my-4">
             <button type="button" class="btn btn-light border"><i class="bi bi-copy p-2"></i>Copy last week</button>
-            <button type="button" class="btn btn-primary">
+            <div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button submit-button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
                     Submit
                 </button>
                 <!-- Modal -->
@@ -211,7 +229,7 @@
                                 <i class="bi bi-check-circle-fill text-success fs-2 border-rounded"></i>
                             </div>
                             <div class="modal-body">
-                                <h5 class="text-dark">
+                                <h5 class="text-dark text-center">
                                     Submitted Successfully
                                 </h5>
                             </div>
@@ -221,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-            </button>
+            </div>
         </div>
         <div class="alterations mt-3">
             <p class="project-list">Recently Submitted</p>
@@ -249,117 +267,222 @@
                 <p class="approval-rate">8.00</p>
                 <p class="approval-details">Pre-sales</p>
             </div>
-            <div class="col my-2 btn-brimary">
+            <div class="col my-2 btn-brimary d-flex">
                 <button class="edit-icon">
                     <button type="button" class="btn btn-white text-dark" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop">
-                        <i class="bi bi-pen icon"></i>
+                        <i class="bi bi-pencil"></i>
                     </button>
                     <div class="modal fade mb-5 mt-5" id="staticBackdrop" data-bs-backdrop="static"
                         data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog  modal-fullscreen">
                             <div class="modal-content">
+                                <div class="modal-header m-0 p-3">
+                                    <h5 class="edit-ts">Edit TIME SHEET</h5>
+                                </div>
                                 <div class="modal-body">
-                                    <h6>MY TIME SHEET</h6>
-                                    <table>
-                                        <tr>
-                                            <td class="project-list">SMRT</td>
-                                            <td>
-                                                <select>
-                                                    <option value="1">Design</option>
-                                                    <option value="2">2nd Shift</option>
-                                                    <option value="3">1st Shift</option>
-                                                </select>
-                                            </td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td>3.00 <i class="bi bi-trash"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="project-list">BuildNT</td>
-                                            <td>
-                                                <select>
-                                                    <option value="1">Design</option>
-                                                    <option value="2">2nd Shift</option>
-                                                    <option value="3">1st Shift</option>
-                                                </select>
-                                            </td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td>0.00 <i class="bi bi-trash"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="project-list">Hitachi</td>
-                                            <td>
-                                                <select>
-                                                    <option value="1">Design</option>
-                                                    <option value="2">2nd Shift</option>
-                                                    <option value="3">1st Shift</option>
-                                                </select>
-                                            </td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td><input></td>
-                                            <td>0.00 <i class="bi bi-trash"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="add-project text-primary">
-                                                + Select Project
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="select-project">
-                                            </td>
-                                            <td>0.00<i class="bi bi-trash ps-1"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="project-list">Total</td>
-                                            <td class="project-list"></td>
-                                            <td class="project-list">
-                                                8.00 hrs
-                                            </td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td class="project-list">0.00</td>
-                                            <td>8.00 <i class="bi bi-trash"></i></td>
-                                        </tr>
+                                    <table class="table border">
+                                        <thead class="bg-secondary">
+                                            <tr>
+                                                <th class="table-heading ps-3">Project</th>
+                                                <th class="table-heading ps-3">Task</th>
+                                                <th class="ps-3">
+                                                    <div>
+                                                        <p class="date-details">Mon, Jul17</p>
+                                                        <select class="text-option-shift">
+                                                            <option value="option-values">1st Shift</option>
+                                                            <option value="option-values">2nd Shift</option>
+                                                            <option value="option-values">3rd Shift</option>
+                                                        </select>
+                                                    </div>
+                                                </th>
+                                                <th class="ps-3">
+                                                    <div>
+                                                        <p class="date-details">Tue, Jul18</p>
+                                                        <select class="text-option-shift">
+                                                            <option value="1">2nd Shift</option>
+                                                            <option value="2">1st Shift</option>
+                                                            <option value="3">3rd Shift</option>
+                                                        </select>
+                                                    </div>
+                                                </th>
+                                                <th class="ps-3">
+                                                    <div>
+                                                        <p class="date-details">Wed, Jul19</p>
+                                                        <select class="text-option-shift">
+                                                            <option value="1">3rd Shift</option>
+                                                            <option value="2">2nd Shift</option>
+                                                            <option value="3">1st Shift</option>
+                                                        </select>
+                                                    </div>
+                                                </th>
+                                                <th class="ps-3">
+                                                    <div>
+                                                        <p class="date-details">Thu, Jul20</p>
+                                                        <select class="text-option-shift">
+                                                            <option value="1">1st Shift</option>
+                                                            <option value="2">2nd Shift</option>
+                                                            <option value="3">3rd Shift</option>
+                                                        </select>
+                                                    </div>
+                                                </th>
+                                                <th class="ps-3">
+                                                    <div>
+                                                        <p class="date-details">Fri, Jul21</p>
+                                                        <select class="text-option-shift">
+                                                            <option value="1">General</option>
+                                                            <option value="2">General</option>
+                                                            <option value="3">General</option>
+                                                        </select>
+                                                    </div>
+                                                </th>
+                                                <th class="ps-3">
+                                                    <div>
+                                                        <p class="date-details">Sat, Jul22</p>
+                                                        <select class="text-option-shift">
+                                                            <option value="1">3rd Shift</option>
+                                                            <option value="2">2nd Shift</option>
+                                                            <option value="3">1st Shift</option>
+                                                        </select>
+                                                    </div>
+                                                </th>
+                                                <th class="ps-3">
+                                                    <div>
+                                                        <p class="date-details">Sun, Jul23</p>
+                                                        <select class="text-option-shift">
+                                                            <option value="1">3rd Shift</option>
+                                                            <option value="2">2nd Shift</option>
+                                                            <option value="3">1st Shift</option>
+                                                        </select>
+                                                    </div>
+                                                </th>
+                                                <th class="table-heading ps-3">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="project-list">SMRT</td>
+                                                <td>
+                                                    <select class="text-option">
+                                                        <option value="1">Design</option>
+                                                        <option value="2">2nd Shift</option>
+                                                        <option value="3">1st Shift</option>
+                                                    </select>
+                                                </td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td>3.00 <i class="bi bi-trash ps-3"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="project-list">BuildNT</td>
+                                                <td>
+                                                    <select class="text-option">
+                                                        <option value="1">Design</option>
+                                                        <option value="2">2nd Shift</option>
+                                                        <option value="3">1st Shift</option>
+                                                    </select>
+                                                </td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td>0.00 <i class="bi bi-trash ps-3"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="project-list">Hitachi</td>
+                                                <td>
+                                                    <select class="text-option">
+                                                        <option value="1">Design</option>
+                                                        <option value="2">2nd Shift</option>
+                                                        <option value="3">1st Shift</option>
+                                                    </select>
+                                                </td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td>0.00 <i class="bi bi-trash ps-3"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class>
+                                                    <div class="btn-group pt-1">
+                                                        <button type="button"
+                                                            class="add-project btn btn-light bg-light text-primary"
+                                                            data-bs-toggle="dropdown" aria-expanded="false"
+                                                            data-bs-reference="parent">
+                                                            +select project
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li style="padding: 5px; font-size: 15px;"><a
+                                                                    class="dropdown-item text-secondary"
+                                                                    href="#">SMRT</a></li>
+                                                            <li style="padding: 5px; font-size: 15px;"><a
+                                                                    class="dropdown-item text-secondary"
+                                                                    href="#">BuildNT</a></li>
+                                                            <li style="padding: 5px; font-size: 15px;"><a
+                                                                    class="dropdown-item text-secondary"
+                                                                    href="#">Hitachi</a></li>
+                                                            <li style="padding: 5px; font-size: 15px;"><a
+                                                                    class="dropdown-item" href="#">Acumen</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="select-project">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="select-project">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="select-project">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="select-project">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="select-project">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="select-project">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="select-project">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="select-project">
+                                                </td>
+
+                                                <td>0.00 <i class="bi bi-trash ps-3"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="project-list">Total</td>
+                                                <td class="project-list"></td>
+                                                <td class="project-list">
+                                                    8.00 hrs
+                                                </td>
+                                                <td class="project-list">0.00</td>
+                                                <td class="project-list">0.00</td>
+                                                <td class="project-list">0.00</td>
+                                                <td class="project-list">0.00</td>
+                                                <td class="project-list">0.00</td>
+                                                <td class="project-list">0.00</td>
+                                                <td>8.00 <i class="bi bi-trash text-dark ps-3"></i>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
                                     </table>
                                     <div class="mb-5">
                                         <button type="button" class="btn btn-secondary"
@@ -371,7 +494,31 @@
                         </div>
                     </div>
                 </button>
-                <button class="edit-icon py-4"><i class="bi bi-trash icon"></i></button>
+
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-light bg-light border-light" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+    <i class="bi bi-trash icon"></i>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Reason for Deleted</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aliquid atque placeat. A incidunt iure magni nulla, dolore soluta corrupti aliquam eum asperiores. Velit, cumque.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn border-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
             </div>
 
         </div>
@@ -396,15 +543,6 @@
                 <p class="approval-rate">8.00</p>
                 <p class="approval-details">Pre-sales</p>
             </div>
-            <div class="col my-2 btn-brimary">
-                <button class="edit-icon">
-                    <button type="button" class="btn btn-white text-dark" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        <i class="bi bi-pen icon"></i>
-                    </button>
-                </button>
-                <button class="edit-icon py-4"><i class="bi bi-trash icon"></i></button>
-            </div>
         </div>
         <div class="row m-0 p-2 box-three border rounded ">
             <div class="col-4">
@@ -428,13 +566,8 @@
                 <p class="approval-details">Pre-sales</p>
             </div>
             <div class="col my-2 btn-brimary">
-                <button class="edit-icon">
-                    <button type="button" class="btn btn-white text-dark" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        <i class="bi bi-pen icon"></i>
-                    </button>
-                </button>
-                <button class="edit-icon py-4"><i class="bi bi-trash icon"></i></button>
+                <button class="edit-icon"><i class="bi bi-pencil"></i></button>
+                <button class="edit-icon py-4 ps-4"><i class="bi bi-trash icon"></i></button>
             </div>
         </div>
     </div>
