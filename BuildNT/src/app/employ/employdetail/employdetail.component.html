@@ -2,10 +2,12 @@
     <div class="d-flex justify-content-between my-3 ms-3">
         <div>
             <h4 class="client mb-0">Employee Details</h4>
-            <nav>
-                <a routerLink="/employ" class="text-decoration-none font-14 text-black mb-2">Employee List /Employee
-                    Details</a>
-            </nav>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a class="text-decoration-none  text-secondary" href="./employ">Employee List</a></li>
+                  <li class="breadcrumb-item active text-black" aria-current="page">Employee Details</li>
+                </ol>
+              </nav>
         </div>
         <div>
             <button routerLink="./editemploy" type="button" class="btn mt-2 btn-outline-secondary"><i
