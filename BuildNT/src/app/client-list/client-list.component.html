@@ -5,22 +5,18 @@
         <h5>My Clients List</h5>
       </div>
       <!-- search tab -->
-         <nav class="navbar navbar-light">
-      <form class="form-inline">
-        <div class="search-box">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"/>
-          <i class="bi bi-search"></i>
-        </div>
-      </form>
-    </nav>
+      <nav class="navbar navbar-light">
+        <form class="form-inline">
+          <div class="search-box">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <i class="bi bi-search"></i>
+          </div>
+        </form>
+      </nav>
     </div>
     <table class="font-18">
-    <thead >
-        <tr >
+      <thead>
+        <tr>
           <th class="font-18 p-3">Client ID</th>
           <th class="font-18 p-3">Client Name</th>
           <th class="font-18 p-3">Email ID</th>
@@ -29,7 +25,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr  *ngFor="let client of clients" [routerLink]="['./', client.path]">
+        <tr *ngFor="let client of clients" [routerLink]="['./', client.path]">
           <td class="p-3">{{ client.id }}</td>
           <td>{{ client.clientName }}</td>
           <td>{{ client.email }}</td>
@@ -40,9 +36,7 @@
     </table>
   </div>
   <div class="create-button">
-    <a class="btn btn-primary fw-bold" routerLink="/create-client" role="button"
-      ><i class="bi bi-plus-lg fs-5"></i></a
-    >
+    <a class="btn btn-primary fw-bold" routerLink="/create-client" role="button"><i class="bi bi-plus-lg fs-5"></i></a>
   </div>
 </div>
 <router-outlet></router-outlet>

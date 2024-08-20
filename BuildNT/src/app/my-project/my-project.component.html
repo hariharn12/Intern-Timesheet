@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-6 p-4">
-            <h3 class="header">MyProjects</h3>
+            <h3 class="header">My Projects</h3>
         </div>
         <div class="col-6 d-flex justify-content-end">
             <div class="wrapper">
@@ -19,18 +19,18 @@
     <div class="row">
         <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
             <a><mat-tab label="Current Project">
-                <app-currentproject></app-currentproject>
-            </mat-tab></a>
+                    <app-currentproject routerLink="./projectdetail"></app-currentproject>
+                </mat-tab></a>
             <a><mat-tab label="Upcoming Project">
-                <app-upcomingproject></app-upcomingproject>
-            </mat-tab></a>
+                    <app-upcomingproject></app-upcomingproject>
+                </mat-tab></a>
             <a routerLink="Complete Project"><mat-tab label="Completed Project">
-                <app-completeproject></app-completeproject>
-            </mat-tab></a>
+                    <app-completeproject></app-completeproject>
+                </mat-tab></a>
         </mat-tab-group>
     </div>
 </div>
 <div class="add">
     <a class="btn btn-primary fw-bold" routerLink="createproject" role="button"><i class="bi bi-plus-lg"></i></a>
-  </div>
-    <router-outlet></router-outlet>
+</div>
+<router-outlet></router-outlet>

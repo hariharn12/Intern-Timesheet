@@ -2,17 +2,21 @@ a {
   text-decoration: none;
   color: #1c1b1f;
 }
+
 .upload-button:hover {
   background-color: unset;
   color: unset;
 }
+
 .bg-secondary {
   background-color: #f4f4f4 !important;
 }
+
 .add-button {
   background-color: #ff8000;
   color: #f4f4f4;
 }
+
 .sumit-btn {
   position: absolute;
   bottom: 0px;
@@ -22,6 +26,7 @@ a {
   width: 100%;
   padding-right: 16px;
 }
+
 .client {
   font-size: 28px;
   font-weight: 500;
@@ -34,18 +39,18 @@ a {
   line-height: 17.57px;
 }
 .font-control {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .card-font {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .card-color {
-background-color:#F4F4F4;
-border: 1px solid #D9D9D957
+  background-color: #F4F4F4;
+  border: 1px solid #D9D9D957
 }
-  
+
 h4 {
   font-family: Mulish;
   font-size: 14px;
@@ -62,6 +67,7 @@ h5 {
   line-height: 17.57px;
   text-align: left;
 }
+
 .detail {
   background-color: #f3f3f3;
   border-radius: 5px;

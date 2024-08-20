@@ -6,11 +6,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .font-18{
+   font: Mulish;
     font-size: 18px;
     font-family: Mulish;
     font-weight: 500;
     line-height: 22.59px;
     border-radius: 5px; 
+    color: #7B7B7B;
 }
 .font-16{
     font-size: 16px;
