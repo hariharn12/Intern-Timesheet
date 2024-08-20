@@ -101,7 +101,14 @@ h5 {
   line-height: 17.57px;
   text-align: left;
 }
-
+.button-clr {
+  background-color: unset;
+  color: #344054;
+}
+.button-clr:hover {
+  background-color: unset;
+  color: #344054;
+}
 .detail {
   background-color: #f3f3f3;
   border-radius: 5px;

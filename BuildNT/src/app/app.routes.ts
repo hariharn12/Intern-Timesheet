@@ -98,7 +98,7 @@ export const routes: Routes = [
       },
 
       {
-        path: 'clientList/smrt-details',
+        path: 'clientList/smrt-details/:id',
         component: SmrtComponent,
       },
       {
