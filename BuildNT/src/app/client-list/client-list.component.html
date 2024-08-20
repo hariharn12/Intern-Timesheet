@@ -25,7 +25,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let client of clients" [routerLink]="['./', client.path]">
+        <tr *ngFor="let client of clients" [routerLink]="['./', client.path,client.id]">
           <td class="p-3">{{ client.id }}</td>
           <td>{{ client.clientName }}</td>
           <td>{{ client.email }}</td>
