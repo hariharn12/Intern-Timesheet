@@ -6,8 +6,10 @@
     position: fixed;
     bottom: 50px;
     right: 10px;
-} 
-td,th{
+}
+
+td,
+th {
     padding-top: 20px;
 }
 
@@ -15,6 +17,12 @@ td,th{
     background: #F4F4F4;
 }
 
-th{
-   color: #7B7B7B;
+th {
+    background: #F4F4F4;
+    color: #7B7B7B;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 500;
 }

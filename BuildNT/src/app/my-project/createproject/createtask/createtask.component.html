@@ -6,7 +6,7 @@
         </div>
         <div class="col-3">
             <label for="exampleFormControlInput1" class="form-label font-control">No. of Hours for This Task</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="40 hrs">
+            <input type="text" class="form-control input-form" id="exampleFormControlInput1" placeholder="40 hrs">
         </div>
         <div class="col-2">
             <label for="exampleFormControlInput1" class="form-label font-control">Start Date</label>
@@ -23,7 +23,6 @@
             <div class="input-group bg-white border rounded">
                 <input matInput [matDatepicker]="picker" placeholder="20/07/2023" id="joining"
                     class="form-control border-0">
-                <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
                 <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
             </div>
@@ -38,7 +37,7 @@
             </select>
         </div>
         <div class="col-1 pt-4">
-            <button type="button" class="btn btn-warning font-control">+ Add</button>
+            <button type="button" class="btn button-color font-control">+ Add</button>
         </div>
     </div>
     <div class="row pt-3">

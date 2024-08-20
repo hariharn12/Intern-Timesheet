@@ -1,5 +1,10 @@
 .add {
     position: absolute;
     bottom: 5%;
-    right:2%
+    right: 2%
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 500;
 }

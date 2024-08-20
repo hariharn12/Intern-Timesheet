@@ -19,6 +19,9 @@ import { ReportsComponent } from './reports/reports.component';
 import { CreatetaskComponent } from './my-project/createproject/createtask/createtask.component';
 import { AssignTeamsComponent } from './my-project/createproject/assign-teams/assign-teams.component';
 import { EditempolyComponent } from './employ/editempoly/editempoly.component';
+import { CreatePageComponent } from './smrt1/create-page/create-page.component';
+import { ApprovelComponent } from './approvel/approvel.component';
+import { ProjectdetailComponent } from './my-project/projectdetail/projectdetail.component';
 import { PopupComponent } from './popup/popup.component';
 
 export const routes: Routes = [
@@ -52,22 +55,30 @@ export const routes: Routes = [
             component: UpcomingprojectComponent,
           },
           {
-            path:'completedproject',
+            path: 'completedproject',
             component: CompleteprojectComponent,
           },
         ],
       },
       {
-        path:'myproject/createproject',
-        component:CreateprojectComponent,
+        path: 'myproject/createproject',
+        component: CreateprojectComponent,
       },
       {
-        path:'createtask',
-        component:CreatetaskComponent,
+        path: 'myproject/projectdetail/createproject',
+        component: CreateprojectComponent,
       },
       {
-        path:'AssignTeams',
-        component:AssignTeamsComponent,
+        path: 'myproject/projectdetail',
+        component: ProjectdetailComponent
+      },
+      {
+        path: 'createtask',
+        component: CreatetaskComponent,
+      },
+      {
+        path: 'AssignTeams',
+        component: AssignTeamsComponent,
       },
       {
         path: 'employ',
@@ -78,16 +89,16 @@ export const routes: Routes = [
         component: CreateemployComponent,
       },
       {
-        path:'employ/detail',
-        component:EmploydetailComponent,
+        path: 'employ/detail',
+        component: EmploydetailComponent,
       },
       {
-        path:'employ/detail/editemploy',
-        component:EditempolyComponent,
+        path: 'employ/detail/editemploy',
+        component: EditempolyComponent,
       },
 
       {
-        path: 'clientList/smrt-details',
+        path: 'clientList/smrt-details/:id',
         component: SmrtComponent,
       },
       {
@@ -95,12 +106,20 @@ export const routes: Routes = [
         component: MyTimesheetComponent,
       },
       {
-        path: 'smrt-edit',
+        path: 'client-edit',
         component: SmrtEditComponent,
       },
       {
-        path:'reports',
-        component: ReportsComponent
+        path: 'approval',
+        component: ApprovelComponent,
+      },
+      {
+        path: 'reports',
+        component: ReportsComponent,
+      },
+      {
+        path: 'create-client',
+        component: CreatePageComponent,
       },
       {
         path: 'popup',

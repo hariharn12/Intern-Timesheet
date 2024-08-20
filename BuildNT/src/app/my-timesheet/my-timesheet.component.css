@@ -198,7 +198,20 @@ height: 80vh;
 .icon {
     width: 18px;
     height: 18px;
+
 }
+
+.edit {
+    width: 1210px;
+    height: 529px;
+    top: 248px;
+    left: 115px;
+    gap: 0px;
+    border-radius: 8px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
 .submit-button {
     width: Hug (94px)px;
 height: Hug (47px)px;

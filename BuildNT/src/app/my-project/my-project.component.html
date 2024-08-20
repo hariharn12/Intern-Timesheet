@@ -1,11 +1,11 @@
 <div class="container">
     <div class="row">
-        <div class="col-6">
-            <h3 class="fs-2 pt-3">My Projects</h3>
+        <div class="col-6 p-4">
+            <h3 class="header">My Projects</h3>
         </div>
         <div class="col-6 d-flex justify-content-end">
             <div class="wrapper">
-                <div class="input-group bg-white border rounded mt-3">
+                <div class="input-group bg-white border rounded mt-4">
                     <input class="form-control border-0" type="text" placeholder="search" id="example-search-input">
                     <span class="input-group-append">
                         <button class="btn btn-outline-secondary bg-white border-0 rounded-pill ms-n3" type="button">
@@ -19,18 +19,18 @@
     <div class="row">
         <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
             <a><mat-tab label="Current Project">
-                <app-currentproject></app-currentproject>
-            </mat-tab></a>
+                    <app-currentproject routerLink="./projectdetail"></app-currentproject>
+                </mat-tab></a>
             <a><mat-tab label="Upcoming Project">
-                <app-upcomingproject></app-upcomingproject>
-            </mat-tab></a>
+                    <app-upcomingproject></app-upcomingproject>
+                </mat-tab></a>
             <a routerLink="Complete Project"><mat-tab label="Completed Project">
-                <app-completeproject></app-completeproject>
-            </mat-tab></a>
+                    <app-completeproject></app-completeproject>
+                </mat-tab></a>
         </mat-tab-group>
     </div>
 </div>
 <div class="add">
-    <a class="btn btn-primary fw-bold" routerLink="createproject" role="button">+</a>
-  </div>
-    <router-outlet></router-outlet>
+    <a class="btn btn-primary fw-bold" routerLink="createproject" role="button"><i class="bi bi-plus-lg"></i></a>
+</div>
+<router-outlet></router-outlet>

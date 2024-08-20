@@ -1,7 +1,8 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
 .compy-logo {
     width: 362px;
     height: 72px;
@@ -11,6 +12,6 @@
     opacity: 0px;
 }
 
-/* .offcanvas-body { */
-    /* width: 20%; */
-/* } */
+hr {
+    color: #F2F4F7;
+}

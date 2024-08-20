@@ -2,11 +2,17 @@ option {
     color: #878686;
 }
 
-.hour-allocation{
+.hour-allocation {
     width: 259.96px;
     height: 222px;
     top: 155px;
     left: 245px;
     gap: 0px;
-    opacity: 0px;    
+    opacity: 0px;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33.89px;
 }

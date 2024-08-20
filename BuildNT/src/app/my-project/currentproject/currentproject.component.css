@@ -4,7 +4,14 @@
 }
 
 .badge-danger {
-    color:#FFB406;
-    background-color:#FFB4061F;
+    color: #FFB406;
+    background-color: #FFB4061F;
 }
 
+.progress-bar {
+    height: 22px;
+}
+
+.card-font {
+    font-size: 14px;
+}

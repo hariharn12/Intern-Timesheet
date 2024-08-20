@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SharedDataService } from '../shared-data.service';
 
 interface Client {
   id: string;
@@ -9,7 +10,7 @@ interface Client {
   email: string;
   project: string;
   onboardDate: string;
-  path:string;
+  path: string;
 }
 
 @Component({
@@ -20,38 +21,11 @@ interface Client {
   styleUrls: ['./client-list.component.css'], // Ensure this is styleUrls, not styleUrl
 })
 export class ClientListComponent {
-  clients: Client[] = [
-    {
-      id: 'C0001',
-      clientName: 'SMRT',
-      email: 'support@gmail.com',
-      project: '02',
-      onboardDate: '12/07/2023',
-      path: 'smrt-details',
-    },
-    {
-      id: 'C0002',
-      clientName: 'Hitachi',
-      email: 'support@hithi.com',
-      project: '04',
-      onboardDate: '02/05/2023',
-      path: 'smrt-details',
-    },
-    {
-      id: 'C0003',
-      clientName: 'BuildNT',
-      email: 'support@buildnt.com',
-      project: '04',
-      onboardDate: '22/09/2023',
-      path: 'smrt-details',
-    },
-    {
-      id: 'C0004',
-      clientName: 'Gaura',
-      email: 'support@gaura.com',
-      project: '02',
-      onboardDate: '05/12/2023',
-      path: 'smrt-details',
-    },
-  ];
+  clients: Client[] = [];
+  constructor(private newsharedDataService: SharedDataService) { 
+  }
+  ngOnInit() {
+    this.clients = this.newsharedDataService.getData();
+  }
+  
 }

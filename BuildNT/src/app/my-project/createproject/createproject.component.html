@@ -1,9 +1,14 @@
-<div class="container">
-    <div class="row">
-        <h4 class="pt-2">Create Project</h4>
-        <p class="text-secondary font-control mt-0">My Projects/Create Project</p>
+<div class="container my-2">
+    <div class="row ms-2">
+        <h4 class="pt-2 mb-0">Create Project</h4>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a class="text-decoration-none  text-secondary" href="./myproject">My Projects</a></li>
+              <li class="breadcrumb-item active text-black" aria-current="page">Create Project</li>
+            </ol>
+          </nav>
     </div>
-    <div class="row">
+    <div class="row ms-2">
         <div class="col-3">
             <div class="mb-2">
                 <label for="exampleFormControlInput1" class="form-label">Select Client</label>
@@ -38,7 +43,6 @@
                     <div class="input-group bg-white border rounded">
                         <input matInput [matDatepicker]="picker" placeholder="12/07/2023" id="joining"
                             class="form-control border-0">
-                        <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
                         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                         <mat-datepicker #picker></mat-datepicker>
                     </div>
@@ -59,7 +63,6 @@
                 <div class="input-group bg-white border rounded">
                     <input matInput [matDatepicker]="pickers" placeholder="12/07/2023" id="joining"
                         class="form-control border-0">
-                    <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
                     <mat-datepicker-toggle matIconSuffix [for]="pickers"></mat-datepicker-toggle>
                     <mat-datepicker #pickers></mat-datepicker>
                 </div>
@@ -81,7 +84,7 @@
             </div>
         </div>
     </div>
-    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="ms-2">
         <mat-tab label="Create Task">
             <app-createtask></app-createtask>
         </mat-tab>
@@ -90,7 +93,19 @@
         </mat-tab>
     </mat-tab-group>
     <div class="add">
-        <button type="button" class="btn btn-primary font-control">Create Project</button>
+        <button type="button" class="btn btn-primary" data-bs-target="#exampleModal1" data-bs-toggle="modal">Create
+            Project</button>
+        <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog modal-dialog-centered">
+                <div class="modal-content container p-3">
+                    <img src="assets/images/approval.png" alt="" class="approval mx-auto my-4">
+                    <h1 class="approval-text mx-auto my-3">Project created successfully</h1>
+                    <button type="button" class="btn btn-primary mx-auto my-2" aria-label="Close"
+                        data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <router-outlet></router-outlet>

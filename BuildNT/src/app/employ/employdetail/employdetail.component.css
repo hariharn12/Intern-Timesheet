@@ -1,15 +1,31 @@
 .bg-card {
-   background-color:  #D9D9D957 !important;
+    background-color: #D9D9D957 !important;
 }
 
-.bg-danger{
-    background-color: #EF626214  !important;
+.bg-danger {
+    background-color: #EF626214 !important;
 }
 
-.bg-success{
+.bg-success {
     background-color: #ECF9F2 !important;
 }
 
 .bg-info {
     background-color: #1755E714 !important;
+}
+
+.client {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.border-height {
+    height: 100px;
+}
+
+.card {
+    width: 373px;
+    height: 100px;
+    gap: 0px;
+    opacity: 0px;
 }

@@ -1,61 +1,62 @@
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-6 d-lg-inline col-md-6 d-md-inline col-12 d-none">
-            <img class="banner-img" src="\assets\images\login-background.png">
-        </div>
-        <div class="col-lg-6 d-lg-inline col-md-6 d-md-inline col-12 d-inline">
-            <div class="row">
-                <div class="col-6">
-                    <img class="ps-2 pt-1" src="\assets\images\logo.png">
-                </div>
-                <div class="col-6">
-                    <div class="d-flex justify-content-end text-secondary pt-lg-3 pe-2">
-                        <i class="bi bi-info fs-lg-5"></i> Need help?
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center pt-5">
-                    <h6 class="fs-lg-5">Welcome Back Again!</h6>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <h6 class="fs-lg-5">Track Your Working Hours</h6>
-                </div>
-                <form class="ps-5 pe-5">
-                    <h5 class="fs-lg-3">Login</h5>
-                    <div class="mb-1">
-                        <label for="exampleInputEmail1" class="form-label">
-                            <h6 class="form-text text-dark">Email address</h6>
-                        </label>
-                        <input type="email" class="form-control p-3" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="tushar@builint.com">
-                    </div>
-                    <div class="">
-                        <label for="exampleInputPassword1" class="form-label">
-                            <h6 class="form-text text-dark">Password</h6>
-                        </label>
-                        <input type="password" class="form-control p-3" id="exampleInputPassword1"
-                            placeholder="**********">
-                    </div>
-                    <div class="mb-3 form-check pt-4 ps-4 d-flex justify-content-between">
-                        <div>
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Remainder</label>
-                    </div>
-                        <div class="d-flex">
-                            <a href="#" class="">Forgot Password?</a>
-                        </div>
-                      </div>
-                    <a routerLink="/dashboard">
-                        <div class="d-grid gap-2 mx-auto my-5">
-                            <button class="btn btn-primary my-5" type="button">
-                                <h6>Login</h6>
-                            </button>
-                        </div>
-                    </a>
-                </form>
-                <div class="d-flex justify-content-end mt-5 pe-3 footer">
-                    <p>Copyright 2023. All rights Reserved</p>
-                </div>
-            </div>
-        </div>
+  <div class="row">
+    <div class="col-lg-7 pe-4 d-lg-inline col-md-6 d-md-inline col-12 d-none">
+      <img class="banner-img" src="\assets\images\login-background.png" />
     </div>
+    <div class="col-lg-5 col-md-6 col-12  d-lg-inline pt-4  d-md-inline d-inline">
+      <div class="row">
+        <div class="col-6">
+          <img class="img-fluid" src="\assets\images\logo.png" />
+        </div>
+        <div class="col-6">
+          <div class="d-flex justify-content-end text-secondary pt-lg-3 pe-4">
+            <i class="bi bi-info fs-5"></i> Need help?
+          </div>
+        </div>
+        <div class="d-flex justify-content-center pt-5">
+          <h6 class="fs-lg-5 header1">Welcome Back Again!</h6>
+        </div>
+        <div class="d-flex justify-content-center">
+          <h6 class="fs-5 header2">Track Your Working Hours</h6>
+        </div>
+        <form class="ps-5 pe-5 pt-5">
+          <h5 class="fs-lg-3 login">Login</h5>
+          <div class="mb-1 mt-3">
+            <label for="exampleInputEmail1" class="form-label">
+              <h6 class="form-text text-dark">Email address</h6>
+            </label>
+            <input type="email" class="form-control p-3" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="tushar@builint.com" />
+          </div>
+          <div class="mt-3">
+            <label for="exampleInputPassword1" class="form-label">
+              <h6 class="form-text text-dark">Password</h6>
+            </label>
+            <input type="password" class="form-control p-3" id="exampleInputPassword1" placeholder="**********" />
+          </div>
+          <div class="mb-3 form-check pt-4 ps-4 d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <div>
+                <input type="checkbox" class="form-check-input" id="flexCheckChecked" checked />
+              </div>
+              <div>
+                <label class="form-check-label text-primary" for="exampleCheck1">Reminder</label>
+              </div>
+            </div>
+            <div class="d-flex">
+              <a href="#" class="">Forgot Password?</a>
+            </div>
+          </div>
+          <div class="d-grid mx-auto pt-5" routerLink="/dashboard">
+            <button class="btn btn-primary p-2 btn-lg" type="button">
+              Login
+            </button>
+          </div>
+        </form>
+        <div class="d-flex justify-content-end mt-5 pe-3 footer text-secondary">
+          <p>Copyright 2023. All rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

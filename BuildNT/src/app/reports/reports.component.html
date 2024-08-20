@@ -1,20 +1,13 @@
 <div class="container">
   <div class="d-flex justify-content-between">
-    <div>
-      <h5>
-        <strong> Reports </strong>
-      </h5>
+    <div class="pt-4 ps-3">
+      <h5>Reports</h5>
     </div>
     <!-- search tab -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light">
       <form class="form-inline">
         <div class="search-box">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
           <i class="bi bi-search"></i>
         </div>
       </form>
@@ -24,102 +17,67 @@
     <!-- start date -->
     <div class="col ">
       <div class="input-group bg-white border rounded">
-        <input
-          matInput
-          [matDatepicker]="picker"
-          placeholder="Start Date"
-          id="joining"
-          class="form-control border-0"
-        />
-        <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
-        <mat-datepicker-toggle
-          matIconSuffix
-          [for]="picker"
-        ></mat-datepicker-toggle>
+        <input matInput [matDatepicker]="picker" placeholder="Start Date" id="joining" class="form-control border-0" />
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </div>
     </div>
     <!-- end date -->
     <div class="col">
       <div class="input-group bg-white border rounded">
-        <input
-          matInput
-          [matDatepicker]="picker1"
-          placeholder="End Date"
-          id="last"
-          class="form-control border-0"
-        />
-        <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
-        <mat-datepicker-toggle
-          matIconSuffix
-          [for]="picker1"
-        ></mat-datepicker-toggle>
+        <input matInput [matDatepicker]="picker1" placeholder="End Date" id="last" class="form-control border-0" />
+        <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
         <mat-datepicker #picker1></mat-datepicker>
       </div>
     </div>
     <!-- project -->
     <div class="col ">
       <div class="btn-group" role="group">
-        <button
-          type="button"
-          class="btn btn-outline-secondary button-color dropdown-toggle"
-          data-bs-toggle="dropdown"
+        <button type="button" class="btn btn-outline-secondary button-color dropdown-toggle" data-bs-toggle="dropdown"
           aria-expanded="false">
-          Select  Project
+          Select Project
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" routerLink="/clientList/smrt-details">SMRT</a></li>
-          <li><a class="dropdown-item" routerLink="/clientList/smrt-details">Hitachi</a></li>
-          <li><a class="dropdown-item" routerLink="/clientList/smrt-details">TATA</a></li>
-          <li><a class="dropdown-item" routerLink="/clientList/smrt-details">BuildNT</a></li>
+          <li class="dropdown-item">SMRT</li>
+          <li class="dropdown-item">Hitachi</li>
+          <li class="dropdown-item">TATA</li>
+          <li class="dropdown-item">BuildNT</li>
         </ul>
       </div>
     </div>
     <!-- task -->
     <div class="col">
       <div class="btn-group" role="group">
-        <button
-          type="button"
-          class="btn btn-outline-secondary button-color dropdown-toggle"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >Select Task
+        <button type="button" class="btn btn-outline-secondary button-color dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false">Select Task
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Design</a></li>
-          <li><a class="dropdown-item" href="#">Developing</a></li>
-          <li><a class="dropdown-item" href="#">Testing</a></li>
-          <li><a class="dropdown-item" href="#">Bigdata</a></li>
+          <li class="dropdown-item">Design</li>
+          <li class="dropdown-item">Developing</li>
+          <li class="dropdown-item">Testing</li>
+          <li class="dropdown-item">Bigdata</li>
         </ul>
       </div>
     </div>
     <!-- employee -->
     <div class="col">
       <div class="btn-group" role="group">
-        <button
-          type="button"
-          class="btn btn-outline-secondary button-color dropdown-toggle"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >Select Employee
+        <button type="button" class="btn btn-outline-secondary button-color dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false">Select Employee
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Arun</a></li>
-          <li><a class="dropdown-item" href="#">Kavi</a></li>
-          <li><a class="dropdown-item" href="#">Murugan</a></li>
-          <li><a class="dropdown-item" href="#">Ganesh</a></li>
+          <li class="dropdown-item">Arun</li>
+          <li class="dropdown-item">Kavi</li>
+          <li class="dropdown-item">Murugan</li>
+          <li class="dropdown-item">Ganesh</li>
         </ul>
       </div>
     </div>
     <!-- download -->
     <div class="col">
-         <div class="btn-group" role="group">
-        <button
-          type="button"
-          class="btn btn-primary  dropdown-toggle"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        ><i class="bi bi-download px-2"></i> Download
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary  dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false"><i class="bi bi-download px-2"></i> Download
         </button>
       </div>
     </div>

@@ -1,0 +1,66 @@
+.header {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33.89px;
+    text-align: left;
+}
+
+.pagelink {
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.57px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: left;
+
+}
+
+.detail {
+    background-color: #F3F3F3;
+    width: 100%;
+    height: 80px;
+    top: 166px;
+    left: 245px;
+    gap: 0px;
+    border-radius: 4px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.topic {
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.57px;
+    text-align: left;
+    color: #707070;
+}
+
+.name {
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.57px;
+    text-align: left;
+}
+
+.progress {
+    height: 5px !important;
+    width: 230px;
+}
+
+.progressbar {
+    font-family: Mulish;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12.55px;
+    text-align: left;
+
+}
+
+.add {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
