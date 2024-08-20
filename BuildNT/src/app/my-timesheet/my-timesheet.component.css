@@ -24,6 +24,7 @@ select {
 }
 
 .table-heading {
+    padding-left: 5px;
     font-size: 14px;
     font-weight: 600;
     line-height: 16.94px;
@@ -72,6 +73,8 @@ select {
 }
 
 .add-project {
+    margin-left: 0%;
+    border: none;
     font-size: 12px;
     font-weight: 500;
     line-height: 14.52px;
@@ -152,7 +155,6 @@ border: 1px solid #878686;
 .box-three {
     border-left: 4px solid #f25d3f !important;
 }
-
 .approval-rate {
     font-size: 18px;
     font-weight: 500;
@@ -187,6 +189,11 @@ border: 1px solid #878686;
     padding: 0;
     cursor: pointer;
 }
+.modal {
+    margin-left: 35px;
+width: 95vw;
+height: 80vh;
+}
 
 .icon {
     width: 18px;
@@ -203,4 +210,22 @@ border: 1px solid #878686;
     border-radius: 8px 0px 0px 0px;
     opacity: 0px;
 
+}
+
+.submit-button {
+    width: Hug (94px)px;
+height: Hug (47px)px;
+top: 532px;
+left: 1321px;
+padding: 14px 20px 14px 20px;
+gap: 10px;
+border-radius: 5px 0px 0px 0px;
+opacity: 0px;
+
+}
+/* .edit-table-head {
+padding-top: 25px;
+} */
+.edit-ts {
+    padding-left: 30px;
 }
