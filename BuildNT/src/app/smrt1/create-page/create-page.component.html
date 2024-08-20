@@ -1,10 +1,10 @@
 <div class="container pt-3">
-  <div class="d-flex justify-content-between">
+  <div class="d-flex m-2 justify-content-between">
     <div>
-      <h4 class="client pt-4 mb-3">Create Client</h4>
+      <h4 class="client pt-4 mb-2">Create Client</h4>
       <nav>
-        <a routerLink="/clientList">ClientList</a>
-        <a class="px-2">/Create Client</a>
+        <a class="clientlist-clr" routerLink="/clientList">ClientList</a>
+        <a class="px-2 font-14">/Create Client</a>
       </nav>
     </div>
   </div>
@@ -41,10 +41,10 @@
         <label for="web-address" class="form-label">Web Address</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="xyz.com" />
       </div>
-      <div class="mb-3 col">
+      <div class="mb-3 pt-2 col">
         <div class="d-flex justify-content-between">
           <label for="Address" class="form-label">Address</label>
-          <div class="form-check">
+          <div class="form-check font-color-14">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
             <label class="form-check-label" for="flexCheckChecked">
               Same Address For Billing Address
@@ -78,7 +78,7 @@
           <label for="contactEmail" class="form-label">Email Id</label>
           <input type="email" class="form-control" [(ngModel)]="newEmail" id="contactEmail" />
         </div>
-        <div class="col align-items-center justify-content-end d-flex">
+        <div class="col-1 align-items-center justify-content-end pt-3 d-flex">
           <button type="button" class="btn add-button" (click)="addContact()">
             <i class="bi bi-plus"></i>
             {{ editingIndex !== null ? "Update" : "Add" }}
@@ -88,21 +88,34 @@
     </div>
     <!-- contact details -->
        <div class="detail mt-4 p-2">
-      <div class="row d-flex text-center" *ngFor="let contact of contacts; let i = index">
+        <!-- head -->
+         <div class="row d-flex text-center">
         <div class="col m-auto mx-2">
           <h4>Contact Person</h4>
-          <h5>{{ contact.contactPerson }}</h5>
         </div>
         <div class="col m-auto">
           <h4>Phone Number</h4>
-          <h5>{{ contact.position }}</h5>
         </div>
         <div class="col m-auto">
           <h4>Phone Number</h4>
-          <h5>{{ contact.phoneNumber }}</h5>
         </div>
         <div class="col m-auto">
           <h4>Email Id</h4>
+        </div>
+        <div class="col m-auto">
+        </div>
+      </div>
+      <div class="row d-flex text-center" *ngFor="let contact of contacts; let i = index">
+        <div class="col m-auto mx-2">
+          <h5>{{ contact.contactPerson }}</h5>
+        </div>
+        <div class="col m-auto">
+          <h5>{{ contact.position }}</h5>
+        </div>
+        <div class="col m-auto">
+          <h5>{{ contact.phoneNumber }}</h5>
+        </div>
+        <div class="col m-auto">
           <h5>{{ contact.email }}</h5>
         </div>
         <div class="col m-auto"> <button
@@ -112,11 +125,12 @@
 
               <i class="bi bi-pencil"></i>
             </button>
-            <button class="btn btn-outreline-danger btn-sm" data-bs-target="#exampleModal3" data-bs-toggle="modal">
+            <button class="btn btn-outreline-danger btn-sm" (click)="deleteContact(i)" data-bs-target="#exampleModal3" data-bs-toggle="modal">
               <i class="bi bi-trash"></i>
             </button></div>
       </div>
     </div>
+    <!-- create button -->
   <div class="sumit-btn">
     <button type="button" class="btn btn-primary btn-lg" data-bs-target="#exampleModal2" data-bs-toggle="modal">Create
       client</button>
@@ -126,7 +140,7 @@
     <div class="modal-content container p-3">
       <img src="assets/images/approval.png" alt="" class="approval mx-auto my-4">
       <h1 class="approvel mx-auto my-3">Project created successfully</h1>
-      <button type="button" class="btn btn-primary mx-auto my-2" aria-label="Close" data-bs-dismiss="modal">OK</button>
+      <button type="button" routerLink="/clientList/smrt-details" class="btn btn-primary mx-auto my-2" aria-label="Close" data-bs-dismiss="modal">OK</button>
     </div>
   </div>
 </div>
