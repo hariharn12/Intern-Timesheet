@@ -119,13 +119,12 @@
         <div class="row pt-4">
             <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
                 <a><mat-tab label="Current Project">
-                        <app-currentproject></app-currentproject>
+                        <app-currentproject routerLink="/myproject/projectdetail"></app-currentproject>
                     </mat-tab></a>
                 <a><mat-tab label="Timesheet">
                         <app-timesheet></app-timesheet>
                     </mat-tab></a>
             </mat-tab-group>
         </div>
-
     </div>
     <router-outlet></router-outlet>

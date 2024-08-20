@@ -7,12 +7,7 @@
     <nav class="navbar navbar-light">
       <form class="form-inline">
         <div class="search-box">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
           <i class="bi bi-search"></i>
         </div>
       </form>
@@ -22,48 +17,25 @@
     <!-- start date -->
     <div class="col ">
       <div class="input-group bg-white border rounded">
-        <input
-          matInput
-          [matDatepicker]="picker"
-          placeholder="Start Date"
-          id="joining"
-          class="form-control border-0"
-        />
-        <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
-        <mat-datepicker-toggle
-          matIconSuffix
-          [for]="picker"
-        ></mat-datepicker-toggle>
+        <input matInput [matDatepicker]="picker" placeholder="Start Date" id="joining" class="form-control border-0" />
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </div>
     </div>
     <!-- end date -->
     <div class="col">
       <div class="input-group bg-white border rounded">
-        <input
-          matInput
-          [matDatepicker]="picker1"
-          placeholder="End Date"
-          id="last"
-          class="form-control border-0"
-        />
-        <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
-        <mat-datepicker-toggle
-          matIconSuffix
-          [for]="picker1"
-        ></mat-datepicker-toggle>
+        <input matInput [matDatepicker]="picker1" placeholder="End Date" id="last" class="form-control border-0" />
+        <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
         <mat-datepicker #picker1></mat-datepicker>
       </div>
     </div>
     <!-- project -->
     <div class="col ">
       <div class="btn-group" role="group">
-        <button
-          type="button"
-          class="btn btn-outline-secondary button-color dropdown-toggle"
-          data-bs-toggle="dropdown"
+        <button type="button" class="btn btn-outline-secondary button-color dropdown-toggle" data-bs-toggle="dropdown"
           aria-expanded="false">
-          Select  Project
+          Select Project
         </button>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">SMRT</a></li>
@@ -76,12 +48,8 @@
     <!-- task -->
     <div class="col">
       <div class="btn-group" role="group">
-        <button
-          type="button"
-          class="btn btn-outline-secondary button-color dropdown-toggle"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >Select Task
+        <button type="button" class="btn btn-outline-secondary button-color dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false">Select Task
         </button>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Design</a></li>
@@ -94,12 +62,8 @@
     <!-- employee -->
     <div class="col">
       <div class="btn-group" role="group">
-        <button
-          type="button"
-          class="btn btn-outline-secondary button-color dropdown-toggle"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >Select Employee
+        <button type="button" class="btn btn-outline-secondary button-color dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false">Select Employee
         </button>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Arun</a></li>
@@ -111,13 +75,9 @@
     </div>
     <!-- download -->
     <div class="col">
-         <div class="btn-group" role="group">
-        <button
-          type="button"
-          class="btn btn-primary  dropdown-toggle"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        ><i class="bi bi-download px-2"></i> Download
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary  dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false"><i class="bi bi-download px-2"></i> Download
         </button>
       </div>
     </div>

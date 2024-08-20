@@ -8,76 +8,74 @@
       </nav>
     </div>
     <div>
-      <button routerLink="/client-edit" type="button" class="btn mt-2 btn-outline-secondary"><i class="bi bi-pencil px-1"></i> Edit</button>
+      <button routerLink="/client-edit" type="button" class="btn mt-2 btn-outline-secondary"><i
+          class="bi bi-pencil px-1"></i> Edit</button>
     </div>
   </div>
 
   <!-- client details label -->
   <div class="client-info p-3 col-6 col-md-12 col-lg-12">
     <div>
-      <img
-      src="/assets/images/Rectangle 5543.png"
-      alt="Company Logo"
-      class="logo"
-      />
+      <img src="/assets/images/Rectangle 5543.png" alt="Company Logo" class="logo" />
     </div>
-      <div class="d-flex ps-4">
-        <div class="col-2">
-          <div>
-            <p class="mb-0">Client Name</p>
-            {{ client.name }}
-          </div>
-          <div class="pt-3">
-            <p class="mb-0">Client ID</p>
-            {{ client.id }}
-          </div>
+    <div class="d-flex ps-4">
+      <div class="col-2">
+        <div>
+          <p class="mb-0">Client Name</p>
+          {{ client.name }}
         </div>
-        <div class="px-3 col-3">
-          <div>
-            <p class="mb-0">Email ID</p>
-            {{ client.email }}
-          </div>
-          <div class="pt-3">
-            <p class="mb-0">Location</p>
-            {{ client.location }}
-          </div>
-        </div>
-        <div class="px-3 col-3">
-          <div>
-            <p class="mb-0">Onboarding Date</p>
-          </div>
-          <div>{{ client.onboardingDate | date : "MM/dd/yyyy" }}</div>
-          <div class="pt-3">
-            <p class="mb-0">Account Manager</p>
-          </div>
-          <div>{{ client.accountManager }}</div>
-        </div>
-        <div class="px-3 col-4">
-          <div>
-            <p class="mb-0">Contact Person</p>
-          </div>
-          <div>{{ client.contactPerson }}</div>
-          <div class="pt-3">
-            <p class="mb-0">Address</p>
-          </div>
-          <div>{{ client.address }}</div>
-        </div>
-        <div class="col-2">
-          <div>
-            <p class="mb-0">Phone Number</p>
-          </div>
-          <div>{{ client.phoneNumber }}</div>
+        <div class="pt-3">
+          <p class="mb-0">Client ID</p>
+          {{ client.id }}
         </div>
       </div>
+      <div class="px-3 col-3">
+        <div>
+          <p class="mb-0">Email ID</p>
+          {{ client.email }}
+        </div>
+        <div class="pt-3">
+          <p class="mb-0">Location</p>
+          {{ client.location }}
+        </div>
+      </div>
+      <div class="px-3 col-3">
+        <div>
+          <p class="mb-0">Onboarding Date</p>
+        </div>
+        <div>{{ client.onboardingDate | date : "MM/dd/yyyy" }}</div>
+        <div class="pt-3">
+          <p class="mb-0">Account Manager</p>
+        </div>
+        <div>{{ client.accountManager }}</div>
+      </div>
+      <div class="px-3 col-4">
+        <div>
+          <p class="mb-0">Contact Person</p>
+        </div>
+        <div>{{ client.contactPerson }}</div>
+        <div class="pt-3">
+          <p class="mb-0">Address</p>
+        </div>
+        <div>{{ client.address }}</div>
+      </div>
+      <div class="col-2">
+        <div>
+          <p class="mb-0">Phone Number</p>
+        </div>
+        <div>{{ client.phoneNumber }}</div>
+      </div>
+    </div>
   </div>
   <div class="row p-2 pt-3">
     <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
-      <a><mat-tab label="Current Project">
-          <app-currentproject></app-currentproject> </mat-tab></a>
-      <a routerLink="#"
-        ><mat-tab label="Completed Project">
-          <app-completeproject></app-completeproject> </mat-tab
-      ></a>
+      <a>
+        <mat-tab label="Current Project">
+          <app-currentproject routerLink="/myproject/projectdetail"></app-currentproject>
+        </mat-tab>
+      </a>
+      <a routerLink="#"><mat-tab label="Completed Project">
+          <app-completeproject></app-completeproject> </mat-tab></a>
     </mat-tab-group>
   </div>
 </div>

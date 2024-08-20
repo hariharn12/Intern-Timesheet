@@ -58,7 +58,7 @@ export const routes: Routes = [
             path: 'completedproject',
             component: CompleteprojectComponent,
           },
-    ],   
+        ],
       },
       {
         path: 'myproject/createproject',
@@ -69,8 +69,8 @@ export const routes: Routes = [
         component: CreateprojectComponent,
       },
       {
-        path:'myproject/projectdetail',
-        component:ProjectdetailComponent
+        path: 'myproject/projectdetail',
+        component: ProjectdetailComponent
       },
       {
         path: 'createtask',

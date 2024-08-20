@@ -1,48 +1,47 @@
 .row {
     width: 1170px;
-height: 80px;
-gap: 0px;
-border-radius: 4px 0px 0px 0px;
-border: 1px 0px 0px 0px;
-opacity: 0px;
+    height: 80px;
+    gap: 0px;
+    border-radius: 4px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
 
 }
 
-.topic{
+.topic {
     font-family: Inter;
-font-size: 18px;
-font-weight: 500;
-line-height: 21.78px;
-text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.78px;
+    text-align: left;
 }
 
-.subtopic{
+.subtopic {
     font-family: Inter;
-font-size: 16px;
-font-weight: 500;
-line-height: 19.36px;
-text-align: left;
-color:#A5AEB4;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    color: #A5AEB4;
 }
 
 p {
     font-family: Mulish;
-font-size: 10px;
-font-weight: 500;
-line-height: 12.55px;
-text-align: left;
-
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12.55px;
+    text-align: left;
 }
 
 .progress {
-    height: 10px !important;
+    height: 5px !important;
+    width: 230px;
 }
 
 .table-droupdown {
     width: 1100px;
-height: 74px;
-/* padding: 23px 51px 23px 25px; */
-gap: 0px;
-border: 0px 0px 1px 0px;
-opacity: 0px;
+    height: 74px;
+    gap: 0px;
+    border: 0px 0px 1px 0px;
+    opacity: 0px;
 }

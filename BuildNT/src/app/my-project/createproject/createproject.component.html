@@ -1,9 +1,9 @@
-<div class="container my-2 ms-2">
-    <div class="row">
+<div class="container my-2">
+    <div class="row ms-2">
         <h4 class="pt-2 mb-0">Create Project</h4>
         <p class="font-control mt-0 mb-3" routerLink="/myproject">My Projects/Create Project</p>
     </div>
-    <div class="row">
+    <div class="row ms-2">
         <div class="col-3">
             <div class="mb-2">
                 <label for="exampleFormControlInput1" class="form-label">Select Client</label>
@@ -38,7 +38,6 @@
                     <div class="input-group bg-white border rounded">
                         <input matInput [matDatepicker]="picker" placeholder="12/07/2023" id="joining"
                             class="form-control border-0">
-                        <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
                         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                         <mat-datepicker #picker></mat-datepicker>
                     </div>
@@ -59,7 +58,6 @@
                 <div class="input-group bg-white border rounded">
                     <input matInput [matDatepicker]="pickers" placeholder="12/07/2023" id="joining"
                         class="form-control border-0">
-                    <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
                     <mat-datepicker-toggle matIconSuffix [for]="pickers"></mat-datepicker-toggle>
                     <mat-datepicker #pickers></mat-datepicker>
                 </div>
@@ -81,7 +79,7 @@
             </div>
         </div>
     </div>
-    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="ms-2">
         <mat-tab label="Create Task">
             <app-createtask></app-createtask>
         </mat-tab>
