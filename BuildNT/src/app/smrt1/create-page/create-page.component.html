@@ -1,14 +1,16 @@
 <div class="container pt-3">
-  <div class="d-flex justify-content-between">
+  <div class="d-flex justify-content-between ms-2">
     <div>
-      <h4 class="client pt-4 mb-3">Create Client</h4>
-      <nav>
-        <a routerLink="/clientList">ClientList</a>
-        <a class="px-2">/Create Client</a>
+      <h4 class="client pt-4 mb-2">Create Client</h4>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item fw-3 text-secondary"><a routerLink="/clientList">ClientList</a></li>
+          <li class="breadcrumb-item active fw-5 text-black" aria-current="page">Create Client</li>
+        </ol>
       </nav>
     </div>
   </div>
-  <div>
+  <div class="ms-2">
     <!-- upload file -->
     <div class="mb-3 pt-3 font-14">
       <label for="formFileMultiple" class="form-label">Logo</label>
@@ -61,27 +63,29 @@
     <!-- create contact details -->
     <div class=" pt-2">
       <p class="font-18">Contact details</p>
-      <div class="row ">
-        <div class="mb-3 col">
+      <div class="row">
+        <div class="col-11 row">
+        <div class="mb-3 col-3">
           <label for="contact-person" class="form-label">Contact Person</label>
           <input type="text" class="form-control" id="contact-person" [(ngModel)]="newContactPerson" />
         </div>
-        <div class="mb-3 col">
+        <div class="mb-3 col-3">
           <label for="Position" class="form-label">Position</label>
           <input type="text" class="form-control" id="Position" [(ngModel)]="newPosition" />
         </div>
-        <div class="mb-3 col">
+        <div class="mb-3 col-3">
           <label for="phoneNumber" class="form-label">Phone Number</label>
           <input type="tel" class="form-control" id="phoneNumber" [(ngModel)]="newPhoneNumber" />
         </div>
-        <div class="mb-3 col">
+        <div class="mb-3 col-3">
           <label for="contactEmail" class="form-label">Email Id</label>
           <input type="email" class="form-control" [(ngModel)]="newEmail" id="contactEmail" />
         </div>
-        <div class="col align-items-center justify-content-end d-flex">
+        </div>
+        <div class="col-1 align-items-center justify-content-end d-flex mt-3">
           <button type="button" class="btn add-button" (click)="addContact()">
-            <i class="bi bi-plus"></i>
-            {{ editingIndex !== null ? "Update" : "Add" }}
+            <i class="bi bi-plus"></i>Add
+            <!-- {{ editingIndex !== null ? "Update" : "Add" }} -->
           </button>
         </div>
       </div>
@@ -105,8 +109,7 @@
           <h4>Email Id</h4>
           <h5>{{ contact.email }}</h5>
         </div>
-        <div class="col m-auto"> <button class="btn btn-outreline-primary me-4 btn-sm" (click)="editContact(i)">
-
+        <div class="col m-auto"> <button class="btn btn-outreline-primary me-4 btn-sm" data-bs-target="#exampleModal1" data-bs-toggle="modal" (click)="editContact(i)">
             <i class="bi bi-pencil"></i>
           </button>
           <button class="btn btn-outreline-danger btn-sm" data-bs-target="#exampleModal3" data-bs-toggle="modal">
@@ -116,19 +119,21 @@
       </div>
     </div>
     <div class="sumit-btn">
-      <button type="button" class="btn btn-primary btn-lg" data-bs-target="#exampleModal2" data-bs-toggle="modal">Create
+      <button type="button" class="btn btn-primary" data-bs-target="#exampleModal2" data-bs-toggle="modal">Create
         client</button>
     </div>
-    <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!--created massage-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog modal-dialog-centered">
         <div class="modal-content container p-3">
           <img src="assets/images/approval.png" alt="" class="approval mx-auto my-4">
-          <h1 class="approvel mx-auto my-3">Project created successfully</h1>
+          <h1 class="approvel mx-auto my-3">Client Created Successfully</h1>
           <button type="button" class="btn btn-primary mx-auto my-2" aria-label="Close"
             data-bs-dismiss="modal">OK</button>
         </div>
       </div>
     </div>
+    <!--detail massage-->
     <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog modal-dialog-centered">
         <div class="modal-content container p-3">
@@ -163,17 +168,17 @@
         </div>
       </div>
     </div>
-
-    <div class="modal fade " id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--edit massage-->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog modal-dialog-centered">
-        <div class="modal-content container p-3">
-          <div class="d-flex">
-            <div class="col-3">
-              <img src="assets/images/detale.png" alt="" class="approval mx-auto my-4">
+        <div class="modal-content container remove">
+          <div class="d-flex ">
+            <div class="col-2 ">
+              <img src="assets/images/detale.png" alt="" class="approval my-4 img-fluid">
             </div>
-            <div class="col-9 text-start">
-              <h1 class="pophead my-3 p-1 text-start">Are you Sure want to Remove Contact Details</h1>
-              <h6 class="poppara">
+            <div class="col-10 text-start ms-4">
+              <h1 class="my-3 text-start remove-title lh-sm">Are you Sure want to Remove Contact Details </h1>
+              <h6 class="poppara remove-content m-2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </h6>
             </div>
