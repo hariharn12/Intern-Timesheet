@@ -4,8 +4,9 @@
       <h4 class="client pt-4 mb-2">Edit Client Detail</h4>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item fw-3 text-secondary"><a routerLink="/clientList">ClientList</a></li>
-          <li class="breadcrumb-item active fw-5 text-black" aria-current="page">Create Client</li>
+          <li class="breadcrumb-item"><a class="text-decoration-none  text-secondary"
+              routerLink="/clientList">ClientList</a></li>
+          <li class="breadcrumb-item active text-black" aria-current="page">Edit Client</li>
         </ol>
       </nav>
     </div>
@@ -28,24 +29,24 @@
     <!-- client details -->
     <div class="row pt-2 font-14">
       <div class="mb-3 col-3">
-        <label for="company-name" class="form-label">Company name</label>
+        <label for="company-name" class="form-label text-black">Company name</label>
         <input type="text" class="form-control" id="company-name" placeholder="xyz" />
       </div>
       <div class="mb-3 col-3">
-        <label for="location" class="form-label">Locatoion</label>
+        <label for="location" class="form-label text-black">Location</label>
         <input type="text" class="form-control" id="location" placeholder="xyz" />
       </div>
       <div class="mb-3 col-3">
-        <label for="email" class="form-label">Account Manager</label>
+        <label for="email" class="form-label text-black">Account Manager</label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
       </div>
       <div class="mb-3 col-3">
-        <label for="web-address" class="form-label">Web Address</label>
+        <label for="web-address" class="form-label text-black">Web Address</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="xyz.com" />
       </div>
       <div class="mb-3 pt-2 col">
         <div class="d-flex justify-content-between">
-          <label for="Address" class="form-label">Address</label>
+          <label for="Address" class="form-label text-black">Address</label>
           <div class="form-check font-color-14">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
             <label class="form-check-label" for="flexCheckChecked">
@@ -56,13 +57,13 @@
         <input type="text" class="form-control" id="location" placeholder="No-12, Raja st,Chengam" />
       </div>
       <div class="mb-3 col">
-        <label for="billing-adress" class="form-label">Billing adress</label>
+        <label for="billing-adress" class="form-label text-black">Billing adress</label>
         <input type="text" class="form-control" id="location" placeholder="xyz" />
       </div>
     </div>
     <!-- create contact details -->
     <div class="pt-2">
-      <p class="font-18 mb-1">Contact details</p>
+      <p class="font-18 mb-1 text-black">Contact details</p>
       <div class="row">
         <div class="col-11 row">
           <div class="mb-3 col-3">
@@ -201,6 +202,19 @@
               </button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog modal-dialog-centered">
+        <div class="modal-content container p-3">
+          <img src="assets/images/approval.png" alt="" class=" mx-auto my-4" />
+          <h4 class="mx-auto my-3">
+            Edited successfully
+          </h4>
+          <button type="button" class="btn btn-primary mx-auto my-2" aria-label="Close" data-bs-dismiss="modal">
+            OK
+          </button>
         </div>
       </div>
     </div>

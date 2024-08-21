@@ -10,22 +10,22 @@
               </nav>
         </div>
         <div>
-            <button routerLink="./editemploy" type="button" class="btn mt-2 btn-outline-secondary"><i
+            <button routerLink="./editemploy" type="button" class="btn mt-2 btn-primary"><i
                     class="bi bi-pencil px-1"></i>
                 Edit</button>
         </div>
     </div>
     <div class="bg-card col-6 col-md-12 col-lg-12 p-2 ms-2">
         <div class="d-flex">
-            <div class="pt-2 px-2">
+            <div class="pt-2 px-2 col">
                 <img src="assets/images/employee.png" alt="employee Logo" class="logo" />
             </div>
-            <div class="font-16 mx-4">
+            <div class="font-16 col ms-1">
                 <div class="pt-2">
                     <p class="font-color-14 mb-0">Employee Name</p>
                     {{ employ.name}}
                 </div>
-                <div class="pt-4">
+                <div class="pt-4 ">
                     <p class="font-color-14 mb-0">Employee ID</p>
                     {{ employ.id}}
                 </div>
@@ -34,7 +34,7 @@
                     {{ employ.status}}
                 </div>
             </div>
-            <div class="px-4 font-16 mx-4">
+            <div class="px-4 font-16 mx-4 col">
                 <div class="pt-2">
                     <p class="font-color-14 mb-0">Email ID</p>
                     {{employ.email }}
@@ -49,7 +49,7 @@
                     {{ employ.join }}
                 </div>
             </div>
-            <div class="px-4 font-16 mx-4">
+            <div class="px-4 font-16 mx-4 col">
                 <div  class="pt-2">
                     <p class="font-color-14 mb-0">Designation</p>
                     {{ employ.designation}}
@@ -88,11 +88,11 @@
             </div>
         </div>
     </div>
-    <h6 class="my-2 font-18 pt-4 ms-3">Employee Reports</h6>
+    <h6 class="my-2 employ-rep pt-4 ms-3 text-black">Employee Reports</h6>
     <div class="row pt-4 ms-2">
         <div class="col border d-flex justify-content-between mx-2 rounded border-height">
             <div>
-                <h4>02</h4>
+                <h4 class="number mt-3">02</h4>
                 <p class="font-color-16">Live Projects</p>
             </div>
             <div class="bg-danger my-4 rounded p-3">
@@ -101,7 +101,7 @@
         </div>
         <div class="col border d-flex justify-content-between mx-2 rounded border-height">
             <div>
-                <h4>07</h4>
+                <h4 class="number mt-3">07</h4>
                 <p class="font-color-16">No of Completed Projects</p>
             </div>
             <div class="bg-success my-4 rounded p-3">
@@ -110,7 +110,7 @@
         </div>
         <div class="col border d-flex justify-content-between mx-2 rounded border-height">
             <div>
-                <h4>200</h4>
+                <h4 class="number mt-3">200</h4>
                 <p class="font-color-16">Total Worked Hours</p>
             </div>
             <div class="bg-info my-4 rounded p-3">
