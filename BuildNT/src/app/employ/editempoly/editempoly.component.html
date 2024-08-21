@@ -7,26 +7,16 @@
         </a>
       </nav>
     </div>
-    <div class="wrapper col-md-3">
-      <div class="input-group bg-white border rounded ">
-        <input class="form-control border-0" type="text" placeholder="search" id="example-search-input">
-        <span class="input-group-append">
-          <button class="btn btn-outline-secondary bg-white border-0 rounded-pill ms-n3" type="button">
-            <i class="bi bi-search"></i>
-          </button>
-        </span>
-      </div>
-    </div>
   </div>
   <form class="ms-2">
     <div class="row mt-2">
       <div class="col">
         <label for="firstname" class="detail-font my-2">Firstname</label>
-        <input type="text" class="form-control" aria-label="First name" id="firstname" value="hari">
+        <input type="text" class="form-control" aria-label="First name" id="firstname" value="Arun">
       </div>
       <div class="col">
         <label for="lastname" class="detail-font my-2">Lastname</label>
-        <input type="text" class="form-control" aria-label="First name" id="lastname" placeholder="hahah">
+        <input type="text" class="form-control" aria-label="First name" id="lastname" value="Ram">
       </div>
       <div class="col ">
         <label for="inputState" class="form-label mt-2">Designation</label>
@@ -37,13 +27,13 @@
       </div>
       <div class="col">
         <label for="employeeid" class="detail-font my-2">Employee ID</label>
-        <input type="text" class="form-control" aria-label="First name" id="employeeid">
+        <input type="text" class="form-control" aria-label="First name" id="employeeid" value="0000001">
       </div>
     </div>
     <div class="row mt-4">
       <div class="col">
         <label for="email" class="detail-font my-2">Email ID</label>
-        <input type="email" class="form-control" aria-label="First name" id="email">
+        <input type="email" class="form-control" aria-label="First name" id="email" value="0000001">
       </div>
       <div class="col">
         <label for="phone" class="detail-font my-2">Mobile Number</label>
@@ -68,7 +58,7 @@
         </select>
       </div>
       <div class="col">
-        <label for="joining" class="form-label mt-2">joining</label>
+        <label for="joining" class="form-label mt-2">Joining Date</label>
         <div class="input-group bg-white border rounded">
           <input matInput [matDatepicker]="picker" placeholder="00/00/2023" id="joining" class="form-control border-0">
           <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
@@ -77,7 +67,7 @@
         </div>
       </div>
       <div class="col">
-        <label for="last" class="form-label mt-2">last</label>
+        <label for="last" class="form-label mt-2">Last Date</label>
         <div class="input-group bg-white border rounded">
           <input matInput [matDatepicker]="picker1" placeholder="00/00/2023" id="last" class="form-control border-0">
           <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->

@@ -29,3 +29,25 @@
     gap: 0px;
     opacity: 0px;
 }
+
+.number {
+    font-family: Inter;
+font-size: 24px;
+font-weight: 600;
+line-height: 29.05px;
+text-align: left;
+
+}
+
+.employ-rep {
+    font-family: Inter;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.78px;
+text-align: left;
+
+}
+
+.btn-primary{
+    background-color: #004CFF;
+}
