@@ -14,6 +14,10 @@
     position: fixed;
     bottom: 20px;
     right: 10px;
+    .btn-primary {
+        background-color: #004CFF;
+        color: #fff;
+      }
 }
 
 .header {

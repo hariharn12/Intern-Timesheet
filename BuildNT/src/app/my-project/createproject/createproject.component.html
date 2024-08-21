@@ -3,14 +3,15 @@
         <h4 class="pt-2 mb-0">Create Project</h4>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a class="text-decoration-none  text-secondary" href="./myproject">My Projects</a></li>
-              <li class="breadcrumb-item active text-black" aria-current="page">Create Project</li>
+                <li class="breadcrumb-item"><a class="text-decoration-none  text-secondary" href="./myproject">My
+                        Projects</a></li>
+                <li class="breadcrumb-item active text-black" aria-current="page">Create Project</li>
             </ol>
-          </nav>
+        </nav>
     </div>
     <div class="row ms-2">
         <div class="col-3">
-            <div class="mb-2">
+            <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Select Client</label>
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Select Client</option>
@@ -33,24 +34,21 @@
         </div>
         <div class="col-3">
             <div class="mb-3">
-                <div>
-                    <label for="exampleFormControlInput1" class="form-label">Status</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Set Project Name">
-                </div>
-                <div>
-                    <label for="joining" class="form-label mt-2">Start Date</label>
-                    <div class="input-group bg-white border rounded">
-                        <input matInput [matDatepicker]="picker" placeholder="12/07/2023" id="joining"
-                            class="form-control border-0">
-                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-                        <mat-datepicker #picker></mat-datepicker>
-                    </div>
+                <label for="exampleFormControlInput1" class="form-label">Status</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Set Project Name">
+            </div>
+            <div>
+                <label for="joining" class="form-label mt-2">Start Date</label>
+                <div class="input-group bg-white border rounded">
+                    <input matInput [matDatepicker]="picker" placeholder="12/07/2023" id="joining"
+                        class="form-control border-0">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
                 </div>
             </div>
         </div>
         <div class="col-3">
-            <div>
+            <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Project Name</label>
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Active</option>
@@ -69,7 +67,7 @@
             </div>
         </div>
         <div class="col-3">
-            <div class="mb-2">
+            <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Select Project Manager</label>
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Tushar B</option>
@@ -93,14 +91,14 @@
         </mat-tab>
     </mat-tab-group>
     <div class="add">
-        <button type="button" class="btn btn-primary" data-bs-target="#exampleModal1" data-bs-toggle="modal">Create
+        <button type="button" class="btn btn-primary" data-bs-target="#exampleModal2" data-bs-toggle="modal">Create
             Project</button>
-        <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+        <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog modal-dialog-centered">
                 <div class="modal-content container p-3">
                     <img src="assets/images/approval.png" alt="" class="approval mx-auto my-4">
-                    <h1 class="approval-text mx-auto my-3">Project created successfully</h1>
+                    <h1 class="approvel mx-auto my-3">Project created successfully</h1>
                     <button type="button" class="btn btn-primary mx-auto my-2" aria-label="Close"
                         data-bs-dismiss="modal">OK</button>
                 </div>
@@ -108,4 +106,93 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog modal-dialog-centered">
+        <div class="modal-content container p-4">
+            <h5 class="approvel text-start">Edit Task</h5>
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <label for="person" class="form-label approval-text">Task</label>
+                        <input type="text" class="form-control" placeholder="UI/UX" aria-label="First name"
+                            id="person" />
+                    </div>
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label font-control">No. of Hours for This
+                            Task</label>
+                        <input type="text" class="form-control input-form" id="exampleFormControlInput1"
+                            placeholder="40 hrs">
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label font-control">Start Date</label>
+                        <div class="input-group bg-white border rounded">
+                            <input matInput [matDatepicker]="pickers1" placeholder="12/07/2023" id="joining"
+                                class="form-control border-0">
+                            <mat-datepicker-toggle matIconSuffix [for]="pickers1"></mat-datepicker-toggle>
+                            <mat-datepicker #pickers1></mat-datepicker>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label font-control">Complition Date</label>
+                        <div class="input-group bg-white border rounded">
+                            <input matInput [matDatepicker]="picker1" placeholder="20/07/2023" id="joining"
+                                class="form-control border-0">
+                            <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-6">
+                        <label for="exampleFormControlInput1" class="form-label fs-6 font-control">Status</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>On going</option>
+                            <option value="1">Completed</option>
+                            <option value="2">In active</option>
+                            <option value="3">Hold</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="d-flex pt-3 justify-content-end">
+                <button type="button" class="btn btn-outline-secondary button-clr mx-3 my-2" aria-label="Close"
+                    data-bs-dismiss="modal">
+                    Cancel
+                </button>
+                <button type="button" class="btn btn-primary my-2" aria-label="Close" data-bs-dismiss="modal">
+                    Edit
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog modal-dialog-centered">
+        <div class="modal-content container p-3">
+            <div class="d-flex">
+                <div class="col-3">
+                    <img src="assets/images/detale.png" alt="" class="my-4 img-fluid">
+                </div>
+                <div class="col-9 text-start">
+                    <h1 class="pophead my-3 p-1 text-start lh-sm">Are you Sure want to Remove Contact Details</h1>
+                    <h6 class="poppara">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </h6>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-light mx-2 my-2 border" aria-label="Close"
+                    data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary  my-2" aria-label="Close"
+                    data-bs-dismiss="modal">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
 <router-outlet></router-outlet>
+

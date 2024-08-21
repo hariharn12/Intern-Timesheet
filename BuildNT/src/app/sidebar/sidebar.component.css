@@ -6,3 +6,7 @@
 .sidebar {
     height: 100vh;
 }
+
+.active {
+    background-color: #004CFF;
+}

@@ -79,4 +79,9 @@ td:hover {
     position: fixed;
     bottom: 50px;
     right: 10px;
+  
+}
+
+.btn-primary{
+    background-color: #004CFF;
 }
